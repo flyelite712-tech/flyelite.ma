@@ -1,0 +1,30 @@
+{
+  "brand": {
+    "name": "Fly Elite",
+    "logo": "/assets/images/logo.svg"
+  },
+  "colors": {
+    "primary": "#0f4068",
+    "accent": "#69cce2",
+    "light": "#dedede",
+    "dark": "#090f10",
+    "white": "#ffffff"
+  },
+  "topBar": {
+    "enabled": true,
+    "bg": "#0f4068",
+    "text": "Devise : MAD — Une question ? N'hésitez pas à nous contacter au +212 670 222 219 - +33 622 15 80 89 ou contact@infinityjet.ma"
+  },
+  "contact": {
+    "phones": ["+212 670 222 219", "+33 622 15 80 89"],
+    "email": "contact@infinityjet.ma",
+    "address": "66, Av de France et 37, Av Ibn Sina, 4ème Étage, Agdal - Rabat",
+    "social": {
+      "instagram": "https://instagram.com/flyelite",
+      "facebook": "https://facebook.com/flyelite",
+      "twitter": "https://twitter.com/flyelite",
+      "linkedin": "https://linkedin.com/company/flyelite"
+    },
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.5!2d-6.8498!3d33.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU4JzE3LjgiTiA2wrA1MCc1OS4zIlc!5e0!3m2!1sfr!2sma!4v1234567890"
+  }
+}

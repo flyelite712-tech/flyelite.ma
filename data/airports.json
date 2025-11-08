@@ -1,0 +1,2530 @@
+[
+  {
+    "id": "AAL",
+    "name": "Aalborg",
+    "city": "Aalborg",
+    "country": "",
+    "code": "AAL",
+    "slug": "aalborg-aal"
+  },
+  {
+    "id": "AJA",
+    "name": "Ajaccio",
+    "city": "Ajaccio",
+    "country": "",
+    "code": "AJA",
+    "slug": "ajaccio-aja"
+  },
+  {
+    "id": "PVK",
+    "name": "Aktion",
+    "city": "Aktion",
+    "country": "",
+    "code": "PVK",
+    "slug": "aktion-pvk"
+  },
+  {
+    "id": "ABC",
+    "name": "Albacete",
+    "city": "Albacete",
+    "country": "",
+    "code": "ABC",
+    "slug": "albacete-abc"
+  },
+  {
+    "id": "AES",
+    "name": "Alesund Vigra",
+    "city": "Alesund",
+    "country": "",
+    "code": "AES",
+    "slug": "alesund-aes"
+  },
+  {
+    "id": "AXD",
+    "name": "Alexandroupolis",
+    "city": "Alexandroupolis",
+    "country": "",
+    "code": "AXD",
+    "slug": "alexandroupolis-axd"
+  },
+  {
+    "id": "ALG",
+    "name": "Alger",
+    "city": "Alger",
+    "country": "",
+    "code": "ALG",
+    "slug": "alger-alg"
+  },
+  {
+    "id": "AHO",
+    "name": "Alghero Fertilia",
+    "city": "Alghero",
+    "country": "",
+    "code": "AHO",
+    "slug": "alghero-aho"
+  },
+  {
+    "id": "ALC",
+    "name": "Alicante",
+    "city": "Alicante",
+    "country": "",
+    "code": "ALC",
+    "slug": "alicante-alc"
+  },
+  {
+    "id": "LEI",
+    "name": "Almeria",
+    "city": "Almeria",
+    "country": "",
+    "code": "LEI",
+    "slug": "almeria-lei"
+  },
+  {
+    "id": "AMS",
+    "name": "Amsterdam Schipol",
+    "city": "Amsterdam",
+    "country": "",
+    "code": "AMS",
+    "slug": "amsterdam-ams"
+  },
+  {
+    "id": "AOI",
+    "name": "Ancona",
+    "city": "Ancona",
+    "country": "",
+    "code": "AOI",
+    "slug": "ancona-aoi"
+  },
+  {
+    "id": "ANR",
+    "name": "Anvers",
+    "city": "Anvers",
+    "country": "",
+    "code": "ANR",
+    "slug": "anvers-anr"
+  },
+  {
+    "id": "AJR",
+    "name": "Arvidsjaur",
+    "city": "Arvidsjaur",
+    "country": "",
+    "code": "AJR",
+    "slug": "arvidsjaur-ajr"
+  },
+  {
+    "id": "ATH",
+    "name": "Athènes Eleftherios",
+    "city": "Athènes",
+    "country": "",
+    "code": "ATH",
+    "slug": "ath-nes-ath"
+  },
+  {
+    "id": "BJZ",
+    "name": "Badajoz",
+    "city": "Badajoz",
+    "country": "",
+    "code": "BJZ",
+    "slug": "badajoz-bjz"
+  },
+  {
+    "id": "BSL",
+    "name": "Bale Mulhouse-Freiburg",
+    "city": "Bale",
+    "country": "",
+    "code": "BSL",
+    "slug": "bale-bsl"
+  },
+  {
+    "id": "BCN",
+    "name": "Barcelona El Prat",
+    "city": "Barcelona",
+    "country": "",
+    "code": "BCN",
+    "slug": "barcelona-bcn"
+  },
+  {
+    "id": "BRI",
+    "name": "Bari Karol Wojtyla",
+    "city": "Bari",
+    "country": "",
+    "code": "BRI",
+    "slug": "bari-bri"
+  },
+  {
+    "id": "BSL",
+    "name": "Basel Mulhouse Freiburg",
+    "city": "Basel",
+    "country": "",
+    "code": "BSL",
+    "slug": "basel-bsl"
+  },
+  {
+    "id": "BIA",
+    "name": "Bastia Poretta",
+    "city": "Bastia",
+    "country": "",
+    "code": "BIA",
+    "slug": "bastia-bia"
+  },
+  {
+    "id": "BVA",
+    "name": "Beauvais Tille",
+    "city": "Beauvais",
+    "country": "",
+    "code": "BVA",
+    "slug": "beauvais-bva"
+  },
+  {
+    "id": "BFS",
+    "name": "Belfast International",
+    "city": "Belfast",
+    "country": "",
+    "code": "BFS",
+    "slug": "belfast-bfs"
+  },
+  {
+    "id": "BEG",
+    "name": "Belgrade Nikola Tesla",
+    "city": "Belgrade",
+    "country": "",
+    "code": "BEG",
+    "slug": "belgrade-beg"
+  },
+  {
+    "id": "BGY",
+    "name": "Bergame Caravaggio",
+    "city": "Bergame",
+    "country": "",
+    "code": "BGY",
+    "slug": "bergame-bgy"
+  },
+  {
+    "id": "EGC",
+    "name": "Bergerac Dordogne Périgord",
+    "city": "Bergerac",
+    "country": "",
+    "code": "EGC",
+    "slug": "bergerac-egc"
+  },
+  {
+    "id": "BER",
+    "name": "Berlin Brandenburg",
+    "city": "Berlin",
+    "country": "",
+    "code": "BER",
+    "slug": "berlin-ber"
+  },
+  {
+    "id": "BRN",
+    "name": "Bern",
+    "city": "Bern",
+    "country": "",
+    "code": "BRN",
+    "slug": "bern-brn"
+  },
+  {
+    "id": "BIQ",
+    "name": "Biarritz",
+    "city": "Biarritz",
+    "country": "",
+    "code": "BIQ",
+    "slug": "biarritz-biq"
+  },
+  {
+    "id": "BIQ",
+    "name": "Biarritz Pays Basque",
+    "city": "Biarritz",
+    "country": "",
+    "code": "BIQ",
+    "slug": "biarritz-biq"
+  },
+  {
+    "id": "BIO",
+    "name": "Bilbao",
+    "city": "Bilbao",
+    "country": "",
+    "code": "BIO",
+    "slug": "bilbao-bio"
+  },
+  {
+    "id": "BLL",
+    "name": "Billund",
+    "city": "Billund",
+    "country": "",
+    "code": "BLL",
+    "slug": "billund-bll"
+  },
+  {
+    "id": "BHX",
+    "name": "Birmingham",
+    "city": "Birmingham",
+    "country": "",
+    "code": "BHX",
+    "slug": "birmingham-bhx"
+  },
+  {
+    "id": "BJV",
+    "name": "Bodrum Milas",
+    "city": "Bodrum",
+    "country": "",
+    "code": "BJV",
+    "slug": "bodrum-bjv"
+  },
+  {
+    "id": "BOD",
+    "name": "Bordeaux",
+    "city": "Bordeaux",
+    "country": "",
+    "code": "BOD",
+    "slug": "bordeaux-bod"
+  },
+  {
+    "id": "BOH",
+    "name": "Bournemouth",
+    "city": "Bournemouth",
+    "country": "",
+    "code": "BOH",
+    "slug": "bournemouth-boh"
+  },
+  {
+    "id": "BTS",
+    "name": "Bratislava M.R Stefanik",
+    "city": "Bratislava",
+    "country": "",
+    "code": "BTS",
+    "slug": "bratislava-bts"
+  },
+  {
+    "id": "BWE",
+    "name": "Braunschweig",
+    "city": "Braunschweig",
+    "country": "",
+    "code": "BWE",
+    "slug": "braunschweig-bwe"
+  },
+  {
+    "id": "BRE",
+    "name": "Bremen",
+    "city": "Bremen",
+    "country": "",
+    "code": "BRE",
+    "slug": "bremen-bre"
+  },
+  {
+    "id": "VBS",
+    "name": "Brescia",
+    "city": "Brescia",
+    "country": "",
+    "code": "VBS",
+    "slug": "brescia-vbs"
+  },
+  {
+    "id": "BDS",
+    "name": "Brindisi",
+    "city": "Brindisi",
+    "country": "",
+    "code": "BDS",
+    "slug": "brindisi-bds"
+  },
+  {
+    "id": "BRS",
+    "name": "Bristol",
+    "city": "Bristol",
+    "country": "",
+    "code": "BRS",
+    "slug": "bristol-brs"
+  },
+  {
+    "id": "BVE",
+    "name": "Brive Souillac",
+    "city": "Brive",
+    "country": "",
+    "code": "BVE",
+    "slug": "brive-bve"
+  },
+  {
+    "id": "BRQ",
+    "name": "Brno Turany",
+    "city": "Brno",
+    "country": "",
+    "code": "BRQ",
+    "slug": "brno-brq"
+  },
+  {
+    "id": "BRU",
+    "name": "Bruxelles Zaventem",
+    "city": "Bruxelles",
+    "country": "",
+    "code": "BRU",
+    "slug": "bruxelles-bru"
+  },
+  {
+    "id": "BBU",
+    "name": "Bucharest Aurel Vlaicu",
+    "city": "Bucharest",
+    "country": "",
+    "code": "BBU",
+    "slug": "bucharest-bbu"
+  },
+  {
+    "id": "OTP",
+    "name": "Bucharest Henri Coanda",
+    "city": "Bucharest",
+    "country": "",
+    "code": "OTP",
+    "slug": "bucharest-otp"
+  },
+  {
+    "id": "BUD",
+    "name": "Budapest Ferenc Liszt",
+    "city": "Budapest",
+    "country": "",
+    "code": "BUD",
+    "slug": "budapest-bud"
+  },
+  {
+    "id": "BXO",
+    "name": "Buochs",
+    "city": "Buochs",
+    "country": "",
+    "code": "BXO",
+    "slug": "buochs-bxo"
+  },
+  {
+    "id": "CAG",
+    "name": "Cagliari",
+    "city": "Cagliari",
+    "country": "",
+    "code": "CAG",
+    "slug": "cagliari-cag"
+  },
+  {
+    "id": "CLY",
+    "name": "Calvi Sainte-Catherine",
+    "city": "Calvi",
+    "country": "",
+    "code": "CLY",
+    "slug": "calvi-cly"
+  },
+  {
+    "id": "CBG",
+    "name": "Cambridge",
+    "city": "Cambridge",
+    "country": "",
+    "code": "CBG",
+    "slug": "cambridge-cbg"
+  },
+  {
+    "id": "CEQ",
+    "name": "Cannes",
+    "city": "Cannes",
+    "country": "",
+    "code": "CEQ",
+    "slug": "cannes-ceq"
+  },
+  {
+    "id": "CWL",
+    "name": "Cardiff",
+    "city": "Cardiff",
+    "country": "",
+    "code": "CWL",
+    "slug": "cardiff-cwl"
+  },
+  {
+    "id": "CMN",
+    "name": "Casablanca",
+    "city": "Casablanca",
+    "country": "",
+    "code": "CMN",
+    "slug": "casablanca-cmn"
+  },
+  {
+    "id": "CTA",
+    "name": "Catane Fontanarossa",
+    "city": "Catane",
+    "country": "",
+    "code": "CTA",
+    "slug": "catane-cta"
+  },
+  {
+    "id": "CHQ",
+    "name": "Chania",
+    "city": "Chania",
+    "country": "",
+    "code": "CHQ",
+    "slug": "chania-chq"
+  },
+  {
+    "id": "CRL",
+    "name": "Charleroi",
+    "city": "Charleroi",
+    "country": "",
+    "code": "CRL",
+    "slug": "charleroi-crl"
+  },
+  {
+    "id": "CHR",
+    "name": "Chateauroux",
+    "city": "Chateauroux",
+    "country": "",
+    "code": "CHR",
+    "slug": "chateauroux-chr"
+  },
+  {
+    "id": "CFE",
+    "name": "Clermont-Ferrand Auvergne",
+    "city": "Clermont-Ferrand",
+    "country": "",
+    "code": "CFE",
+    "slug": "clermont-ferrand-cfe"
+  },
+  {
+    "id": "CGN",
+    "name": "Cologne Bonn",
+    "city": "Cologne",
+    "country": "",
+    "code": "CGN",
+    "slug": "cologne-cgn"
+  },
+  {
+    "id": "CIY",
+    "name": "Comiso",
+    "city": "Comiso",
+    "country": "",
+    "code": "CIY",
+    "slug": "comiso-ciy"
+  },
+  {
+    "id": "CPH",
+    "name": "Copenhagen",
+    "city": "Copenhagen",
+    "country": "",
+    "code": "CPH",
+    "slug": "copenhagen-cph"
+  },
+  {
+    "id": "CFU",
+    "name": "Corfu",
+    "city": "Corfu",
+    "country": "",
+    "code": "CFU",
+    "slug": "corfu-cfu"
+  },
+  {
+    "id": "ORK",
+    "name": "Cork",
+    "city": "Cork",
+    "country": "",
+    "code": "ORK",
+    "slug": "cork-ork"
+  },
+  {
+    "id": "KJK",
+    "name": "Courtrai Wevelgem",
+    "city": "Courtrai",
+    "country": "",
+    "code": "KJK",
+    "slug": "courtrai-kjk"
+  },
+  {
+    "id": "KRK",
+    "name": "Cracovie John Paul II",
+    "city": "Cracovie",
+    "country": "",
+    "code": "KRK",
+    "slug": "cracovie-krk"
+  },
+  {
+    "id": "DSS",
+    "name": "Dakar Blaise Diagne",
+    "city": "Dakar",
+    "country": "",
+    "code": "DSS",
+    "slug": "dakar-dss"
+  },
+  {
+    "id": "DOL",
+    "name": "Deauville Saint Gatien",
+    "city": "Deauville",
+    "country": "",
+    "code": "DOL",
+    "slug": "deauville-dol"
+  },
+  {
+    "id": "DEB",
+    "name": "Debrecen",
+    "city": "Debrecen",
+    "country": "",
+    "code": "DEB",
+    "slug": "debrecen-deb"
+  },
+  {
+    "id": "DIJ",
+    "name": "Dijon Longvic",
+    "city": "Dijon",
+    "country": "",
+    "code": "DIJ",
+    "slug": "dijon-dij"
+  },
+  {
+    "id": "DNR",
+    "name": "Dinard Pleurtuit Saint-Malo",
+    "city": "Dinard",
+    "country": "",
+    "code": "DNR",
+    "slug": "dinard-dnr"
+  },
+  {
+    "id": "DLE",
+    "name": "Dole Jura",
+    "city": "Dole",
+    "country": "",
+    "code": "DLE",
+    "slug": "dole-dle"
+  },
+  {
+    "id": "DTM",
+    "name": "Dortmund",
+    "city": "Dortmund",
+    "country": "",
+    "code": "DTM",
+    "slug": "dortmund-dtm"
+  },
+  {
+    "id": "DRS",
+    "name": "Dresden",
+    "city": "Dresden",
+    "country": "",
+    "code": "DRS",
+    "slug": "dresden-drs"
+  },
+  {
+    "id": "DWC",
+    "name": "Dubai Jebel Ali",
+    "city": "Dubai",
+    "country": "",
+    "code": "DWC",
+    "slug": "dubai-dwc"
+  },
+  {
+    "id": "DUB",
+    "name": "Dublin",
+    "city": "Dublin",
+    "country": "",
+    "code": "DUB",
+    "slug": "dublin-dub"
+  },
+  {
+    "id": "DBV",
+    "name": "Dubrovnik",
+    "city": "Dubrovnik",
+    "country": "",
+    "code": "DBV",
+    "slug": "dubrovnik-dbv"
+  },
+  {
+    "id": "DUS",
+    "name": "Dusseldorf",
+    "city": "Dusseldorf",
+    "country": "",
+    "code": "DUS",
+    "slug": "dusseldorf-dus"
+  },
+  {
+    "id": "EMA",
+    "name": "East Midlands",
+    "city": "East",
+    "country": "",
+    "code": "EMA",
+    "slug": "east-ema"
+  },
+  {
+    "id": "EDI",
+    "name": "Edinburgh",
+    "city": "Edinburgh",
+    "country": "",
+    "code": "EDI",
+    "slug": "edinburgh-edi"
+  },
+  {
+    "id": "EIN",
+    "name": "Eindhoven",
+    "city": "Eindhoven",
+    "country": "",
+    "code": "EIN",
+    "slug": "eindhoven-ein"
+  },
+  {
+    "id": "EPL",
+    "name": "Epinal Mirecourt",
+    "city": "Epinal",
+    "country": "",
+    "code": "EPL",
+    "slug": "epinal-epl"
+  },
+  {
+    "id": "ERF",
+    "name": "Erfurt Weimar",
+    "city": "Erfurt",
+    "country": "",
+    "code": "ERF",
+    "slug": "erfurt-erf"
+  },
+  {
+    "id": "EXT",
+    "name": "Exeter",
+    "city": "Exeter",
+    "country": "",
+    "code": "EXT",
+    "slug": "exeter-ext"
+  },
+  {
+    "id": "FAO",
+    "name": "Faro",
+    "city": "Faro",
+    "country": "",
+    "code": "FAO",
+    "slug": "faro-fao"
+  },
+  {
+    "id": "FEZ",
+    "name": "Fes Saiss",
+    "city": "Fes",
+    "country": "",
+    "code": "FEZ",
+    "slug": "fes-fez"
+  },
+  {
+    "id": "FSC",
+    "name": "Figari Sud-Corse",
+    "city": "Figari",
+    "country": "",
+    "code": "FSC",
+    "slug": "figari-fsc"
+  },
+  {
+    "id": "FLR",
+    "name": "Florence Peretola",
+    "city": "Florence",
+    "country": "",
+    "code": "FLR",
+    "slug": "florence-flr"
+  },
+  {
+    "id": "FRL",
+    "name": "Forli",
+    "city": "Forli",
+    "country": "",
+    "code": "FRL",
+    "slug": "forli-frl"
+  },
+  {
+    "id": "FLL",
+    "name": "Fort Lauderdale Hollywood",
+    "city": "Fort",
+    "country": "",
+    "code": "FLL",
+    "slug": "fort-fll"
+  },
+  {
+    "id": "FRA",
+    "name": "Frankfurt",
+    "city": "Frankfurt",
+    "country": "",
+    "code": "FRA",
+    "slug": "frankfurt-fra"
+  },
+  {
+    "id": "HHN",
+    "name": "Frankfurt Hahn",
+    "city": "Frankfurt",
+    "country": "",
+    "code": "HHN",
+    "slug": "frankfurt-hhn"
+  },
+  {
+    "id": "FDH",
+    "name": "Friedrichshafen",
+    "city": "Friedrichshafen",
+    "country": "",
+    "code": "FDH",
+    "slug": "friedrichshafen-fdh"
+  },
+  {
+    "id": "FUE",
+    "name": "Fuerteventura",
+    "city": "Fuerteventura",
+    "country": "",
+    "code": "FUE",
+    "slug": "fuerteventura-fue"
+  },
+  {
+    "id": "FNC",
+    "name": "Funchal Cristiano Ronaldo",
+    "city": "Funchal",
+    "country": "",
+    "code": "FNC",
+    "slug": "funchal-fnc"
+  },
+  {
+    "id": "GDN",
+    "name": "Gdansk Lesch Walesa",
+    "city": "Gdansk",
+    "country": "",
+    "code": "GDN",
+    "slug": "gdansk-gdn"
+  },
+  {
+    "id": "GOA",
+    "name": "Genes Genoa Cristoforo Colombo",
+    "city": "Genes",
+    "country": "",
+    "code": "GOA",
+    "slug": "genes-goa"
+  },
+  {
+    "id": "GVA",
+    "name": "Geneve International",
+    "city": "Geneve",
+    "country": "",
+    "code": "GVA",
+    "slug": "geneve-gva"
+  },
+  {
+    "id": "GRO",
+    "name": "Girona Costa Brava",
+    "city": "Girona",
+    "country": "",
+    "code": "GRO",
+    "slug": "girona-gro"
+  },
+  {
+    "id": "GLA",
+    "name": "Glasgow International",
+    "city": "Glasgow",
+    "country": "",
+    "code": "GLA",
+    "slug": "glasgow-gla"
+  },
+  {
+    "id": "PIK",
+    "name": "Glasgow Prestwick",
+    "city": "Glasgow",
+    "country": "",
+    "code": "PIK",
+    "slug": "glasgow-pik"
+  },
+  {
+    "id": "GOT",
+    "name": "Gothenburg Landvetter",
+    "city": "Gothenburg",
+    "country": "",
+    "code": "GOT",
+    "slug": "gothenburg-got"
+  },
+  {
+    "id": "LPA",
+    "name": "Gran Canaria",
+    "city": "Gran",
+    "country": "",
+    "code": "LPA",
+    "slug": "gran-lpa"
+  },
+  {
+    "id": "GRX",
+    "name": "Granada Federico Garcia Lopez",
+    "city": "Granada",
+    "country": "",
+    "code": "GRX",
+    "slug": "granada-grx"
+  },
+  {
+    "id": "GRZ",
+    "name": "Graz",
+    "city": "Graz",
+    "country": "",
+    "code": "GRZ",
+    "slug": "graz-grz"
+  },
+  {
+    "id": "GNB",
+    "name": "Grenoble Isere",
+    "city": "Grenoble",
+    "country": "",
+    "code": "GNB",
+    "slug": "grenoble-gnb"
+  },
+  {
+    "id": "GRS",
+    "name": "Grosseto",
+    "city": "Grosseto",
+    "country": "",
+    "code": "GRS",
+    "slug": "grosseto-grs"
+  },
+  {
+    "id": "HAM",
+    "name": "Hamburg",
+    "city": "Hamburg",
+    "country": "",
+    "code": "HAM",
+    "slug": "hamburg-ham"
+  },
+  {
+    "id": "HAJ",
+    "name": "Hannover Langenhagen",
+    "city": "Hannover",
+    "country": "",
+    "code": "HAJ",
+    "slug": "hannover-haj"
+  },
+  {
+    "id": "HAU",
+    "name": "Haugesund Karmoy",
+    "city": "Haugesund",
+    "country": "",
+    "code": "HAU",
+    "slug": "haugesund-hau"
+  },
+  {
+    "id": "HER",
+    "name": "Heraklion",
+    "city": "Heraklion",
+    "country": "",
+    "code": "HER",
+    "slug": "heraklion-her"
+  },
+  {
+    "id": "HDF",
+    "name": "Heringsdorf",
+    "city": "Heringsdorf",
+    "country": "",
+    "code": "HDF",
+    "slug": "heringsdorf-hdf"
+  },
+  {
+    "id": "HUY",
+    "name": "Humberside",
+    "city": "Humberside",
+    "country": "",
+    "code": "HUY",
+    "slug": "humberside-huy"
+  },
+  {
+    "id": "IBZ",
+    "name": "Ibiza",
+    "city": "Ibiza",
+    "country": "",
+    "code": "IBZ",
+    "slug": "ibiza-ibz"
+  },
+  {
+    "id": "IGS",
+    "name": "Ingolstadt Manching",
+    "city": "Ingolstadt",
+    "country": "",
+    "code": "IGS",
+    "slug": "ingolstadt-igs"
+  },
+  {
+    "id": "INN",
+    "name": "Innsbruck",
+    "city": "Innsbruck",
+    "country": "",
+    "code": "INN",
+    "slug": "innsbruck-inn"
+  },
+  {
+    "id": "IOA",
+    "name": "Ioannina",
+    "city": "Ioannina",
+    "country": "",
+    "code": "IOA",
+    "slug": "ioannina-ioa"
+  },
+  {
+    "id": "IVL",
+    "name": "Ivalo",
+    "city": "Ivalo",
+    "country": "",
+    "code": "IVL",
+    "slug": "ivalo-ivl"
+  },
+  {
+    "id": "XRY",
+    "name": "Jerez",
+    "city": "Jerez",
+    "country": "",
+    "code": "XRY",
+    "slug": "jerez-xry"
+  },
+  {
+    "id": "KLX",
+    "name": "Kalamata",
+    "city": "Kalamata",
+    "country": "",
+    "code": "KLX",
+    "slug": "kalamata-klx"
+  },
+  {
+    "id": "FKB",
+    "name": "Karlsruhe/Baden-Baden",
+    "city": "Karlsruhe/Baden-Baden",
+    "country": "",
+    "code": "FKB",
+    "slug": "karlsruhe-baden-baden-fkb"
+  },
+  {
+    "id": "KSD",
+    "name": "Karlstad",
+    "city": "Karlstad",
+    "country": "",
+    "code": "KSD",
+    "slug": "karlstad-ksd"
+  },
+  {
+    "id": "KSF",
+    "name": "Kassel Calden",
+    "city": "Kassel",
+    "country": "",
+    "code": "KSF",
+    "slug": "kassel-ksf"
+  },
+  {
+    "id": "KSO",
+    "name": "Kastoria",
+    "city": "Kastoria",
+    "country": "",
+    "code": "KSO",
+    "slug": "kastoria-kso"
+  },
+  {
+    "id": "KTW",
+    "name": "Katowice",
+    "city": "Katowice",
+    "country": "",
+    "code": "KTW",
+    "slug": "katowice-ktw"
+  },
+  {
+    "id": "KVA",
+    "name": "Kavala",
+    "city": "Kavala",
+    "country": "",
+    "code": "KVA",
+    "slug": "kavala-kva"
+  },
+  {
+    "id": "EFL",
+    "name": "Kefalonia Cephalonia",
+    "city": "Kefalonia",
+    "country": "",
+    "code": "EFL",
+    "slug": "kefalonia-efl"
+  },
+  {
+    "id": "HMA",
+    "name": "Khanty-Mansiysk",
+    "city": "Khanty-Mansiysk",
+    "country": "",
+    "code": "HMA",
+    "slug": "khanty-mansiysk-hma"
+  },
+  {
+    "id": "KKN",
+    "name": "Kirkenes Hoybuktmoen",
+    "city": "Kirkenes",
+    "country": "",
+    "code": "KKN",
+    "slug": "kirkenes-kkn"
+  },
+  {
+    "id": "KRN",
+    "name": "Kiruna",
+    "city": "Kiruna",
+    "country": "",
+    "code": "KRN",
+    "slug": "kiruna-krn"
+  },
+  {
+    "id": "KLU",
+    "name": "Klagenfurt",
+    "city": "Klagenfurt",
+    "country": "",
+    "code": "KLU",
+    "slug": "klagenfurt-klu"
+  },
+  {
+    "id": "NOC",
+    "name": "Knock Ireland West",
+    "city": "Knock",
+    "country": "",
+    "code": "NOC",
+    "slug": "knock-noc"
+  },
+  {
+    "id": "KOK",
+    "name": "Kokkola-Pietarsaari",
+    "city": "Kokkola-Pietarsaari",
+    "country": "",
+    "code": "KOK",
+    "slug": "kokkola-pietarsaari-kok"
+  },
+  {
+    "id": "KGS",
+    "name": "Kos",
+    "city": "Kos",
+    "country": "",
+    "code": "KGS",
+    "slug": "kos-kgs"
+  },
+  {
+    "id": "KSC",
+    "name": "Kosice",
+    "city": "Kosice",
+    "country": "",
+    "code": "KSC",
+    "slug": "kosice-ksc"
+  },
+  {
+    "id": "KRO",
+    "name": "Kourgan",
+    "city": "Kourgan",
+    "country": "",
+    "code": "KRO",
+    "slug": "kourgan-kro"
+  },
+  {
+    "id": "KSU",
+    "name": "Kristiansund Kvernberget",
+    "city": "Kristiansund",
+    "country": "",
+    "code": "KSU",
+    "slug": "kristiansund-ksu"
+  },
+  {
+    "id": "KUO",
+    "name": "Kuopio",
+    "city": "Kuopio",
+    "country": "",
+    "code": "KUO",
+    "slug": "kuopio-kuo"
+  },
+  {
+    "id": "SPC",
+    "name": "La Palma",
+    "city": "La",
+    "country": "",
+    "code": "SPC",
+    "slug": "la-spc"
+  },
+  {
+    "id": "LRH",
+    "name": "La Rochelle Ile de Re",
+    "city": "La",
+    "country": "",
+    "code": "LRH",
+    "slug": "la-lrh"
+  },
+  {
+    "id": "LHA",
+    "name": "Lahr Black Forest",
+    "city": "Lahr",
+    "country": "",
+    "code": "LHA",
+    "slug": "lahr-lha"
+  },
+  {
+    "id": "TER",
+    "name": "Lajes Field",
+    "city": "Lajes",
+    "country": "",
+    "code": "TER",
+    "slug": "lajes-ter"
+  },
+  {
+    "id": "LKL",
+    "name": "Lakselv Banak",
+    "city": "Lakselv",
+    "country": "",
+    "code": "LKL",
+    "slug": "lakselv-lkl"
+  },
+  {
+    "id": "SUF",
+    "name": "Lamezia Terme",
+    "city": "Lamezia",
+    "country": "",
+    "code": "SUF",
+    "slug": "lamezia-suf"
+  },
+  {
+    "id": "ACE",
+    "name": "Lanzarote",
+    "city": "Lanzarote",
+    "country": "",
+    "code": "ACE",
+    "slug": "lanzarote-ace"
+  },
+  {
+    "id": "LCA",
+    "name": "Larnaca",
+    "city": "Larnaca",
+    "country": "",
+    "code": "LCA",
+    "slug": "larnaca-lca"
+  },
+  {
+    "id": "LTQ",
+    "name": "Le Touquet Cote d'Opale",
+    "city": "Le",
+    "country": "",
+    "code": "LTQ",
+    "slug": "le-ltq"
+  },
+  {
+    "id": "LBA",
+    "name": "Leeds Bradford",
+    "city": "Leeds",
+    "country": "",
+    "code": "LBA",
+    "slug": "leeds-lba"
+  },
+  {
+    "id": "LEJ",
+    "name": "Leipzig",
+    "city": "Leipzig",
+    "country": "",
+    "code": "LEJ",
+    "slug": "leipzig-lej"
+  },
+  {
+    "id": "LEY",
+    "name": "Lelystad",
+    "city": "Lelystad",
+    "country": "",
+    "code": "LEY",
+    "slug": "lelystad-ley"
+  },
+  {
+    "id": "LXS",
+    "name": "Lemnos",
+    "city": "Lemnos",
+    "country": "",
+    "code": "LXS",
+    "slug": "lemnos-lxs"
+  },
+  {
+    "id": "LEN",
+    "name": "Leon",
+    "city": "Leon",
+    "country": "",
+    "code": "LEN",
+    "slug": "leon-len"
+  },
+  {
+    "id": "LGG",
+    "name": "Liege",
+    "city": "Liege",
+    "country": "",
+    "code": "LGG",
+    "slug": "liege-lgg"
+  },
+  {
+    "id": "LIL",
+    "name": "Lille",
+    "city": "Lille",
+    "country": "",
+    "code": "LIL",
+    "slug": "lille-lil"
+  },
+  {
+    "id": "LIG",
+    "name": "Limoges Bellegarde",
+    "city": "Limoges",
+    "country": "",
+    "code": "LIG",
+    "slug": "limoges-lig"
+  },
+  {
+    "id": "LNZ",
+    "name": "Linz",
+    "city": "Linz",
+    "country": "",
+    "code": "LNZ",
+    "slug": "linz-lnz"
+  },
+  {
+    "id": "LIS",
+    "name": "Lisbon Humberto Delgado",
+    "city": "Lisbon",
+    "country": "",
+    "code": "LIS",
+    "slug": "lisbon-lis"
+  },
+  {
+    "id": "CAT",
+    "name": "Lisbonne Cascais",
+    "city": "Lisbonne",
+    "country": "",
+    "code": "CAT",
+    "slug": "lisbonne-cat"
+  },
+  {
+    "id": "LPL",
+    "name": "Liverpool John Lennon",
+    "city": "Liverpool",
+    "country": "",
+    "code": "LPL",
+    "slug": "liverpool-lpl"
+  },
+  {
+    "id": "LJU",
+    "name": "Ljubljana",
+    "city": "Ljubljana",
+    "country": "",
+    "code": "LJU",
+    "slug": "ljubljana-lju"
+  },
+  {
+    "id": "BQH",
+    "name": "London Biggin Hill",
+    "city": "London",
+    "country": "",
+    "code": "BQH",
+    "slug": "london-bqh"
+  },
+  {
+    "id": "FAB",
+    "name": "London Farnborough",
+    "city": "London",
+    "country": "",
+    "code": "FAB",
+    "slug": "london-fab"
+  },
+  {
+    "id": "LGW",
+    "name": "London Gatwick",
+    "city": "London",
+    "country": "",
+    "code": "LGW",
+    "slug": "london-lgw"
+  },
+  {
+    "id": "LTN",
+    "name": "London Luton",
+    "city": "London",
+    "country": "",
+    "code": "LTN",
+    "slug": "london-ltn"
+  },
+  {
+    "id": "OXF",
+    "name": "London Oxford",
+    "city": "London",
+    "country": "",
+    "code": "OXF",
+    "slug": "london-oxf"
+  },
+  {
+    "id": "SEN",
+    "name": "London Southend",
+    "city": "London",
+    "country": "",
+    "code": "SEN",
+    "slug": "london-sen"
+  },
+  {
+    "id": "STN",
+    "name": "London Stansted",
+    "city": "London",
+    "country": "",
+    "code": "STN",
+    "slug": "london-stn"
+  },
+  {
+    "id": "LYR",
+    "name": "Longyearbyen Svalbard",
+    "city": "Longyearbyen",
+    "country": "",
+    "code": "LYR",
+    "slug": "longyearbyen-lyr"
+  },
+  {
+    "id": "LRT",
+    "name": "Lorient South Brittany",
+    "city": "Lorient",
+    "country": "",
+    "code": "LRT",
+    "slug": "lorient-lrt"
+  },
+  {
+    "id": "LUZ",
+    "name": "Lublin",
+    "city": "Lublin",
+    "country": "",
+    "code": "LUZ",
+    "slug": "lublin-luz"
+  },
+  {
+    "id": "LUG",
+    "name": "Lugano",
+    "city": "Lugano",
+    "country": "",
+    "code": "LUG",
+    "slug": "lugano-lug"
+  },
+  {
+    "id": "LLA",
+    "name": "Lulea",
+    "city": "Lulea",
+    "country": "",
+    "code": "LLA",
+    "slug": "lulea-lla"
+  },
+  {
+    "id": "LUX",
+    "name": "Luxembourg",
+    "city": "Luxembourg",
+    "country": "",
+    "code": "LUX",
+    "slug": "luxembourg-lux"
+  },
+  {
+    "id": "LYN",
+    "name": "Lyon Bron",
+    "city": "Lyon",
+    "country": "",
+    "code": "LYN",
+    "slug": "lyon-lyn"
+  },
+  {
+    "id": "MST",
+    "name": "Maastricht Aachen",
+    "city": "Maastricht",
+    "country": "",
+    "code": "MST",
+    "slug": "maastricht-mst"
+  },
+  {
+    "id": "MAD",
+    "name": "Madrid Barajas",
+    "city": "Madrid",
+    "country": "",
+    "code": "MAD",
+    "slug": "madrid-mad"
+  },
+  {
+    "id": "MQF",
+    "name": "Magnitogorsk",
+    "city": "Magnitogorsk",
+    "country": "",
+    "code": "MQF",
+    "slug": "magnitogorsk-mqf"
+  },
+  {
+    "id": "MAH",
+    "name": "Mahon Minorque",
+    "city": "Mahon",
+    "country": "",
+    "code": "MAH",
+    "slug": "mahon-mah"
+  },
+  {
+    "id": "AGP",
+    "name": "Malaga Costa Del Sol",
+    "city": "Malaga",
+    "country": "",
+    "code": "AGP",
+    "slug": "malaga-agp"
+  },
+  {
+    "id": "MMX",
+    "name": "Malmo",
+    "city": "Malmo",
+    "country": "",
+    "code": "MMX",
+    "slug": "malmo-mmx"
+  },
+  {
+    "id": "MLA",
+    "name": "Malta Luqa",
+    "city": "Malta",
+    "country": "",
+    "code": "MLA",
+    "slug": "malta-mla"
+  },
+  {
+    "id": "MAN",
+    "name": "Manchester",
+    "city": "Manchester",
+    "country": "",
+    "code": "MAN",
+    "slug": "manchester-man"
+  },
+  {
+    "id": "MBX",
+    "name": "Maribor",
+    "city": "Maribor",
+    "country": "",
+    "code": "MBX",
+    "slug": "maribor-mbx"
+  },
+  {
+    "id": "RAK",
+    "name": "Marrakech",
+    "city": "Marrakech",
+    "country": "",
+    "code": "RAK",
+    "slug": "marrakech-rak"
+  },
+  {
+    "id": "MRS",
+    "name": "Marseille Provence",
+    "city": "Marseille",
+    "country": "",
+    "code": "MRS",
+    "slug": "marseille-mrs"
+  },
+  {
+    "id": "FMM",
+    "name": "Memmingen",
+    "city": "Memmingen",
+    "country": "",
+    "code": "FMM",
+    "slug": "memmingen-fmm"
+  },
+  {
+    "id": "ETZ",
+    "name": "Metz-Nancy-Lorraine",
+    "city": "Metz-Nancy-Lorraine",
+    "country": "",
+    "code": "ETZ",
+    "slug": "metz-nancy-lorraine-etz"
+  },
+  {
+    "id": "LIN",
+    "name": "Milan Linate",
+    "city": "Milan",
+    "country": "",
+    "code": "LIN",
+    "slug": "milan-lin"
+  },
+  {
+    "id": "MPL",
+    "name": "Montpellier Méditerranée",
+    "city": "Montpellier",
+    "country": "",
+    "code": "MPL",
+    "slug": "montpellier-mpl"
+  },
+  {
+    "id": "VKO",
+    "name": "Moscou Vnukovo",
+    "city": "Moscou",
+    "country": "",
+    "code": "VKO",
+    "slug": "moscou-vko"
+  },
+  {
+    "id": "MUC",
+    "name": "Munich",
+    "city": "Munich",
+    "country": "",
+    "code": "MUC",
+    "slug": "munich-muc"
+  },
+  {
+    "id": "FMO",
+    "name": "Munster Osnabruck",
+    "city": "Munster",
+    "country": "",
+    "code": "FMO",
+    "slug": "munster-fmo"
+  },
+  {
+    "id": "JMK",
+    "name": "Mykonos",
+    "city": "Mykonos",
+    "country": "",
+    "code": "JMK",
+    "slug": "mykonos-jmk"
+  },
+  {
+    "id": "MJT",
+    "name": "Mytilene",
+    "city": "Mytilene",
+    "country": "",
+    "code": "MJT",
+    "slug": "mytilene-mjt"
+  },
+  {
+    "id": "NTE",
+    "name": "Nantes Atlantique",
+    "city": "Nantes",
+    "country": "",
+    "code": "NTE",
+    "slug": "nantes-nte"
+  },
+  {
+    "id": "NAP",
+    "name": "Naples",
+    "city": "Naples",
+    "country": "",
+    "code": "NAP",
+    "slug": "naples-nap"
+  },
+  {
+    "id": "NAS",
+    "name": "Nassau Lynden Pindling",
+    "city": "Nassau",
+    "country": "",
+    "code": "NAS",
+    "slug": "nassau-nas"
+  },
+  {
+    "id": "TEB",
+    "name": "New-York Teterboro",
+    "city": "New-York",
+    "country": "",
+    "code": "TEB",
+    "slug": "new-york-teb"
+  },
+  {
+    "id": "NQY",
+    "name": "Newquay Cornwall",
+    "city": "Newquay",
+    "country": "",
+    "code": "NQY",
+    "slug": "newquay-nqy"
+  },
+  {
+    "id": "NCE",
+    "name": "Nice",
+    "city": "Nice",
+    "country": "",
+    "code": "NCE",
+    "slug": "nice-nce"
+  },
+  {
+    "id": "FNI",
+    "name": "Nimes",
+    "city": "Nimes",
+    "country": "",
+    "code": "FNI",
+    "slug": "nimes-fni"
+  },
+  {
+    "id": "INI",
+    "name": "Nis Constantine The Great",
+    "city": "Nis",
+    "country": "",
+    "code": "INI",
+    "slug": "nis-ini"
+  },
+  {
+    "id": "NWI",
+    "name": "Norwich",
+    "city": "Norwich",
+    "country": "",
+    "code": "NWI",
+    "slug": "norwich-nwi"
+  },
+  {
+    "id": "NUE",
+    "name": "Nuremberg",
+    "city": "Nuremberg",
+    "country": "",
+    "code": "NUE",
+    "slug": "nuremberg-nue"
+  },
+  {
+    "id": "OBF",
+    "name": "Oberpfaffenhofen / Munich",
+    "city": "Oberpfaffenhofen",
+    "country": "",
+    "code": "OBF",
+    "slug": "oberpfaffenhofen-obf"
+  },
+  {
+    "id": "OLB",
+    "name": "Olbia Costa Smeralda",
+    "city": "Olbia",
+    "country": "",
+    "code": "OLB",
+    "slug": "olbia-olb"
+  },
+  {
+    "id": "SZY",
+    "name": "Olsztyn Mazury",
+    "city": "Olsztyn",
+    "country": "",
+    "code": "SZY",
+    "slug": "olsztyn-szy"
+  },
+  {
+    "id": "ORB",
+    "name": "Orebro",
+    "city": "Orebro",
+    "country": "",
+    "code": "ORB",
+    "slug": "orebro-orb"
+  },
+  {
+    "id": "OSI",
+    "name": "Osijek",
+    "city": "Osijek",
+    "country": "",
+    "code": "OSI",
+    "slug": "osijek-osi"
+  },
+  {
+    "id": "OSL",
+    "name": "Oslo Gardermoen",
+    "city": "Oslo",
+    "country": "",
+    "code": "OSL",
+    "slug": "oslo-osl"
+  },
+  {
+    "id": "OST",
+    "name": "Ostende Bruges",
+    "city": "Ostende",
+    "country": "",
+    "code": "OST",
+    "slug": "ostende-ost"
+  },
+  {
+    "id": "OSD",
+    "name": "Ostersund Are",
+    "city": "Ostersund",
+    "country": "",
+    "code": "OSD",
+    "slug": "ostersund-osd"
+  },
+  {
+    "id": "OSR",
+    "name": "Ostrava Leos Janacek",
+    "city": "Ostrava",
+    "country": "",
+    "code": "OSR",
+    "slug": "ostrava-osr"
+  },
+  {
+    "id": "PMO",
+    "name": "Palerme Falcone-Borsellino",
+    "city": "Palerme",
+    "country": "",
+    "code": "PMO",
+    "slug": "palerme-pmo"
+  },
+  {
+    "id": "PMI",
+    "name": "Palma de Mallorca",
+    "city": "Palma",
+    "country": "",
+    "code": "PMI",
+    "slug": "palma-pmi"
+  },
+  {
+    "id": "PNA",
+    "name": "Pampelune",
+    "city": "Pampelune",
+    "country": "",
+    "code": "PNA",
+    "slug": "pampelune-pna"
+  },
+  {
+    "id": "PFO",
+    "name": "Paphos",
+    "city": "Paphos",
+    "country": "",
+    "code": "PFO",
+    "slug": "paphos-pfo"
+  },
+  {
+    "id": "LBG",
+    "name": "Paris Le Bourget",
+    "city": "Paris",
+    "country": "",
+    "code": "LBG",
+    "slug": "paris-lbg"
+  },
+  {
+    "id": "GPA",
+    "name": "Patras Araxos",
+    "city": "Patras",
+    "country": "",
+    "code": "GPA",
+    "slug": "patras-gpa"
+  },
+  {
+    "id": "PUF",
+    "name": "Pau Pyrennees",
+    "city": "Pau",
+    "country": "",
+    "code": "PUF",
+    "slug": "pau-puf"
+  },
+  {
+    "id": "PEE",
+    "name": "Perm Bolshoye Savino",
+    "city": "Perm",
+    "country": "",
+    "code": "PEE",
+    "slug": "perm-pee"
+  },
+  {
+    "id": "PGF",
+    "name": "Perpignan Rivesaltes",
+    "city": "Perpignan",
+    "country": "",
+    "code": "PGF",
+    "slug": "perpignan-pgf"
+  },
+  {
+    "id": "PEG",
+    "name": "Perugia Umbria",
+    "city": "Perugia",
+    "country": "",
+    "code": "PEG",
+    "slug": "perugia-peg"
+  },
+  {
+    "id": "PSR",
+    "name": "Pescara Abruzzo",
+    "city": "Pescara",
+    "country": "",
+    "code": "PSR",
+    "slug": "pescara-psr"
+  },
+  {
+    "id": "PSA",
+    "name": "Pise Galileo Galilei",
+    "city": "Pise",
+    "country": "",
+    "code": "PSA",
+    "slug": "pise-psa"
+  },
+  {
+    "id": "PDV",
+    "name": "Plovdiv",
+    "city": "Plovdiv",
+    "country": "",
+    "code": "PDV",
+    "slug": "plovdiv-pdv"
+  },
+  {
+    "id": "TAT",
+    "name": "Poprad Tatry",
+    "city": "Poprad",
+    "country": "",
+    "code": "TAT",
+    "slug": "poprad-tat"
+  },
+  {
+    "id": "OPO",
+    "name": "Porto Francisco de Sa Carneiro",
+    "city": "Porto",
+    "country": "",
+    "code": "OPO",
+    "slug": "porto-opo"
+  },
+  {
+    "id": "POZ",
+    "name": "Poznan Lawica",
+    "city": "Poznan",
+    "country": "",
+    "code": "POZ",
+    "slug": "poznan-poz"
+  },
+  {
+    "id": "PRG",
+    "name": "Prague Vaclav Havel",
+    "city": "Prague",
+    "country": "",
+    "code": "PRG",
+    "slug": "prague-prg"
+  },
+  {
+    "id": "PUY",
+    "name": "Pula",
+    "city": "Pula",
+    "country": "",
+    "code": "PUY",
+    "slug": "pula-puy"
+  },
+  {
+    "id": "UIP",
+    "name": "Quimper Cornouaille",
+    "city": "Quimper",
+    "country": "",
+    "code": "UIP",
+    "slug": "quimper-uip"
+  },
+  {
+    "id": "RBA",
+    "name": "Rabat Sale",
+    "city": "Rabat",
+    "country": "",
+    "code": "RBA",
+    "slug": "rabat-rba"
+  },
+  {
+    "id": "REG",
+    "name": "Reggio Calabria",
+    "city": "Reggio",
+    "country": "",
+    "code": "REG",
+    "slug": "reggio-reg"
+  },
+  {
+    "id": "RNS",
+    "name": "Rennes Saint-Jacques",
+    "city": "Rennes",
+    "country": "",
+    "code": "RNS",
+    "slug": "rennes-rns"
+  },
+  {
+    "id": "REU",
+    "name": "Reus",
+    "city": "Reus",
+    "country": "",
+    "code": "REU",
+    "slug": "reus-reu"
+  },
+  {
+    "id": "RHO",
+    "name": "Rhodes",
+    "city": "Rhodes",
+    "country": "",
+    "code": "RHO",
+    "slug": "rhodes-rho"
+  },
+  {
+    "id": "RIX",
+    "name": "Riga",
+    "city": "Riga",
+    "country": "",
+    "code": "RIX",
+    "slug": "riga-rix"
+  },
+  {
+    "id": "RMI",
+    "name": "Rimini Federico Fellini",
+    "city": "Rimini",
+    "country": "",
+    "code": "RMI",
+    "slug": "rimini-rmi"
+  },
+  {
+    "id": "CIA",
+    "name": "Rome Ciampino",
+    "city": "Rome",
+    "country": "",
+    "code": "CIA",
+    "slug": "rome-cia"
+  },
+  {
+    "id": "RTM",
+    "name": "Rotterdam The Hague",
+    "city": "Rotterdam",
+    "country": "",
+    "code": "RTM",
+    "slug": "rotterdam-rtm"
+  },
+  {
+    "id": "RVN",
+    "name": "Rovaniemi",
+    "city": "Rovaniemi",
+    "country": "",
+    "code": "RVN",
+    "slug": "rovaniemi-rvn"
+  },
+  {
+    "id": "RZE",
+    "name": "Rzeszow Jasionka",
+    "city": "Rzeszow",
+    "country": "",
+    "code": "RZE",
+    "slug": "rzeszow-rze"
+  },
+  {
+    "id": "SCN",
+    "name": "Saarbrucken",
+    "city": "Saarbrucken",
+    "country": "",
+    "code": "SCN",
+    "slug": "saarbrucken-scn"
+  },
+  {
+    "id": "EBU",
+    "name": "Saint Etienne Boutheon",
+    "city": "Saint",
+    "country": "",
+    "code": "EBU",
+    "slug": "saint-ebu"
+  },
+  {
+    "id": "ACH",
+    "name": "Saint Gallen Altenrhein",
+    "city": "Saint",
+    "country": "",
+    "code": "ACH",
+    "slug": "saint-ach"
+  },
+  {
+    "id": "SMV",
+    "name": "Saint Moritz Samedan",
+    "city": "Saint",
+    "country": "",
+    "code": "SMV",
+    "slug": "saint-smv"
+  },
+  {
+    "id": "SNR",
+    "name": "Saint Nazaire Montoir",
+    "city": "Saint",
+    "country": "",
+    "code": "SNR",
+    "slug": "saint-snr"
+  },
+  {
+    "id": "LED",
+    "name": "Saint Peterburg Pulkovo",
+    "city": "Saint",
+    "country": "",
+    "code": "LED",
+    "slug": "saint-led"
+  },
+  {
+    "id": "LTT",
+    "name": "Saint Tropez La Mole",
+    "city": "Saint",
+    "country": "",
+    "code": "LTT",
+    "slug": "saint-ltt"
+  },
+  {
+    "id": "SBK",
+    "name": "Saint-Brieuc Armor",
+    "city": "Saint-Brieuc",
+    "country": "",
+    "code": "SBK",
+    "slug": "saint-brieuc-sbk"
+  },
+  {
+    "id": "SLM",
+    "name": "Salamanque",
+    "city": "Salamanque",
+    "country": "",
+    "code": "SLM",
+    "slug": "salamanque-slm"
+  },
+  {
+    "id": "SLY",
+    "name": "Salekhard",
+    "city": "Salekhard",
+    "country": "",
+    "code": "SLY",
+    "slug": "salekhard-sly"
+  },
+  {
+    "id": "SZG",
+    "name": "Salzburg",
+    "city": "Salzburg",
+    "country": "",
+    "code": "SZG",
+    "slug": "salzburg-szg"
+  },
+  {
+    "id": "SMA",
+    "name": "Santa Maria",
+    "city": "Santa",
+    "country": "",
+    "code": "SMA",
+    "slug": "santa-sma"
+  },
+  {
+    "id": "SDR",
+    "name": "Santander",
+    "city": "Santander",
+    "country": "",
+    "code": "SDR",
+    "slug": "santander-sdr"
+  },
+  {
+    "id": "SCQ",
+    "name": "Santiago de Compostela",
+    "city": "Santiago",
+    "country": "",
+    "code": "SCQ",
+    "slug": "santiago-scq"
+  },
+  {
+    "id": "JTR",
+    "name": "Santorin",
+    "city": "Santorin",
+    "country": "",
+    "code": "JTR",
+    "slug": "santorin-jtr"
+  },
+  {
+    "id": "SKX",
+    "name": "Saransk",
+    "city": "Saransk",
+    "country": "",
+    "code": "SKX",
+    "slug": "saransk-skx"
+  },
+  {
+    "id": "SOB",
+    "name": "Sarmellek",
+    "city": "Sarmellek",
+    "country": "",
+    "code": "SOB",
+    "slug": "sarmellek-sob"
+  },
+  {
+    "id": "SVQ",
+    "name": "Seville San Pablo",
+    "city": "Seville",
+    "country": "",
+    "code": "SVQ",
+    "slug": "seville-svq"
+  },
+  {
+    "id": "SNN",
+    "name": "Shannon",
+    "city": "Shannon",
+    "country": "",
+    "code": "SNN",
+    "slug": "shannon-snn"
+  },
+  {
+    "id": "SIR",
+    "name": "Sion",
+    "city": "Sion",
+    "country": "",
+    "code": "SIR",
+    "slug": "sion-sir"
+  },
+  {
+    "id": "SFT",
+    "name": "Skelleftea",
+    "city": "Skelleftea",
+    "country": "",
+    "code": "SFT",
+    "slug": "skelleftea-sft"
+  },
+  {
+    "id": "JSI",
+    "name": "Skiathos",
+    "city": "Skiathos",
+    "country": "",
+    "code": "JSI",
+    "slug": "skiathos-jsi"
+  },
+  {
+    "id": "SLD",
+    "name": "Sliac",
+    "city": "Sliac",
+    "country": "",
+    "code": "SLD",
+    "slug": "sliac-sld"
+  },
+  {
+    "id": "SOF",
+    "name": "Sofia",
+    "city": "Sofia",
+    "country": "",
+    "code": "SOF",
+    "slug": "sofia-sof"
+  },
+  {
+    "id": "ZQC",
+    "name": "Speyer",
+    "city": "Speyer",
+    "country": "",
+    "code": "ZQC",
+    "slug": "speyer-zqc"
+  },
+  {
+    "id": "SPU",
+    "name": "Split",
+    "city": "Split",
+    "country": "",
+    "code": "SPU",
+    "slug": "split-spu"
+  },
+  {
+    "id": "SVG",
+    "name": "Stavanger Sola",
+    "city": "Stavanger",
+    "country": "",
+    "code": "SVG",
+    "slug": "stavanger-svg"
+  },
+  {
+    "id": "ARN",
+    "name": "Stockholm Arlanda",
+    "city": "Stockholm",
+    "country": "",
+    "code": "ARN",
+    "slug": "stockholm-arn"
+  },
+  {
+    "id": "BMA",
+    "name": "Stockholm Bromma",
+    "city": "Stockholm",
+    "country": "",
+    "code": "BMA",
+    "slug": "stockholm-bma"
+  },
+  {
+    "id": "SYY",
+    "name": "Stornoway",
+    "city": "Stornoway",
+    "country": "",
+    "code": "SYY",
+    "slug": "stornoway-syy"
+  },
+  {
+    "id": "SXB",
+    "name": "Strasbourg Entzheim",
+    "city": "Strasbourg",
+    "country": "",
+    "code": "SXB",
+    "slug": "strasbourg-sxb"
+  },
+  {
+    "id": "STR",
+    "name": "Stuttgart",
+    "city": "Stuttgart",
+    "country": "",
+    "code": "STR",
+    "slug": "stuttgart-str"
+  },
+  {
+    "id": "TLL",
+    "name": "Tallinn Lennart Meri",
+    "city": "Tallinn",
+    "country": "",
+    "code": "TLL",
+    "slug": "tallinn-tll"
+  },
+  {
+    "id": "TMP",
+    "name": "Tampere Pirkkala",
+    "city": "Tampere",
+    "country": "",
+    "code": "TMP",
+    "slug": "tampere-tmp"
+  },
+  {
+    "id": "TNG",
+    "name": "Tanger",
+    "city": "Tanger",
+    "country": "",
+    "code": "TNG",
+    "slug": "tanger-tng"
+  },
+  {
+    "id": "LDE",
+    "name": "Tarbes-Lourdes-Pyrenees",
+    "city": "Tarbes-Lourdes-Pyrenees",
+    "country": "",
+    "code": "LDE",
+    "slug": "tarbes-lourdes-pyrenees-lde"
+  },
+  {
+    "id": "MME",
+    "name": "Teesside International",
+    "city": "Teesside",
+    "country": "",
+    "code": "MME",
+    "slug": "teesside-mme"
+  },
+  {
+    "id": "TLV",
+    "name": "Tel Aviv Ben Gurion",
+    "city": "Tel",
+    "country": "",
+    "code": "TLV",
+    "slug": "tel-tlv"
+  },
+  {
+    "id": "TFN",
+    "name": "Tenerife North",
+    "city": "Tenerife",
+    "country": "",
+    "code": "TFN",
+    "slug": "tenerife-tfn"
+  },
+  {
+    "id": "TFS",
+    "name": "Tenerife South",
+    "city": "Tenerife",
+    "country": "",
+    "code": "TFS",
+    "slug": "tenerife-tfs"
+  },
+  {
+    "id": "SKG",
+    "name": "Thessalonique",
+    "city": "Thessalonique",
+    "country": "",
+    "code": "SKG",
+    "slug": "thessalonique-skg"
+  },
+  {
+    "id": "TIV",
+    "name": "Tivat",
+    "city": "Tivat",
+    "country": "",
+    "code": "TIV",
+    "slug": "tivat-tiv"
+  },
+  {
+    "id": "TLN",
+    "name": "Toulon-Hyeres",
+    "city": "Toulon-Hyeres",
+    "country": "",
+    "code": "TLN",
+    "slug": "toulon-hyeres-tln"
+  },
+  {
+    "id": "TLS",
+    "name": "Toulouse Blagnac",
+    "city": "Toulouse",
+    "country": "",
+    "code": "TLS",
+    "slug": "toulouse-tls"
+  },
+  {
+    "id": "TUF",
+    "name": "Tours Val de Loire",
+    "city": "Tours",
+    "country": "",
+    "code": "TUF",
+    "slug": "tours-tuf"
+  },
+  {
+    "id": "TPS",
+    "name": "Trapani Birgi",
+    "city": "Trapani",
+    "country": "",
+    "code": "TPS",
+    "slug": "trapani-tps"
+  },
+  {
+    "id": "TRS",
+    "name": "Trieste Friuli Venezia Giulia",
+    "city": "Trieste",
+    "country": "",
+    "code": "TRS",
+    "slug": "trieste-trs"
+  },
+  {
+    "id": "TOS",
+    "name": "Tromso",
+    "city": "Tromso",
+    "country": "",
+    "code": "TOS",
+    "slug": "tromso-tos"
+  },
+  {
+    "id": "TUN",
+    "name": "Tunis Carthage",
+    "city": "Tunis",
+    "country": "",
+    "code": "TUN",
+    "slug": "tunis-tun"
+  },
+  {
+    "id": "TRN",
+    "name": "Turin Caselle",
+    "city": "Turin",
+    "country": "",
+    "code": "TRN",
+    "slug": "turin-trn"
+  },
+  {
+    "id": "UME",
+    "name": "Umea",
+    "city": "Umea",
+    "country": "",
+    "code": "UME",
+    "slug": "umea-ume"
+  },
+  {
+    "id": "VAF",
+    "name": "Valence Chabeuil",
+    "city": "Valence",
+    "country": "",
+    "code": "VAF",
+    "slug": "valence-vaf"
+  },
+  {
+    "id": "VLC",
+    "name": "Valencia",
+    "city": "Valencia",
+    "country": "",
+    "code": "VLC",
+    "slug": "valencia-vlc"
+  },
+  {
+    "id": "VLL",
+    "name": "Valladolid",
+    "city": "Valladolid",
+    "country": "",
+    "code": "VLL",
+    "slug": "valladolid-vll"
+  },
+  {
+    "id": "VAR",
+    "name": "Varna",
+    "city": "Varna",
+    "country": "",
+    "code": "VAR",
+    "slug": "varna-var"
+  },
+  {
+    "id": "WAW",
+    "name": "Varsovie Chopin",
+    "city": "Varsovie",
+    "country": "",
+    "code": "WAW",
+    "slug": "varsovie-waw"
+  },
+  {
+    "id": "XCR",
+    "name": "Vatry Reims Chalons",
+    "city": "Vatry",
+    "country": "",
+    "code": "XCR",
+    "slug": "vatry-xcr"
+  },
+  {
+    "id": "VCE",
+    "name": "Venise Marco Polo",
+    "city": "Venise",
+    "country": "",
+    "code": "VCE",
+    "slug": "venise-vce"
+  },
+  {
+    "id": "VRN",
+    "name": "Verone",
+    "city": "Verone",
+    "country": "",
+    "code": "VRN",
+    "slug": "verone-vrn"
+  },
+  {
+    "id": "VIE",
+    "name": "Vienne",
+    "city": "Vienne",
+    "country": "",
+    "code": "VIE",
+    "slug": "vienne-vie"
+  },
+  {
+    "id": "VGO",
+    "name": "Vigo-Peinador",
+    "city": "Vigo-Peinador",
+    "country": "",
+    "code": "VGO",
+    "slug": "vigo-peinador-vgo"
+  },
+  {
+    "id": "VNO",
+    "name": "Vilnius",
+    "city": "Vilnius",
+    "country": "",
+    "code": "VNO",
+    "slug": "vilnius-vno"
+  },
+  {
+    "id": "VOL",
+    "name": "Volos Nea Anchialos National",
+    "city": "Volos",
+    "country": "",
+    "code": "VOL",
+    "slug": "volos-vol"
+  },
+  {
+    "id": "WRO",
+    "name": "Wroclaw Copernicus",
+    "city": "Wroclaw",
+    "country": "",
+    "code": "WRO",
+    "slug": "wroclaw-wro"
+  },
+  {
+    "id": "IAR",
+    "name": "Yaroslavl Tunoshna",
+    "city": "Yaroslavl",
+    "country": "",
+    "code": "IAR",
+    "slug": "yaroslavl-iar"
+  },
+  {
+    "id": "EVN",
+    "name": "Yerevan Zvartnots",
+    "city": "Yerevan",
+    "country": "",
+    "code": "EVN",
+    "slug": "yerevan-evn"
+  },
+  {
+    "id": "UUS",
+    "name": "Yuzhno-Sakhalinsk",
+    "city": "Yuzhno-Sakhalinsk",
+    "country": "",
+    "code": "UUS",
+    "slug": "yuzhno-sakhalinsk-uus"
+  },
+  {
+    "id": "ZAD",
+    "name": "Zadar",
+    "city": "Zadar",
+    "country": "",
+    "code": "ZAD",
+    "slug": "zadar-zad"
+  },
+  {
+    "id": "ZAG",
+    "name": "Zagreb Franjo Tudman",
+    "city": "Zagreb",
+    "country": "",
+    "code": "ZAG",
+    "slug": "zagreb-zag"
+  },
+  {
+    "id": "ZTH",
+    "name": "Zakynthos",
+    "city": "Zakynthos",
+    "country": "",
+    "code": "ZTH",
+    "slug": "zakynthos-zth"
+  },
+  {
+    "id": "IEG",
+    "name": "Zielona Gora Babimost",
+    "city": "Zielona",
+    "country": "",
+    "code": "IEG",
+    "slug": "zielona-ieg"
+  },
+  {
+    "id": "ZRH",
+    "name": "Zurich",
+    "city": "Zurich",
+    "country": "",
+    "code": "ZRH",
+    "slug": "zurich-zrh"
+  }
+]

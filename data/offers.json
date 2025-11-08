@@ -1,0 +1,137 @@
+[
+  {
+    "id": "porto-manchester-2025-11-19",
+    "slug": "porto-manchester-19-nov",
+    "date": "2025-11-19",
+    "from": "OPO",
+    "to": "MAN",
+    "aircraft": "Embraer Phenom 300",
+    "seats": 6,
+    "flightTimeMin": 180,
+    "schedule": {
+      "depart": "18:00",
+      "arrive": "20:00"
+    },
+    "price": {
+      "currency": "MAD",
+      "amount": 0
+    },
+    "gallery": [
+      "/assets/images/hero.svg",
+      "/assets/images/hero.svg",
+      "/assets/images/hero.svg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "nice-fes-2025-11-19",
+    "slug": "nice-fes-19-nov",
+    "date": "2025-11-19",
+    "from": "NCE",
+    "to": "FEZ",
+    "aircraft": "Citation CJ3",
+    "seats": 7,
+    "flightTimeMin": 150,
+    "schedule": {
+      "depart": "14:00",
+      "arrive": "16:30"
+    },
+    "price": {
+      "currency": "MAD",
+      "amount": 0
+    },
+    "gallery": [
+      "/assets/images/hero.svg",
+      "/assets/images/hero.svg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "bruxelles-catania-2025-11-30",
+    "slug": "bruxelles-catania-30-nov",
+    "date": "2025-11-30",
+    "from": "BRU",
+    "to": "CTA",
+    "aircraft": "Hawker 900XP",
+    "seats": 8,
+    "flightTimeMin": 165,
+    "schedule": {
+      "depart": "09:00",
+      "arrive": "11:45"
+    },
+    "price": {
+      "currency": "MAD",
+      "amount": 0
+    },
+    "gallery": [
+      "/assets/images/hero.svg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "amsterdam-cracovie-2025-12-01",
+    "slug": "amsterdam-cracovie-01-dec",
+    "date": "2025-12-01",
+    "from": "AMS",
+    "to": "KRK",
+    "aircraft": "Cessna Citation XLS",
+    "seats": 8,
+    "flightTimeMin": 120,
+    "schedule": {
+      "depart": "10:30",
+      "arrive": "12:30"
+    },
+    "price": {
+      "currency": "MAD",
+      "amount": 0
+    },
+    "gallery": [
+      "/assets/images/hero.svg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "paris-dubai-2025-12-02",
+    "slug": "paris-dubai-02-dec",
+    "date": "2025-12-02",
+    "from": "LBG",
+    "to": "DWC",
+    "aircraft": "Gulfstream G550",
+    "seats": 12,
+    "flightTimeMin": 390,
+    "schedule": {
+      "depart": "22:00",
+      "arrive": "06:30"
+    },
+    "price": {
+      "currency": "MAD",
+      "amount": 0
+    },
+    "gallery": [
+      "/assets/images/hero.svg"
+    ],
+    "featured": false
+  },
+  {
+    "id": "gibraltar-dubai-2025-11-11",
+    "slug": "gibraltar-dubai-11-dec",
+    "date": "2025-12-11",
+    "from": "GPA",
+    "to": "DWC",
+    "aircraft": "Bombardier Global 6000",
+    "seats": 14,
+    "flightTimeMin": 420,
+    "schedule": {
+      "depart": "20:00",
+      "arrive": "05:00"
+    },
+    "price": {
+      "currency": "MAD",
+      "amount": 0
+    },
+    "gallery": [
+      "/assets/images/hero.svg"
+    ],
+    "featured": false
+  }
+]
