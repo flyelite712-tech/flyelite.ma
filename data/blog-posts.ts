@@ -10,10 +10,6 @@ export const blogPosts: BlogPost[] = [
     image: '/assets/images/offers/Embraer Phenom 300/1.png',
     publishedAt: '2024-11-01',
     readTime: '5 min',
-    author: {
-      name: 'Sophie Benali',
-      role: 'Directrice des Opérations'
-    },
     tags: ['Aviation Privée', 'Luxe', 'Service Premium'],
     content: `
 # Pourquoi Choisir FlyElite pour Votre Prochain Vol Privé ?
