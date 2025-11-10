@@ -4,26 +4,27 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export default function Features() {
-  const features = [
-    {
-      title: 'Réservez instantanément',
-      description: 'Il est 12 heures, vous décidez de partir en voyage, pour des raisons personnelles, familiales, professionnelles. Imaginez décoller dans 5 heures, selon votre destination souhaitée, en réservant un jet privé en moins de 5 minutes.',
-      image: '/assets/images/hero.svg',
-      imagePosition: 'right' as const
-    },
-    {
-      title: 'Partenaire des meilleurs compagnies',
-      description: 'Gagner du temps est le véritable objectif de la réservation d\'un jet privé. C\'est pourquoi, Infinity Jet est partenaire des meilleures compagnies aériennes. Nos algorithmes optimisent votre vol en jet privé en cumulant un maximum de DATA.',
-      image: '/assets/images/hero.svg',
-      imagePosition: 'left' as const
-    },
-    {
-      title: 'Un jet au prix de la classe business',
-      description: 'Infinity Jet rend accessible le voyage en jet privé. Embarquez en quelques minutes, sans perdre de temps, au prix de la classe business, c\'est l\'enjeu de notre société.',
-      image: '/assets/images/hero.svg',
-      imagePosition: 'right' as const
-    }
-  ]
+ const features = [
+  {
+    title: 'Réservez instantanément',
+    description: "Il est 12 heures, et vous décidez de partir en voyage pour des raisons personnelles, familiales ou professionnelles. Imaginez décoller dans 5 heures vers votre destination souhaitée, en réservant un jet privé en moins de 5 minutes.",
+    image: '/assets/images/offers/Embraer Phenom 300/1.png',
+    imagePosition: 'right' as const
+  },
+  {
+    title: 'Partenaire des meilleures compagnies',
+    description: "Gagner du temps est l'objectif principal de la réservation d'un jet privé. C'est pourquoi Infinity Jet collabore avec les meilleures compagnies aériennes. Nos algorithmes optimisent votre vol en cumulant un maximum de données.",
+    image: '/assets/images/offers/Embraer Phenom 300/2.png',
+    imagePosition: 'left' as const
+  },
+  {
+    title: 'Un jet au prix de la classe business',
+    description: "Infinity Jet rend le voyage en jet privé accessible. Embarquez en quelques minutes, sans perdre de temps, au prix d'une classe business, tel est notre engagement.",
+    image: '/assets/images/offers/Hawker 900XP/1.png',
+    imagePosition: 'right' as const
+  }
+]
+
 
   return (
     <section className="py-20 bg-white">

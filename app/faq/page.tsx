@@ -8,92 +8,93 @@ export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const faqData = [
-    {
-      category: "Réservation",
-      questions: [
-        {
-          q: "Comment réserver un vol en jet privé ?",
-          a: "Vous pouvez réserver en utilisant notre formulaire de recherche sur la page d'accueil. Sélectionnez vos aéroports de départ et d'arrivée, choisissez vos dates, et soumettez votre demande. Notre équipe vous contactera dans les plus brefs délais avec un devis personnalisé."
-        },
-        {
-          q: "Quel est le délai minimum pour réserver un vol ?",
-          a: "Nous pouvons organiser des vols avec un préavis de quelques heures seulement. Cependant, pour garantir la disponibilité et les meilleurs tarifs, nous recommandons de réserver au moins 24-48 heures à l'avance."
-        },
-        {
-          q: "Puis-je modifier ou annuler ma réservation ?",
-          a: "Oui, les modifications et annulations sont possibles selon les conditions de votre contrat. Les frais d'annulation varient en fonction du préavis donné. Contactez notre équipe pour plus de détails sur votre réservation spécifique."
-        }
-      ]
-    },
-    {
-      category: "Tarifs et Paiement",
-      questions: [
-        {
-          q: "Comment sont calculés les prix ?",
-          a: "Les prix dépendent de plusieurs facteurs : la distance du vol, le type d'appareil, la disponibilité, les taxes aéroportuaires, et les services additionnels. Nos 'Offres du Moment' affichent des prix fixes pour des vols à vide à tarifs réduits."
-        },
-        {
-          q: "Quels modes de paiement acceptez-vous ?",
-          a: "Nous acceptons les virements bancaires, les cartes de crédit (Visa, Mastercard, American Express), et les paiements par chèque pour les clients réguliers. Un acompte est généralement requis lors de la réservation."
-        },
-        {
-          q: "Y a-t-il des frais cachés ?",
-          a: "Non, tous nos devis sont transparents et incluent tous les frais obligatoires. Les seuls coûts supplémentaires possibles sont les services optionnels que vous choisissez (restauration premium, transferts terrestres, etc.)."
-        }
-      ]
-    },
-    {
-      category: "Appareils et Services",
-      questions: [
-        {
-          q: "Quels types d'appareils proposez-vous ?",
-          a: "Notre flotte comprend une gamme complète d'appareils, des jets légers (4-6 passagers) aux jets long-courriers (12-16 passagers). Chaque appareil est sélectionné selon les normes de sécurité les plus strictes et offre un confort optimal."
-        },
-        {
-          q: "Puis-je choisir mon appareil ?",
-          a: "Oui, vous pouvez exprimer vos préférences lors de votre demande. Nous vous proposerons les appareils disponibles correspondant à vos besoins en termes de capacité, autonomie et budget."
-        },
-        {
-          q: "Quels services sont inclus à bord ?",
-          a: "Tous nos vols incluent un service de base : sièges en cuir, Wi-Fi, rafraîchissements et collations. Des services premium (repas gastronomiques, champagne, équipements spéciaux) peuvent être ajoutés sur demande."
-        }
-      ]
-    },
-    {
-      category: "Sécurité et Réglementation",
-      questions: [
-        {
-          q: "Vos vols sont-ils sûrs ?",
-          a: "Absolument. Tous nos opérateurs sont certifiés et respectent les normes de sécurité aérienne les plus strictes. Les appareils font l'objet de maintenances régulières et les équipages sont hautement qualifiés."
-        },
-        {
-          q: "Quels documents sont nécessaires pour voyager ?",
-          a: "Pour les vols domestiques, une pièce d'identité valide suffit. Pour les vols internationaux, un passeport en cours de validité est requis. Selon la destination, un visa peut être nécessaire. Nous vous informerons des exigences spécifiques."
-        },
-        {
-          q: "Que se passe-t-il en cas de conditions météorologiques défavorables ?",
-          a: "La sécurité est notre priorité absolue. En cas de conditions météo dangereuses, le vol peut être retardé ou reporté. Nous vous tiendrons informé en temps réel et proposerons des alternatives."
-        }
-      ]
-    },
-    {
-      category: "Destinations et Itinéraires",
-      questions: [
-        {
-          q: "Où puis-je voler ?",
-          a: "Nous couvrons plus de 23 000 aéroports dans 165 pays. Que ce soit pour un vol domestique au Maroc ou un voyage intercontinental, nous pouvons organiser votre vol vers pratiquement n'importe quelle destination."
-        },
-        {
-          q: "Proposez-vous des vols multi-destinations ?",
-          a: "Oui, nous pouvons organiser des itinéraires complexes avec plusieurs escales. C'est idéal pour les tournées d'affaires ou les voyages touristiques multi-destinations."
-        },
-        {
-          q: "Puis-je atterrir dans des petits aéroports ?",
-          a: "Oui, l'un des avantages du jet privé est l'accès à des milliers d'aéroports régionaux et privés inaccessibles aux vols commerciaux, vous rapprochant ainsi de votre destination finale."
-        }
-      ]
-    }
-  ]
+  {
+    category: "Réservation",
+    questions: [
+      {
+        q: "Comment réserver un vol en jet privé ?",
+        a: "Vous pouvez réserver via notre formulaire de recherche sur la page d'accueil. Sélectionnez vos aéroports de départ et d'arrivée, choisissez vos dates, puis soumettez votre demande. Notre équipe vous contactera rapidement avec un devis personnalisé."
+      },
+      {
+        q: "Quel est le délai minimum pour réserver un vol ?",
+        a: "Nous pouvons organiser des vols avec seulement quelques heures de préavis. Cependant, pour garantir la disponibilité et bénéficier des meilleurs tarifs, nous recommandons de réserver au moins 24 à 48 heures à l'avance."
+      },
+      {
+        q: "Puis-je modifier ou annuler ma réservation ?",
+        a: "Oui, les modifications et annulations sont possibles selon les conditions de votre contrat. Les frais d'annulation varient en fonction du préavis donné. Contactez notre équipe pour plus de détails concernant votre réservation spécifique."
+      }
+    ]
+  },
+  {
+    category: "Tarifs et Paiement",
+    questions: [
+      {
+        q: "Comment sont calculés les prix ?",
+        a: "Les prix dépendent de plusieurs facteurs : distance du vol, type d'appareil, disponibilité, taxes aéroportuaires et services additionnels. Nos 'Offres du Moment' affichent des prix fixes pour des vols à vide à tarifs réduits."
+      },
+      {
+        q: "Quels modes de paiement acceptez-vous ?",
+        a: "Nous acceptons les virements bancaires, cartes de crédit (Visa, Mastercard, American Express) et paiements par chèque pour les clients réguliers. Un acompte est généralement requis lors de la réservation."
+      },
+      {
+        q: "Y a-t-il des frais cachés ?",
+        a: "Non, tous nos devis sont transparents et incluent tous les frais obligatoires. Les seuls coûts supplémentaires possibles concernent les services optionnels que vous choisissez (restauration premium, transferts terrestres, etc.)."
+      }
+    ]
+  },
+  {
+    category: "Appareils et Services",
+    questions: [
+      {
+        q: "Quels types d'appareils proposez-vous ?",
+        a: "Notre flotte comprend une large gamme d'appareils, des jets légers (4-6 passagers) aux jets long-courriers (12-16 passagers). Chaque appareil respecte les normes de sécurité les plus strictes et offre un confort optimal."
+      },
+      {
+        q: "Puis-je choisir mon appareil ?",
+        a: "Oui, vous pouvez exprimer vos préférences lors de votre demande. Nous vous proposerons les appareils disponibles correspondant à vos besoins en termes de capacité, autonomie et budget."
+      },
+      {
+        q: "Quels services sont inclus à bord ?",
+        a: "Tous nos vols incluent un service de base : sièges en cuir, Wi-Fi, rafraîchissements et collations. Des services premium (repas gastronomiques, champagne, équipements spéciaux) peuvent être ajoutés sur demande."
+      }
+    ]
+  },
+  {
+    category: "Sécurité et Réglementation",
+    questions: [
+      {
+        q: "Vos vols sont-ils sûrs ?",
+        a: "Absolument. Tous nos opérateurs sont certifiés et respectent les normes de sécurité aérienne les plus strictes. Les appareils subissent des maintenances régulières et les équipages sont hautement qualifiés."
+      },
+      {
+        q: "Quels documents sont nécessaires pour voyager ?",
+        a: "Pour les vols domestiques, une pièce d'identité valide suffit. Pour les vols internationaux, un passeport en cours de validité est requis. Selon la destination, un visa peut être nécessaire. Nous vous informerons des exigences spécifiques."
+      },
+      {
+        q: "Que se passe-t-il en cas de conditions météorologiques défavorables ?",
+        a: "La sécurité est notre priorité absolue. En cas de conditions météo dangereuses, le vol peut être retardé ou reporté. Nous vous tiendrons informé en temps réel et proposerons des alternatives."
+      }
+    ]
+  },
+  {
+    category: "Destinations et Itinéraires",
+    questions: [
+      {
+        q: "Où puis-je voler ?",
+        a: "Nous couvrons plus de 23 000 aéroports dans 165 pays. Que ce soit pour un vol domestique au Maroc ou un voyage intercontinental, nous pouvons organiser votre vol vers presque toutes les destinations."
+      },
+      {
+        q: "Proposez-vous des vols multi-destinations ?",
+        a: "Oui, nous pouvons organiser des itinéraires complexes avec plusieurs escales. C'est idéal pour les tournées d'affaires ou les voyages touristiques multi-destinations."
+      },
+      {
+        q: "Puis-je atterrir dans des petits aéroports ?",
+        a: "Oui, l'un des avantages du jet privé est l'accès à des milliers d'aéroports régionaux et privés inaccessibles aux vols commerciaux, vous rapprochant ainsi de votre destination finale."
+      }
+    ]
+  }
+]
+
 
   const toggleQuestion = (categoryIndex: number, questionIndex: number) => {
     const index = categoryIndex * 1000 + questionIndex

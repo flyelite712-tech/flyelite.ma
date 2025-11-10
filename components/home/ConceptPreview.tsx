@@ -17,7 +17,7 @@ export default function ConceptPreview() {
             className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/assets/images/hero.svg"
+              src="/assets/images/offers/Embraer Phenom 300/3.png"
               alt="Réservez instantanément"
               fill
               className="object-cover"

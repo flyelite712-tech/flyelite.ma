@@ -31,10 +31,10 @@ export default function Hero() {
               className="text-white"
             >
               <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-2 md:mb-4 leading-tight">
-                Réservez votre <span className="text-accent">jet privé</span> .
+                Réservez votre  <span className="text-accent">jet privé</span> en seulement 5 min !
               </h1>
               <p className="text-lg md:text-2xl lg:text-3xl mb-3 md:mb-6 font-semibold">
-                En 5 minutes, <span className="text-accent">au meilleur prix !</span>
+               Profitez du meilleur prix et<span className="text-accent"> d’un service d’exception.</span>
               </p>
               <p className="text-sm md:text-lg lg:text-xl mb-2 md:mb-4 font-medium">
                 Aviation d'Affaires Maroc
@@ -51,7 +51,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="hidden lg:flex justify-end"
             >
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl max-w-sm transform hover:scale-105 transition-transform">
+              {/* <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl max-w-sm transform hover:scale-105 transition-transform">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold text-xl">
@@ -70,7 +70,7 @@ export default function Hero() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
 

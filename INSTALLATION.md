@@ -42,7 +42,7 @@ SMTP_PASS=votre-mot-de-passe
 
 # Configuration Email
 EMAIL_FROM="Fly Elite <no-reply@flyelite.fr>"
-EMAIL_TO=contact@infinityjet.ma
+EMAIL_TO=contact@flyelite.ma
 
 # Configuration Marque
 BRAND_NAME="Fly Elite"
@@ -100,8 +100,8 @@ Toutes les données sont éditables dans le dossier `data/` :
     "text": "Devise : MAD — Une question ? ..."
   },
   "contact": {
-    "phones": ["+212 670 222 219", "+33 622 15 80 89"],
-    "email": "contact@infinityjet.ma",
+    "phones": ["+212 689 33 02 02", "+33 744 96 62 68"],
+    "email": "contact@flyelite.ma",
     "address": "66, Av de France et 37, Av Ibn Sina...",
     "social": {
       "instagram": "https://instagram.com/flyelite",

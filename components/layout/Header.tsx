@@ -2,23 +2,46 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import settings from '@/data/settings.json'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isTopBarVisible, setIsTopBarVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      
+      // Sync with TopBar visibility
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsTopBarVisible(false)
+      } else {
+        setIsTopBarVisible(true)
+      }
+      
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
 
   const navigation = [
     { name: 'Offres Du Moment', href: '/offres' },
     { name: 'Notre Concept', href: '/notre-concept' },
+    { name: 'Blog', href: '/blog' },
     { name: 'FAQ', href: '/faq' },
     { name: 'Contact', href: '/contact' },
   ]
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto px-6 py-3">
+    <header className={`bg-white shadow-md fixed left-0 right-0 z-40 transition-all duration-300 ${
+      isTopBarVisible ? 'top-7 md:top-10' : 'top-0'
+    }`}>
+      <nav className="max-w-7xl mx-auto px-4 md:px-6 py-2 md:py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0">
@@ -27,7 +50,7 @@ export default function Header() {
               alt={settings.brand.name}
               width={140}
               height={45}
-              className="h-16 w-auto"
+              className="h-12 md:h-14 lg:h-16 w-auto"
             />
           </Link>
 

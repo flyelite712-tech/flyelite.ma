@@ -17,9 +17,9 @@
       "amount": 0
     },
     "gallery": [
-      "/assets/images/hero.svg",
-      "/assets/images/hero.svg",
-      "/assets/images/hero.svg"
+      "/assets/images/offers/Embraer Phenom 300/1.png",
+      "/assets/images/offers/Embraer Phenom 300/2.png",
+      "/assets/images/offers/Embraer Phenom 300/3.png"
     ],
     "featured": true
   },
@@ -41,8 +41,9 @@
       "amount": 0
     },
     "gallery": [
-      "/assets/images/hero.svg",
-      "/assets/images/hero.svg"
+      "/assets/images/offers/Citation CJ3/1.png",
+      "/assets/images/offers/Citation CJ3/2.png",
+      "/assets/images/offers/Citation CJ3/3.png"
     ],
     "featured": true
   },
@@ -64,7 +65,9 @@
       "amount": 0
     },
     "gallery": [
-      "/assets/images/hero.svg"
+      "/assets/images/offers/Hawker 900XP/1.png",
+      "/assets/images/offers/Hawker 900XP/2.png",
+      "/assets/images/offers/Hawker 900XP/3.png"
     ],
     "featured": true
   },
@@ -86,7 +89,9 @@
       "amount": 0
     },
     "gallery": [
-      "/assets/images/hero.svg"
+      "/assets/images/offers/Cessna Citation XLS/1.png",
+      "/assets/images/offers/Cessna Citation XLS/2.png",
+      "/assets/images/offers/Cessna Citation XLS/3.png"
     ],
     "featured": true
   },
@@ -108,7 +113,9 @@
       "amount": 0
     },
     "gallery": [
-      "/assets/images/hero.svg"
+      "/assets/images/offers/Gulfstream G550/1.png",
+      "/assets/images/offers/Gulfstream G550/2.png",
+      "/assets/images/offers/Gulfstream G550/3.png"
     ],
     "featured": false
   },
@@ -130,7 +137,9 @@
       "amount": 0
     },
     "gallery": [
-      "/assets/images/hero.svg"
+      "/assets/images/offers/Bombardier Global 6000/1.png",
+      "/assets/images/offers/Bombardier Global 6000/2.png",
+      "/assets/images/offers/Bombardier Global 6000/3.png"
     ],
     "featured": false
   }
