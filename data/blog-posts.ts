@@ -235,8 +235,8 @@ Chaque client bénéficie d'un coordinateur dédié qui :
 ### Contact 24/7
 
 Notre équipe est joignable :
-- Par téléphone : +212 XXX XXX XXX
-- Par email : reservations@flyelite.ma
+- Par téléphone : +212 689-330202
+- Par email : contact@flyelite.ma
 - Via WhatsApp
 - Chat en direct sur notre site
 
