@@ -13,13 +13,13 @@ export default function Features() {
   },
   {
     title: 'Partenaire des meilleures compagnies',
-    description: "Gagner du temps est l'objectif principal de la réservation d'un jet privé. C'est pourquoi Infinity Jet collabore avec les meilleures compagnies aériennes. Nos algorithmes optimisent votre vol en cumulant un maximum de données.",
+    description: "Gagner du temps est l'objectif principal de la réservation d'un jet privé. C'est pourquoi Fly Elite collabore avec les meilleures compagnies aériennes. Nos algorithmes optimisent votre vol en cumulant un maximum de données.",
     image: '/assets/images/offers/Embraer Phenom 300/2.png',
     imagePosition: 'left' as const
   },
   {
     title: 'Un jet au prix de la classe business',
-    description: "Infinity Jet rend le voyage en jet privé accessible. Embarquez en quelques minutes, sans perdre de temps, au prix d'une classe business, tel est notre engagement.",
+    description: "Fly Elite rend le voyage en jet privé accessible. Embarquez en quelques minutes, sans perdre de temps, au prix d'une classe business, tel est notre engagement.",
     image: '/assets/images/offers/Hawker 900XP/1.png',
     imagePosition: 'right' as const
   }

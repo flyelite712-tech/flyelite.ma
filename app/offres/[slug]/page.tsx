@@ -68,12 +68,18 @@ export default function OfferDetailPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           offerId: offer.id,
+          type: 'one_way',
           from: offer.from,
           to: offer.to,
-          date: offer.date,
+          depart: {
+            date: offer.date,
+            time: offer.schedule.depart,
+          },
           schedule: offer.schedule,
           aircraft: offer.aircraft,
           price: offer.price,
+          seats: offer.seats,
+          flightTimeMin: offer.flightTimeMin,
           pax: formData.passengers,
           contact: {
             firstName: formData.firstName,

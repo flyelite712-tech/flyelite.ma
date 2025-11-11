@@ -51,9 +51,20 @@ export interface QuoteRequest {
   notes?: string
 }
 
-export interface BookingRequest extends QuoteRequest {
+export interface BookingRequest {
   offerId: string
-  offerSlug: string
+  type?: 'one_way' | 'round_trip'
+  from: string
+  to: string
+  pax: number
+  depart: {
+    date: string
+    time?: string
+  }
+  return?: {
+    date: string
+    time: string
+  }
   price: {
     currency: string
     amount: number
@@ -65,6 +76,14 @@ export interface BookingRequest extends QuoteRequest {
     depart: string
     arrive: string
   }
+  contact: {
+    firstName: string
+    lastName: string
+    email: string
+    phone: string
+  }
+  consent: boolean
+  notes?: string
 }
 
 export interface ContactRequest {

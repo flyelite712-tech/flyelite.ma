@@ -10,7 +10,7 @@ export default function FAQPreview() {
   const faqs = [
     {
       question: 'Puis-je partir à la dernière minute ?',
-      answer: 'Oui, vous pouvez partir à la dernière minute. L\'équipe de Infinity JET vous certifie que votre avion décollera après 72 H de votre demande (après l\'approbation de toutes les autorités compétentes).'
+      answer: 'Oui, vous pouvez partir à la dernière minute. L\'équipe de Fly Elite vous certifie que votre avion décollera après 72 H de votre demande (après l\'approbation de toutes les autorités compétentes).'
     },
     {
       question: 'Puis-je réserver mon vol par téléphone ?',
