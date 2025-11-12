@@ -46,20 +46,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Dynamic offer pages
-  const offerPages: MetadataRoute.Sitemap = (offers || []).map(offer => ({
-    url: `${baseUrl}/offres/${offer.slug}`,
-    lastModified: new Date(offer.date),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }))
+  const offerPages: MetadataRoute.Sitemap = (offers || []).map(offer => {
+    const date = offer.date ? new Date(offer.date) : new Date()
+    return {
+      url: `${baseUrl}/offres/${offer.slug}`,
+      lastModified: isNaN(date.getTime()) ? new Date() : date,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }
+  })
 
   // Dynamic blog pages
-  const blogPages: MetadataRoute.Sitemap = (blogPosts || []).map(post => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.publishedAt),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
+  const blogPages: MetadataRoute.Sitemap = (blogPosts || []).map(post => {
+    const date = post.publishedAt ? new Date(post.publishedAt) : new Date()
+    return {
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: isNaN(date.getTime()) ? new Date() : date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }
+  })
 
   return [...staticPages, ...offerPages, ...blogPages]
 }
