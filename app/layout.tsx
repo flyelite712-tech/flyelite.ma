@@ -7,13 +7,33 @@ import Footer from '@/components/layout/Footer'
 import WhatsAppButton from '@/components/common/WhatsAppButton'
 import ScrollToTop from '@/components/common/ScrollToTop'
 import { LanguageProvider } from '@/contexts/LanguageContext'
+import { generateMetadata, defaultSEO, organizationStructuredData } from '@/lib/seo'
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
+import GoogleTagManager from '@/components/analytics/GoogleTagManager'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
-  title: 'Fly Elite - Réservez votre jet privé',
-  description: 'Aviation d\'affaires au Maroc. Réservez votre jet privé en 5 minutes au meilleur prix. Plus de 300 aéroports disponibles.',
-  keywords: 'jet privé, aviation affaires, Maroc, réservation vol, charter',
+  ...generateMetadata(defaultSEO),
+  metadataBase: new URL('https://flyelite.ma'),
+  alternates: {
+    canonical: 'https://flyelite.ma',
+    languages: {
+      'fr': 'https://flyelite.ma',
+      'en': 'https://flyelite.ma',
+    },
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
+  manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/iconflyelite.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/icon-192.png',
+  },
 }
 
 export default function RootLayout({
@@ -23,7 +43,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationStructuredData),
+          }}
+        />
+      </head>
       <body className={inter.variable}>
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        )}
+        {process.env.NEXT_PUBLIC_GTM_ID && (
+          <GoogleTagManager GTM_ID={process.env.NEXT_PUBLIC_GTM_ID} />
+        )}
+        
         <LanguageProvider>
           <TopBar />
           <Header />
