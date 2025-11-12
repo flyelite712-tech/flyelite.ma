@@ -1,15 +1,12 @@
-import { Metadata } from 'next'
+'use client'
+
 import BlogHero from '@/components/blog/BlogHero'
 import BlogCard from '@/components/blog/BlogCard'
 import { blogPosts } from '@/data/blog-posts'
-
-export const metadata: Metadata = {
-  title: 'Blog - FlyElite | Conseils et Guides Aviation Privée',
-  description: 'Découvrez nos articles sur l\'aviation privée, nos guides de réservation, FAQ et conseils pour voyager en jet privé au Maroc.',
-  keywords: 'blog aviation, jet privé conseils, guide réservation, FAQ aviation privée',
-}
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function BlogPage() {
+  const { t } = useLanguage()
   return (
     <div className="min-h-screen">
       <BlogHero />
@@ -24,7 +21,7 @@ export default function BlogPage() {
           
           {blogPosts.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-gray-600 text-lg">Aucun article disponible pour le moment.</p>
+              <p className="text-gray-600 text-lg">{t('blogPage.noArticles')}</p>
             </div>
           )}
         </div>

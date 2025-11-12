@@ -1,9 +1,11 @@
-import { Metadata } from 'next'
+'use client'
+
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar, Clock, User, ArrowLeft, Share2 } from 'lucide-react'
 import { blogPosts } from '@/data/blog-posts'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 interface BlogPostPageProps {
   params: {
@@ -11,29 +13,8 @@ interface BlogPostPageProps {
   }
 }
 
-export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    slug: post.slug,
-  }))
-}
-
-export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = blogPosts.find((p) => p.slug === params.slug)
-  
-  if (!post) {
-    return {
-      title: 'Article non trouvé - FlyElite',
-    }
-  }
-
-  return {
-    title: `${post.title} - Blog FlyElite`,
-    description: post.excerpt,
-    keywords: post.tags.join(', '),
-  }
-}
-
 export default function BlogPostPage({ params }: BlogPostPageProps) {
+  const { t, language } = useLanguage()
   const post = blogPosts.find((p) => p.slug === params.slug)
 
   if (!post) {
@@ -50,15 +31,15 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             className="inline-flex items-center gap-2 text-white hover:text-white/80 transition-colors mb-6"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span>Retour au blog</span>
+            <span>{t('blogPost.backToBlog')}</span>
           </Link>
           
           <div className="max-w-4xl">
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-white/20 text-white px-4 py-1 rounded-full text-sm font-semibold backdrop-blur-sm">
-                {post.category}
+                {post.category[language]}
               </span>
-              {post.tags.map((tag) => (
+              {post.tags[language].map((tag) => (
                 <span key={tag} className="bg-white/10 text-white px-3 py-1 rounded-full text-sm backdrop-blur-sm">
                   {tag}
                 </span>
@@ -66,13 +47,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              {post.title}
+              {post.title[language]}
             </h1>
             
             <div className="flex flex-wrap items-center gap-6 text-white/90">
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
-                <span>{new Date(post.publishedAt).toLocaleDateString('fr-FR', { 
+                <span>{new Date(post.publishedAt).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', { 
                   year: 'numeric', 
                   month: 'long', 
                   day: 'numeric' 
@@ -80,7 +61,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5" />
-                <span>{post.readTime} de lecture</span>
+                <span>{post.readTime[language]} {t('blogPost.readTime')}</span>
               </div>
              
             </div>
@@ -93,7 +74,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
           <Image
             src={post.image}
-            alt={post.title}
+            alt={post.title[language]}
             fill
             className="object-cover"
             priority
@@ -121,16 +102,16 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
                 prose-li:text-gray-700 prose-li:mb-2
                 prose-img:rounded-xl prose-img:shadow-lg"
-              dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }}
+              dangerouslySetInnerHTML={{ __html: post.content[language].replace(/\n/g, '<br />') }}
             />
 
             {/* Share Section */}
             <div className="mt-12 pt-8 border-t border-gray-200">
               <div className="flex items-center justify-between">
-                <p className="text-gray-600 font-semibold">Partager cet article :</p>
+                <p className="text-gray-600 font-semibold">{t('blogPost.shareArticle')}</p>
                 <button className="flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-full font-semibold transition-all">
                   <Share2 className="w-5 h-5" />
-                  <span>Partager</span>
+                  <span>{t('blogPost.share')}</span>
                 </button>
               </div>
             </div>
@@ -138,7 +119,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
           {/* Related Posts */}
           <div className="mt-16">
-            <h2 className="text-3xl font-bold text-primary mb-8">Articles similaires</h2>
+            <h2 className="text-3xl font-bold text-primary mb-8">{t('blogPost.relatedPosts')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {blogPosts
                 .filter((p) => p.id !== post.id)
@@ -152,17 +133,17 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     <div className="relative h-48">
                       <Image
                         src={relatedPost.image}
-                        alt={relatedPost.title}
+                        alt={relatedPost.title[language]}
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                     </div>
                     <div className="p-6">
-                      <span className="text-accent text-sm font-semibold">{relatedPost.category}</span>
+                      <span className="text-accent text-sm font-semibold">{relatedPost.category[language]}</span>
                       <h3 className="text-xl font-bold text-primary mt-2 mb-3 line-clamp-2 group-hover:text-accent transition-colors">
-                        {relatedPost.title}
+                        {relatedPost.title[language]}
                       </h3>
-                      <p className="text-gray-600 text-sm line-clamp-2">{relatedPost.excerpt}</p>
+                      <p className="text-gray-600 text-sm line-clamp-2">{relatedPost.excerpt[language]}</p>
                     </div>
                   </Link>
                 ))}
@@ -172,16 +153,16 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           {/* CTA Section */}
           <div className="mt-16 bg-gradient-to-br from-primary to-accent rounded-2xl p-8 md:p-12 text-center text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Prêt à Réserver Votre Vol Privé ?
+              {t('blogPost.cta.title')}
             </h2>
             <p className="text-xl mb-8 text-white/90">
-              Découvrez nos offres exclusives et réservez en moins de 5 minutes
+              {t('blogPost.cta.description')}
             </p>
             <Link
               href="/offres"
-              className="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg"
+              className="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Voir Nos Offres
+              {t('blogPost.cta.button')}
             </Link>
           </div>
         </div>

@@ -3,8 +3,10 @@
 import { useState } from 'react'
 import { MapPin, Phone, Mail, Send } from 'lucide-react'
 import settings from '@/data/settings.json'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function ContactPage() {
+  const { t } = useLanguage()
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
   const [formData, setFormData] = useState({
@@ -41,7 +43,7 @@ export default function ContactPage() {
       }
     } catch (error) {
       console.error('Error:', error)
-      alert('Une erreur est survenue. Veuillez réessayer.')
+      alert(t('common.error'))
     } finally {
       setLoading(false)
     }
@@ -53,10 +55,10 @@ export default function ContactPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-primary mb-4">
-            Contactez-nous
+            {t('contact.title')}
           </h1>
           <p className="text-xl text-gray-600">
-            Notre équipe est à votre disposition 24/7
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -65,7 +67,7 @@ export default function ContactPage() {
           <div className="space-y-8">
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h2 className="text-2xl font-bold text-primary mb-6">
-                Informations de contact
+                {t('contact.infoTitle')}
               </h2>
 
               <div className="space-y-6">
@@ -75,7 +77,7 @@ export default function ContactPage() {
                     <MapPin className="text-accent" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Adresse</h3>
+                    <h3 className="font-semibold text-primary mb-1">{t('contact.address')}</h3>
                     <p className="text-gray-600">{settings.contact.address}</p>
                   </div>
                 </div>
@@ -86,7 +88,7 @@ export default function ContactPage() {
                     <Phone className="text-accent" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Téléphone</h3>
+                    <h3 className="font-semibold text-primary mb-1">{t('contact.phone')}</h3>
                     {settings.contact.phones.map((phone, index) => (
                       <p key={index} className="text-gray-600">
                         <a href={`tel:${phone}`} className="hover:text-accent transition-colors">
@@ -103,7 +105,7 @@ export default function ContactPage() {
                     <Mail className="text-accent" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Email</h3>
+                    <h3 className="font-semibold text-primary mb-1">{t('contact.email')}</h3>
                     <p className="text-gray-600">
                       <a href={`mailto:${settings.contact.email}`} className="hover:text-accent transition-colors">
                         {settings.contact.email}
@@ -132,16 +134,16 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <h2 className="text-2xl font-bold text-primary mb-6">
-              Envoyez-nous un message
+              {t('contact.formTitle')}
             </h2>
 
             {success && (
               <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
                 <p className="text-green-800 font-semibold">
-                  ✓ Message envoyé avec succès !
+                  {t('contact.successTitle')}
                 </p>
                 <p className="text-green-600 text-sm mt-1">
-                  Nous vous répondrons dans les plus brefs délais.
+                  {t('contact.successMessage')}
                 </p>
               </div>
             )}
@@ -151,7 +153,7 @@ export default function ContactPage() {
                 {/* First Name */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Prénom *
+                    {t('search.firstName')} {t('contact.required')}
                   </label>
                   <input
                     type="text"
@@ -165,7 +167,7 @@ export default function ContactPage() {
                 {/* Last Name */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Nom *
+                    {t('search.lastName')} {t('contact.required')}
                   </label>
                   <input
                     type="text"
@@ -181,7 +183,7 @@ export default function ContactPage() {
                 {/* Email */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email *
+                    {t('search.email')} {t('contact.required')}
                   </label>
                   <input
                     type="email"
@@ -195,7 +197,7 @@ export default function ContactPage() {
                 {/* Phone */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Téléphone *
+                    {t('search.phone')} {t('contact.required')}
                   </label>
                   <input
                     type="tel"
@@ -210,7 +212,7 @@ export default function ContactPage() {
               {/* Subject */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Sujet *
+                  {t('contact.subject')} {t('contact.required')}
                 </label>
                 <input
                   type="text"
@@ -224,7 +226,7 @@ export default function ContactPage() {
               {/* Message */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Message *
+                  {t('contact.message')} {t('contact.required')}
                 </label>
                 <textarea
                   value={formData.message}
@@ -242,7 +244,7 @@ export default function ContactPage() {
                 className="w-full bg-accent hover:bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center justify-center space-x-2 transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send size={20} />
-                <span>{loading ? 'Envoi en cours...' : 'Envoyer le message'}</span>
+                <span>{loading ? t('contact.sending') : t('contact.submit')}</span>
               </button>
             </form>
           </div>

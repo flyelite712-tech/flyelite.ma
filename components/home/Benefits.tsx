@@ -2,33 +2,36 @@
 
 import { motion } from 'framer-motion'
 import { Shield, Clock, Diamond, Plane, Users } from 'lucide-react'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Benefits() {
+  const { t } = useLanguage()
+  
   const benefits = [
     {
       icon: Shield,
-      title: "Normes de sécurité",
-      description: "Respect des plus hauts standards de sécurité aérienne"
+      titleKey: 'home.benefits.benefit1Title',
+      descriptionKey: 'home.benefits.benefit1Description'
     },
     {
       icon: Clock,
-      title: "Réservez en moins de 5 minutes",
-      description: "Processus de réservation simple et rapide"
+      titleKey: 'home.benefits.benefit2Title',
+      descriptionKey: 'home.benefits.benefit2Description'
     },
     {
       icon: Diamond,
-      title: "Inspiration de voyage de luxe",
-      description: "Voyagez dans le confort et l'élégance"
+      titleKey: 'home.benefits.benefit3Title',
+      descriptionKey: 'home.benefits.benefit3Description'
     },
     {
       icon: Plane,
-      title: "Transferts en hélicoptère disponibles",
-      description: "Service de transfert premium en Europe"
+      titleKey: 'home.benefits.benefit4Title',
+      descriptionKey: 'home.benefits.benefit4Description'
     },
     {
       icon: Users,
-      title: "Événements exclusifs en Europe",
-      description: "Accès à des événements VIP"
+      titleKey: 'home.benefits.benefit5Title',
+      descriptionKey: 'home.benefits.benefit5Description'
     }
   ]
 
@@ -42,7 +45,7 @@ export default function Benefits() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Pourquoi choisir <span className="text-accent">Fly Elite</span> ?
+            {t('home.benefits.title')} <span className="text-accent">{t('home.benefits.titleHighlight')}</span> ?
           </h2>
         </motion.div>
 
@@ -62,10 +65,10 @@ export default function Benefits() {
                   <Icon className="text-accent group-hover:text-white transition-colors" size={32} />
                 </div>
                 <h3 className="text-lg font-bold text-primary mb-3">
-                  {benefit.title}
+                  {t(benefit.titleKey)}
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  {benefit.description}
+                  {t(benefit.descriptionKey)}
                 </p>
               </motion.div>
             )

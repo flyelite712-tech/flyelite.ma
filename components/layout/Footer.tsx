@@ -4,26 +4,28 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Instagram, Facebook, Twitter, Linkedin } from 'lucide-react'
 import settings from '@/data/settings.json'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const { t } = useLanguage()
 
   const menuLinks = [
-    { name: 'Vols', href: '/' },
-    { name: 'Notre concept', href: '/notre-concept' },
-    { name: 'FAQ', href: '/faq' },
-    { name: 'Contact', href: '/contact' },
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.concept'), href: '/notre-concept' },
+    { name: t('nav.faq'), href: '/faq' },
+    { name: t('nav.contact'), href: '/contact' },
   ]
 
   const legalLinks = [
-    { name: 'Mentions légales', href: '/mentions-legales' },
-    { name: 'CGV', href: '/cgv' },
-    { name: 'CGU', href: '/cgu' },
+    { name: t('footer.legalNotice'), href: '/mentions-legales' },
+    { name: t('footer.termsOfSale'), href: '/cgv' },
+    { name: t('footer.termsOfUse'), href: '/cgu' },
   ]
 
   const resourceLinks = [
-    { name: 'Ressources', href: '/ressources' },
-    { name: 'Communiqué de presse', href: '/presse' },
+    { name: t('footer.resourcesLink'), href: '/ressources' },
+    { name: t('footer.pressRelease'), href: '/presse' },
   ]
 
   const socialIcons = [
@@ -47,13 +49,13 @@ export default function Footer() {
               className="h-16 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-sm text-gray-300">
-              Louez votre jet privé. En 5 minutes, au meilleur prix !
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Menu */}
           <div>
-            <h3 className="font-bold mb-4">MENU</h3>
+            <h3 className="font-bold mb-4">{t('footer.menu')}</h3>
             <ul className="space-y-2">
               {menuLinks.map((link) => (
                 <li key={link.name}>
@@ -67,7 +69,7 @@ export default function Footer() {
 
           {/* Légal */}
           <div>
-            <h3 className="font-bold mb-4">LÉGALES</h3>
+            <h3 className="font-bold mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.name}>
@@ -81,7 +83,7 @@ export default function Footer() {
 
           {/* Ressources */}
           <div>
-            <h3 className="font-bold mb-4">RESSOURCES</h3>
+            <h3 className="font-bold mb-4">{t('footer.resources')}</h3>
             <ul className="space-y-2">
               {resourceLinks.map((link) => (
                 <li key={link.name}>
@@ -118,10 +120,10 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
           <p className="mb-2">
-            {currentYear} © {settings.brand.name}. All rights reserved.
+            {currentYear} © {settings.brand.name}. {t('footer.rights')}
           </p>
           <p className="text-xs">
-            Développé avec excellence et passion par{' '}
+            {t('footer.developedBy')}{' '}
             <a 
               href="https://mehdicodes.com" 
               target="_blank" 

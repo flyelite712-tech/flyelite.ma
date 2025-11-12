@@ -13,8 +13,8 @@
       "arrive": "20:00"
     },
     "price": {
-      "currency": "MAD",
-      "amount": 0
+      "currency": "EUR",
+      "amount": 15210
     },
     "gallery": [
       "/assets/images/offers/Embraer Phenom 300/1.png",
@@ -22,6 +22,67 @@
       "/assets/images/offers/Embraer Phenom 300/3.png"
     ],
     "featured": true
+  },
+  {
+    "id": "medical-flight-worldwide",
+    "slug": "vol-sanitaire-mondial",
+    "date": "N'importe quand",
+    "from": "Worldwide",
+    "to": "Worldwide",
+    "aircraft": "Citation CJ3 Médicalisé",
+    "seats": 2,
+    "flightTimeMin": 0,
+    "schedule": {
+      "depart": "Disponible 24h/24",
+      "arrive": "Sur demande"
+    },
+    "price": {
+      "currency": "EUR",
+      "amount": 0
+    },
+    "gallery": [
+      "/assets/images/offers/Avion Sanitaire/1.png",
+      "/assets/images/offers/Avion Sanitaire/2.png",
+      "/assets/images/offers/Avion Sanitaire/3.png"
+    ],
+    "featured": true,
+    "isMedical": true,
+    "medicalDetails": {
+      "type": "Vol Sanitaire / Avion Ambulance",
+      "description": "Transport médical sécurisé avec équipe médicale complète et équipements de soins intensifs à bord",
+      "equipment": [
+        "Unité de soins intensifs Lifeport avec matelas coquille",
+        "Réservoir d'oxygène centralisé (6000+ litres)",
+        "Moniteur de transport médical multiparamètres",
+        "Respirateur artificiel pour modes de respiration complexes",
+        "Électrocardiographe multifonction 12 canaux",
+        "Défibrillateur/système de surveillance compact",
+        "Téléphone satellite pour communications mondiales"
+      ],
+      "crew": [
+        "Médecin spécialisé en soins d'urgence et intensifs",
+        "Assistant paramédical qualifié",
+        "Pilotes expérimentés certifiés vols médicaux"
+      ],
+      "services": [
+        "Disponibilité 24h/24, 7j/7",
+        "Départ de l'aéroport le plus proche de l'hôpital",
+        "Transfert 'de lit à lit' avec ambulance terrestre",
+        "Ajustement de la pression cabine (vol sea level si nécessaire)",
+        "Surveillance médicale constante durant le vol",
+        "Coordination avec établissements de santé",
+        "Service traduction et gestion documents médicaux"
+      ],
+      "suitableFor": [
+        "Rapatriements sanitaires internationaux",
+        "Évacuations médicales urgentes",
+        "Transferts inter-hospitaliers pour soins spécialisés",
+        "Patients en soins intensifs",
+        "Patients sous assistance respiratoire",
+        "Transport de patients avec monitoring constant",
+        "Voyages médicaux planifiés pour traitements à l'étranger"
+      ]
+    }
   },
   {
     "id": "nice-fes-2025-11-19",
@@ -37,8 +98,8 @@
       "arrive": "16:30"
     },
     "price": {
-      "currency": "MAD",
-      "amount": 0
+      "currency": "EUR",
+      "amount": 13065
     },
     "gallery": [
       "/assets/images/offers/Citation CJ3/1.png",
@@ -61,8 +122,8 @@
       "arrive": "11:45"
     },
     "price": {
-      "currency": "MAD",
-      "amount": 0
+      "currency": "EUR",
+      "amount": 16315
     },
     "gallery": [
       "/assets/images/offers/Hawker 900XP/1.png",
@@ -85,8 +146,8 @@
       "arrive": "12:30"
     },
     "price": {
-      "currency": "MAD",
-      "amount": 0
+      "currency": "EUR",
+      "amount": 19240
     },
     "gallery": [
       "/assets/images/offers/Cessna Citation XLS/1.png",
@@ -109,8 +170,8 @@
       "arrive": "06:30"
     },
     "price": {
-      "currency": "MAD",
-      "amount": 0
+      "currency": "EUR",
+      "amount": 71305
     },
     "gallery": [
       "/assets/images/offers/Gulfstream G550/1.png",
@@ -133,8 +194,8 @@
       "arrive": "05:00"
     },
     "price": {
-      "currency": "MAD",
-      "amount": 0
+      "currency": "EUR",
+      "amount": 56680
     },
     "gallery": [
       "/assets/images/offers/Bombardier Global 6000/1.png",

@@ -4,14 +4,30 @@ export const blogPosts: BlogPost[] = [
   {
     id: '1',
     slug: 'pourquoi-choisir-flyelite',
-    title: 'Pourquoi Choisir FlyElite pour Votre Prochain Vol Privé ?',
-    excerpt: 'Découvrez les avantages exclusifs qui font de FlyElite le leader de l\'aviation d\'affaires au Maroc et votre partenaire idéal pour des voyages d\'exception.',
-    category: 'Guide',
+    title: {
+      fr: 'Pourquoi Choisir FlyElite pour Votre Prochain Vol Privé ?',
+      en: 'Why Choose FlyElite for Your Next Private Flight?'
+    },
+    excerpt: {
+      fr: 'Découvrez les avantages exclusifs qui font de FlyElite le leader de l\'aviation d\'affaires au Maroc et votre partenaire idéal pour des voyages d\'exception.',
+      en: 'Discover the exclusive advantages that make FlyElite the leader in business aviation in Morocco and your ideal partner for exceptional travel.'
+    },
+    category: {
+      fr: 'Guide',
+      en: 'Guide'
+    },
     image: '/assets/images/offers/Embraer Phenom 300/1.png',
     publishedAt: '2024-11-01',
-    readTime: '5 min',
-    tags: ['Aviation Privée', 'Luxe', 'Service Premium'],
-    content: `
+    readTime: {
+      fr: '5 min',
+      en: '5 min'
+    },
+    tags: {
+      fr: ['Aviation Privée', 'Luxe', 'Service Premium'],
+      en: ['Private Aviation', 'Luxury', 'Premium Service']
+    },
+    content: {
+      fr: `
 # Pourquoi Choisir FlyElite pour Votre Prochain Vol Privé ?
 
 Dans le monde de l'aviation d'affaires, le choix de votre prestataire peut faire toute la différence entre un simple déplacement et une expérience de voyage exceptionnelle. FlyElite s'impose comme le leader au Maroc, offrant bien plus qu'un simple service de transport aérien.
@@ -75,19 +91,101 @@ Nos clients font notre fierté. Avec un taux de satisfaction de 98%, nous avons 
 Choisir FlyElite, c'est opter pour l'excellence, la fiabilité et un service personnalisé qui dépasse vos attentes. Que ce soit pour un voyage d'affaires urgent ou des vacances en famille, nous transformons chaque vol en une expérience mémorable.
 
 **Prêt à découvrir la différence FlyElite ?** Contactez-nous dès aujourd'hui pour planifier votre prochain voyage.
-    `
+      `,
+      en: `
+# Why Choose FlyElite for Your Next Private Flight?
+
+In the world of business aviation, choosing your provider can make all the difference between a simple trip and an exceptional travel experience. FlyElite stands as the leader in Morocco, offering much more than just air transportation service.
+
+## A Modern and Diverse Fleet
+
+Our fleet includes over 23,000 aircraft available across 165 countries. Whether you need a light jet for a short trip or a luxurious long-haul aircraft for an intercontinental journey, we have the perfect aircraft to meet your specific needs.
+
+### Latest Generation Aircraft
+
+All our aircraft are equipped with the most recent technologies in safety and comfort. Each aircraft is meticulously maintained according to the strictest international standards, guaranteeing your safety and peace of mind.
+
+## Unmatched Customer Service
+
+### 24/7 Availability
+
+Our dedicated team is available day and night to meet your needs. Whether you're planning a trip several weeks in advance or need an immediate departure, we're here to support you.
+
+### Total Customization
+
+Each flight is unique, just like your needs. Our concierge service takes care of every detail:
+- Personalized gourmet catering
+- Ground arrangements (transfers, hotels)
+- Special services (pets, medical equipment)
+- Special requests to make your trip unforgettable
+
+## Transparency and Competitive Pricing
+
+At FlyElite, we believe in total transparency. Our rates are clear, with no hidden fees. You receive a detailed quote before confirming your booking, allowing you to make an informed decision.
+
+### Best Value for Money
+
+Thanks to our extensive network and expertise, we negotiate the best rates while maintaining an exceptional level of service. You benefit from premium service at a competitive price.
+
+## Simplified Booking
+
+Our intuitive booking platform allows you to:
+- Compare different aircraft in real-time
+- View availability instantly
+- Book your flight in less than 5 minutes
+- Easily modify your plans if necessary
+
+## Safety and Compliance
+
+Safety is our absolute priority. All our operators are certified and comply with the strictest international regulations. We conduct regular audits to ensure that each flight meets the highest standards.
+
+## Local Experience and Expertise
+
+Based in Morocco, we perfectly understand the specificities of the local and regional market. Our in-depth knowledge of airports, regulations, and best practices allows us to offer you optimal service.
+
+## Environmental Commitment
+
+We are aware of our environmental responsibility. That's why we work with operators who invest in cleaner technologies and carbon offset programs.
+
+## Client Testimonials
+
+Our clients are our pride. With a 98% satisfaction rate, we have established a reputation for excellence in the industry. Our clients return to us for the consistent quality of our service and attention to detail.
+
+## Conclusion
+
+Choosing FlyElite means opting for excellence, reliability, and personalized service that exceeds your expectations. Whether for an urgent business trip or family vacation, we transform every flight into a memorable experience.
+
+**Ready to discover the FlyElite difference?** Contact us today to plan your next trip.
+      `
+    }
   },
   {
     id: '2',
     slug: 'comment-reserver-jet-prive',
-    title: 'Comment Réserver Votre Jet Privé en 5 Minutes avec FlyElite',
-    excerpt: 'Guide complet étape par étape pour réserver votre vol privé rapidement et facilement. Découvrez notre processus simplifié de réservation.',
-    category: 'Tutoriel',
+    title: {
+      fr: 'Comment Réserver Votre Jet Privé en 5 Minutes avec FlyElite',
+      en: 'How to Book Your Private Jet in 5 Minutes with FlyElite'
+    },
+    excerpt: {
+      fr: 'Guide complet étape par étape pour réserver votre vol privé rapidement et facilement. Découvrez notre processus simplifié de réservation.',
+      en: 'Complete step-by-step guide to book your private flight quickly and easily. Discover our simplified booking process.'
+    },
+    category: {
+      fr: 'Tutoriel',
+      en: 'Tutorial'
+    },
     image: '/assets/images/offers/Embraer Phenom 300/2.png',
     publishedAt: '2024-10-28',
-    readTime: '6 min',
-    tags: ['Réservation', 'Guide Pratique', 'Tutoriel'],
-    content: `
+    readTime: {
+      fr: '6 min',
+      en: '6 min'
+    },
+    tags: {
+      fr: ['Réservation', 'Guide Pratique', 'Tutoriel'],
+      en: ['Booking', 'Practical Guide', 'Tutorial']
+    },
+    content: {
+      fr: `
 # Comment Réserver Votre Jet Privé en 5 Minutes avec FlyElite
 
 Réserver un jet privé n'a jamais été aussi simple. Chez FlyElite, nous avons révolutionné le processus de réservation pour le rendre accessible, rapide et transparent. Voici votre guide complet pour réserver votre prochain vol en quelques minutes seulement.
@@ -256,19 +354,206 @@ Oui, nos tarifs sont tout compris : carburant, équipage, assurance, taxes d'att
 Réserver un jet privé avec FlyElite est vraiment aussi simple que nous le promettons. Notre plateforme intuitive, combinée à notre équipe d'experts disponibles 24/7, garantit une expérience de réservation fluide et sans stress.
 
 **Prêt à décoller ?** Commencez votre réservation dès maintenant et découvrez pourquoi des milliers de clients nous font confiance pour leurs voyages d'affaires et de loisirs.
-    `
+      `,
+      en: `
+# How to Book Your Private Jet in 5 Minutes with FlyElite
+
+Booking a private jet has never been easier. At FlyElite, we've revolutionized the booking process to make it accessible, fast, and transparent. Here's your complete guide to booking your next flight in just a few minutes.
+
+## Step 1: Define Your Itinerary
+
+### Choose Your Destinations
+
+Start by selecting your departure airport and destination. Our system covers over 300 airports, offering you maximum flexibility.
+
+**Pro Tip:** Smaller private airports can often get you closer to your final destination and offer faster boarding procedures.
+
+### Select Your Dates
+
+Indicate your desired departure date and time. Our system will show you real-time availability. You can also:
+- Book one-way or round-trip
+- Plan multiple stops
+- Adjust schedules according to your preferences
+
+## Step 2: Choose Your Aircraft
+
+### Compare Options
+
+Our platform presents all available aircraft for your itinerary, with:
+- Detailed interior and exterior photos
+- Passenger capacity
+- Equipment and amenities
+- Transparent pricing
+
+### Available Aircraft Types
+
+**Light Jets (4-8 passengers)**
+Perfect for short and medium trips, offering comfort and efficiency.
+
+**Midsize Jets (8-10 passengers)**
+Ideal for regional flights with more space and amenities.
+
+**Heavy Jets (10-16 passengers)**
+For long-haul flights with maximum luxury and generous space.
+
+**Ultra Long-Range (12-19 passengers)**
+For intercontinental travel with all the comfort of a flying lounge.
+
+## Step 3: Customize Your Experience
+
+### Onboard Services
+
+Select your preferences:
+- **Catering:** Gourmet menu, dietary preferences, beverages
+- **Entertainment:** Wi-Fi, audiovisual systems
+- **Configuration:** Seat layout, workspace
+- **Special services:** Medical equipment, pet transport
+
+### Ground Services
+
+Add complementary services:
+- Ground transfers (limousine, helicopter)
+- Hotel reservations
+- VIP airport assistance
+- Concierge services at destination
+
+## Step 4: Review and Confirm
+
+### Detailed Review
+
+Before finalizing, verify:
+- Complete itinerary
+- Aircraft details
+- Selected services
+- Total cost with all fees included
+
+### Passenger Information
+
+Provide necessary information:
+- Full passenger names
+- Travel documents
+- Contact details
+- Special requests
+
+## Step 5: Secure Payment
+
+### Payment Options
+
+We accept:
+- International credit cards
+- Bank transfers
+- Installment payments (for certain amounts)
+
+### Guaranteed Security
+
+All transactions are encrypted and secure. Your financial information is protected according to PCI DSS standards.
+
+## After Booking
+
+### Instant Confirmation
+
+You receive immediately:
+- Confirmation email with all details
+- Flight voucher
+- Contact information for your dedicated coordinator
+- Departure day instructions
+
+### Modifications and Flexibility
+
+Need to modify your booking? Contact our 24/7 team:
+- Schedule changes
+- Itinerary modifications
+- Service additions
+- Cancellation (subject to conditions)
+
+## Tips for Optimal Booking
+
+### Book in Advance
+
+While we can organize flights with very short notice, booking in advance offers you:
+- More aircraft choices
+- Better rates
+- More time to customize
+
+### Be Flexible
+
+If your dates are flexible, you can benefit from:
+- Preferential rates
+- Premium aircraft at reduced prices
+- Increased availability
+
+### Communicate Your Needs
+
+The more we know about your preferences, the better we can customize your experience. Don't hesitate to share:
+- Dietary preferences
+- Professional needs (in-flight meetings)
+- Special occasions
+- Particular requests
+
+## Dedicated Customer Support
+
+### Personalized Assistance
+
+Each client benefits from a dedicated coordinator who:
+- Answers all your questions
+- Manages logistical details
+- Monitors your booking
+- Remains available until your landing
+
+### 24/7 Contact
+
+Our team is reachable:
+- By phone: +212 689-330202
+- By email: contact@flyelite.ma
+- Via WhatsApp
+- Live chat on our website
+
+## Frequently Asked Questions
+
+**What is the minimum booking time?**
+We can organize flights with as little as 2-4 hours notice, depending on availability.
+
+**Can I cancel my booking?**
+Yes, according to our cancellation conditions which vary depending on the type of booking and notice period.
+
+**Do prices include all fees?**
+Yes, our rates are all-inclusive: fuel, crew, insurance, landing fees.
+
+## Conclusion
+
+Booking a private jet with FlyElite is truly as simple as we promise. Our intuitive platform, combined with our team of experts available 24/7, guarantees a smooth and stress-free booking experience.
+
+**Ready to take off?** Start your booking now and discover why thousands of clients trust us for their business and leisure travel.
+      `
+    }
   },
   {
     id: '3',
     slug: 'avantages-jet-prive-business',
-    title: 'Les Avantages du Jet Privé pour les Voyages d\'Affaires',
-    excerpt: 'Découvrez comment l\'aviation privée peut transformer votre productivité et optimiser vos déplacements professionnels au Maroc et à l\'international.',
-    category: 'Business',
+    title: {
+      fr: 'Les Avantages du Jet Privé pour les Voyages d\'Affaires',
+      en: 'The Advantages of Private Jets for Business Travel'
+    },
+    excerpt: {
+      fr: 'Découvrez comment l\'aviation privée peut transformer votre productivité et optimiser vos déplacements professionnels au Maroc et à l\'international.',
+      en: 'Discover how private aviation can transform your productivity and optimize your business travel in Morocco and internationally.'
+    },
+    category: {
+      fr: 'Business',
+      en: 'Business'
+    },
     image: '/assets/images/offers/Citation CJ3/1.png',
     publishedAt: '2024-11-08',
-    readTime: '7 min',
-    tags: ['Business', 'Productivité', 'Voyages'],
-    content: `
+    readTime: {
+      fr: '7 min',
+      en: '7 min'
+    },
+    tags: {
+      fr: ['Business', 'Productivité', 'Voyages'],
+      en: ['Business', 'Productivity', 'Travel']
+    },
+    content: {
+      fr: `
 # Les Avantages du Jet Privé pour les Voyages d'Affaires
 
 Dans le monde des affaires moderne, le temps est votre ressource la plus précieuse. L'aviation privée n'est plus un luxe réservé à une élite, mais un outil stratégique qui peut transformer radicalement votre efficacité professionnelle.
@@ -442,19 +727,211 @@ Définissez quand l'aviation privée est justifiée :
 L'aviation privée n'est plus un luxe mais un investissement stratégique pour les entreprises qui valorisent le temps, la productivité et l'efficacité. Dans un monde où chaque minute compte, le jet privé devient un avantage compétitif décisif.
 
 **Prêt à transformer vos déplacements professionnels ?** Contactez FlyElite pour une consultation personnalisée et découvrez comment nous pouvons optimiser votre mobilité d'affaires.
-    `
+      `,
+      en: `
+# The Advantages of Private Jets for Business Travel
+
+In the modern business world, time is your most precious resource. Private aviation is no longer a luxury reserved for an elite, but a strategic tool that can radically transform your professional efficiency.
+
+## Considerable Time Savings
+
+### Eliminate Airport Constraints
+
+With a private jet, forget about:
+- Endless check-in queues
+- Time-consuming security checks
+- Waiting times before boarding
+- Unnecessary connections and stopovers
+
+**Result:** Arrive 15 minutes before departure instead of 2-3 hours.
+
+### Optimize Your Schedule
+
+Plan your flights according to YOUR schedule, not airline schedules. Need to leave at 6 AM or 10 PM? No problem. You have total control over your agenda.
+
+## Maximum Productivity
+
+### Transform Your Flight into a Flying Office
+
+Aboard a private jet, you benefit from:
+- **Total confidentiality** for your sensitive meetings
+- **High-speed Wi-Fi** to stay connected
+- **Dedicated workspace** with tables and electrical outlets
+- **Silence** to concentrate without interruption
+
+### Organize In-Flight Meetings
+
+Bring your team or clients:
+- Strategic meetings in complete discretion
+- Important presentations before an appointment
+- Creative brainstorming in a unique environment
+- Contract signing in complete confidentiality
+
+## Operational Flexibility
+
+### Access Over 300 Airports
+
+Unlike commercial flights limited to major airports, private jets can land at regional airports closer to your final destination.
+
+**Concrete example:** For a meeting in Agadir, land directly at Al Massira airport instead of transiting through Casablanca.
+
+### Modify Your Plans in Real-Time
+
+Business is unpredictable. With FlyElite:
+- Change your destination en route
+- Extend your stay without penalty
+- Advance or delay your departure according to your needs
+- Add additional stopovers
+
+## Cost-Effectiveness for Businesses
+
+### Calculate the True Cost
+
+Don't just compare ticket prices. Consider:
+- **Time saved:** How much is a day of your CEO worth?
+- **Productivity:** Actual work done during the flight
+- **Avoided ancillary costs:** Hotel nights, meals, taxis
+- **Efficiency:** Multiple meetings in different cities in one day
+
+### Optimize for Teams
+
+For a group of 6-8 people, the cost per person becomes very competitive compared to business class tickets, with incomparable advantages.
+
+## Comfort and Well-being
+
+### Arrive Fresh and Ready
+
+- Spacious seats that convert into beds
+- Personalized gourmet catering
+- Pressurized cabin for less fatigue
+- Absence of crowd-related stress
+
+### Preserve Your Health
+
+During pandemic or flu season, limit your exposure:
+- Controlled and disinfected environment
+- Crew dedicated to your flight only
+- No contact with other passengers
+
+## Image and Representation
+
+### Impress Your Clients
+
+Inviting an important client to travel by private jet:
+- Demonstrates your seriousness and success
+- Creates a memorable experience
+- Facilitates signing major contracts
+- Strengthens business relationships
+
+### Strengthen Your Employer Brand
+
+For your key employees:
+- Recognition of their value
+- Motivation and loyalty
+- Attraction of top talent
+- Culture of corporate excellence
+
+## Security and Discretion
+
+### Absolute Confidentiality
+
+- No risk of being heard or seen by competitors
+- Protection of your sensitive documents
+- Strategic discussions in complete safety
+- Respect for your privacy
+
+### Enhanced Security
+
+- Total control over who boards
+- Verified and certified crew
+- Rigorous aircraft maintenance
+- International safety standards
+
+## Concrete Use Cases
+
+### The Investor Roadshow
+
+Meet 5 investors in 3 different cities in a single day. Impossible with commercial aviation, easy with a private jet.
+
+### International Negotiation
+
+Paris in the morning, London in the afternoon, back to Casablanca in the evening. Sign your contracts and sleep in your own bed.
+
+### Crisis Management
+
+An urgent situation in your subsidiary? Immediate takeoff, arrival in a few hours, problem solved.
+
+### Important Event
+
+Trade show, conference, inauguration: bring your entire team together, briefing during the flight.
+
+## How to Integrate Private Aviation
+
+### Start Gradually
+
+- Test for a crucial trip
+- Evaluate return on investment
+- Increase usage according to your needs
+- Negotiate preferential rates for regular use
+
+### Establish a Travel Policy
+
+Define when private aviation is justified:
+- Hierarchical level of travelers
+- Strategic importance of the trip
+- Time constraints
+- Number of people traveling together
+
+## FlyElite: Your Business Partner
+
+### Dedicated Corporate Service
+
+- Personal account manager
+- Simplified billing
+- Detailed travel reports
+- Negotiated rates for regular use
+
+### Total Flexibility
+
+- No long-term commitment
+- Flight-by-flight booking
+- Or advantageous packages for frequent users
+
+## Conclusion
+
+Private aviation is no longer a luxury but a strategic investment for companies that value time, productivity, and efficiency. In a world where every minute counts, the private jet becomes a decisive competitive advantage.
+
+**Ready to transform your business travel?** Contact FlyElite for a personalized consultation and discover how we can optimize your business mobility.
+      `
+    }
   },
   {
     id: '4',
     slug: 'destinations-populaires-maroc',
-    title: 'Top 10 des Destinations Accessibles en Jet Privé depuis le Maroc',
-    excerpt: 'Explorez les destinations les plus prisées accessibles en jet privé depuis le Maroc. De l\'Europe à l\'Afrique, découvrez où votre prochain vol peut vous emmener.',
-    category: 'Destinations',
+    title: {
+      fr: 'Top 10 des Destinations Accessibles en Jet Privé depuis le Maroc',
+      en: 'Top 10 Destinations Accessible by Private Jet from Morocco'
+    },
+    excerpt: {
+      fr: 'Explorez les destinations les plus prisées accessibles en jet privé depuis le Maroc. De l\'Europe à l\'Afrique, découvrez où votre prochain vol peut vous emmener.',
+      en: 'Explore the most popular destinations accessible by private jet from Morocco. From Europe to Africa, discover where your next flight can take you.'
+    },
+    category: {
+      fr: 'Destinations',
+      en: 'Destinations'
+    },
     image: '/assets/images/offers/Hawker 900XP/1.png',
     publishedAt: '2024-11-05',
-    readTime: '6 min',
-    tags: ['Destinations', 'Voyages', 'Maroc'],
-    content: `
+    readTime: {
+      fr: '6 min',
+      en: '6 min'
+    },
+    tags: {
+      fr: ['Destinations', 'Voyages', 'Maroc'],
+      en: ['Destinations', 'Travel', 'Morocco']
+    },
+    content: {
+      fr: `
 # Top 10 des Destinations Accessibles en Jet Privé depuis le Maroc
 
 Le Maroc, situé au carrefour de l'Europe et de l'Afrique, offre une position géographique idéale pour explorer le monde en jet privé. Découvrez les destinations les plus populaires auprès de nos clients.
@@ -665,19 +1142,248 @@ Rome attire pour :
 Depuis le Maroc, le monde est à portée de main. Que ce soit pour les affaires ou le plaisir, l'aviation privée vous ouvre les portes de destinations prestigieuses avec un confort et une flexibilité inégalés.
 
 **Où souhaitez-vous aller ?** Contactez FlyElite dès aujourd'hui et laissez-nous organiser votre prochain voyage sur mesure.
-    `
+      `,
+      en: `
+# Top 10 Destinations Accessible by Private Jet from Morocco
+
+Morocco, located at the crossroads of Europe and Africa, offers an ideal geographical position to explore the world by private jet. Discover the most popular destinations among our clients.
+
+## 1. Paris, France (2h30 flight)
+
+### Why Paris?
+
+The French capital remains the preferred destination for:
+- International business meetings
+- Luxury shopping
+- Cultural events
+- Exceptional gastronomy
+
+### Our Recommendations
+
+- **Le Bourget Airport**: Historic private terminal, 20 minutes from downtown
+- **Best time**: Spring and autumn to avoid crowds
+- **Ideal duration**: Extended weekend or full week
+
+## 2. London, United Kingdom (3h flight)
+
+### The Business Capital
+
+London attracts for:
+- Global financial center
+- Investment opportunities
+- Shopping in Mayfair and Knightsbridge
+- Artistic and theatrical scene
+
+### Privileged Access
+
+- **London Luton** or **Farnborough**: Exclusive private airports
+- **Quick transfer** to the City or West End
+- **VIP services** upon arrival
+
+## 3. Geneva, Switzerland (2h45 flight)
+
+### The Alpine Financial Hub
+
+Destination of choice for:
+- Private banking and wealth management
+- Luxury watchmaking
+- Skiing in the Swiss Alps
+- Discretion and confidentiality
+
+### Advantages
+
+- **Geneva International Airport**: Dedicated private section
+- **Proximity** to ski resorts (Verbier, Gstaad)
+- **Swiss neutrality** and stability
+
+## 4. Dubai, United Arab Emirates (6h30 flight)
+
+### The New Eldorado
+
+Dubai attracts with:
+- Booming business opportunities
+- Luxury and extravagance
+- Hub to Asia
+- Advantageous taxation
+
+### Highlights
+
+- **Al Maktoum International**: Ultra-modern private airport
+- **Shopping** at Dubai Mall and Mall of the Emirates
+- **7-star hotels** and unique experiences
+
+## 5. Madrid, Spain (1h45 flight)
+
+### The Closest European Capital
+
+Madrid offers:
+- Ideal geographical proximity
+- Spanish culture and gastronomy
+- Business and commerce
+- World-renowned art and museums
+
+### Facilities
+
+- **Cuatro Vientos Airport**: Private terminal
+- **Short flight** perfect for a same-day round trip
+- **Connections** throughout Spain
+
+## 6. Dakar, Senegal (3h flight)
+
+### The Gateway to West Africa
+
+Dakar attracts for:
+- Commercial expansion in Africa
+- Investment projects
+- Vibrant culture
+- Paradisiacal beaches
+
+### Opportunities
+
+- **Blaise Diagne Airport**: Modern infrastructure
+- **Regional hub** for Francophone Africa
+- **Rapidly growing market**
+
+## 7. Istanbul, Turkey (4h30 flight)
+
+### The Bridge Between Two Continents
+
+Istanbul fascinates with:
+- Strategic Europe-Asia position
+- Millennial history
+- Exceptional gastronomy
+- Business opportunities
+
+### Assets
+
+- **Atatürk Airport**: Private terminal
+- **Bosphorus** and Ottoman palaces
+- **Shopping** at Grand Bazaar and modern boutiques
+
+## 8. Nice, French Riviera (2h15 flight)
+
+### Mediterranean Glamour
+
+The French Riviera for:
+- Relaxation and luxury
+- Festivals and events (Cannes, Monaco)
+- Provençal gastronomy
+- Exceptional climate
+
+### Premium Experience
+
+- **Nice Côte d'Azur Airport**: Private terminal
+- **Proximity** to Monaco, Cannes, Saint-Tropez
+- **Yachting** and luxury lifestyle
+
+## 9. Abidjan, Ivory Coast (4h flight)
+
+### The Economic Powerhouse
+
+Abidjan attracts for:
+- Strong economic growth
+- Infrastructure investments
+- West African financial hub
+- Business opportunities
+
+### Advantages
+
+- **Félix Houphouët-Boigny Airport**: Well-equipped
+- **French-speaking** facilitating exchanges
+- **Dynamic and expanding market**
+
+## 10. Rome, Italy (3h flight)
+
+### The Eternal City
+
+Rome attracts for:
+- Incomparable history and culture
+- Authentic Italian gastronomy
+- Fashion and design
+- Art and architecture
+
+### Italian Charm
+
+- **Ciampino Airport**: Private terminal close to downtown
+- **Roman Dolce Vita**
+- **Shopping** via Condotti and via Veneto
+
+## Emerging Destinations
+
+### Soon to be Popular
+
+- **Lagos, Nigeria**: African economic giant
+- **Lisbon, Portugal**: European tech hub
+- **Malta**: Attractive taxation
+- **Marrakech-Agadir**: Premium domestic flights
+
+## Plan Your Next Flight
+
+### With FlyElite
+
+- **300+ accessible airports**
+- **Total flexibility** on destinations
+- **Multiple stopovers** possible
+- **Personalized advice** according to your needs
+
+### Transparent Pricing
+
+- Instant online quote
+- All-inclusive prices
+- No hidden fees
+- Flexible payment options
+
+## Tips for Choosing Your Destination
+
+### Consider
+
+1. **Trip purpose**: Business, leisure, mixed
+2. **Stay duration**: Short or long term
+3. **Season**: Weather and events
+4. **Formalities**: Visas and required documents
+5. **Local logistics**: Hotels, transport, services
+
+### Optimize
+
+- **Combine multiple cities** in one trip
+- **Take advantage of stopovers** to multiply opportunities
+- **Plan ahead** for best availability
+
+## Conclusion
+
+From Morocco, the world is at your fingertips. Whether for business or pleasure, private aviation opens the doors to prestigious destinations with unmatched comfort and flexibility.
+
+**Where would you like to go?** Contact FlyElite today and let us organize your next tailor-made trip.
+      `
+    }
   },
   {
     id: '5',
     slug: 'guide-premier-vol-jet-prive',
-    title: 'Votre Premier Vol en Jet Privé : Guide Complet du Débutant',
-    excerpt: 'Tout ce que vous devez savoir avant votre premier vol en jet privé. De la réservation à l\'atterrissage, découvrez comment profiter pleinement de cette expérience unique.',
-    category: 'Guide',
+    title: {
+      fr: 'Votre Premier Vol en Jet Privé : Guide Complet du Débutant',
+      en: 'Your First Private Jet Flight: Complete Beginner\'s Guide'
+    },
+    excerpt: {
+      fr: 'Tout ce que vous devez savoir avant votre premier vol en jet privé. De la réservation à l\'atterrissage, découvrez comment profiter pleinement de cette expérience unique.',
+      en: 'Everything you need to know before your first private jet flight. From booking to landing, discover how to fully enjoy this unique experience.'
+    },
+    category: {
+      fr: 'Guide',
+      en: 'Guide'
+    },
     image: '/assets/images/offers/Embraer Phenom 300/3.png',
     publishedAt: '2024-11-03',
-    readTime: '8 min',
-    tags: ['Guide Débutant', 'Première Fois', 'Conseils'],
-    content: `
+    readTime: {
+      fr: '8 min',
+      en: '8 min'
+    },
+    tags: {
+      fr: ['Guide Débutant', 'Première Fois', 'Conseils'],
+      en: ['Beginner Guide', 'First Time', 'Tips']
+    },
+    content: {
+      fr: `
 # Votre Premier Vol en Jet Privé : Guide Complet du Débutant
 
 Vous vous apprêtez à vivre votre premier vol en jet privé ? Félicitations ! Cette expérience va transformer votre perception du voyage aérien. Voici tout ce que vous devez savoir pour en profiter pleinement.
@@ -941,6 +1647,272 @@ Votre premier vol en jet privé sera une révélation. La combinaison de confort
 **Prêt pour votre premier vol ?** Contactez-nous dès aujourd'hui. Notre équipe vous guidera à chaque étape pour que votre première expérience en jet privé soit absolument parfaite.
 
 **Bienvenue dans le monde de l'aviation privée !**
-    `
+      `,
+      en: `
+# Your First Private Jet Flight: Complete Beginner's Guide
+
+You're about to experience your first private jet flight? Congratulations! This experience will transform your perception of air travel. Here's everything you need to know to fully enjoy it.
+
+## Before the Flight: Preparation
+
+### Booking
+
+**How far in advance?**
+- Ideally 48-72h for the best choice
+- Possible in 2-4h for emergencies
+- Earlier = more options and better rates
+
+**What information to provide?**
+- Full passenger names (as on passports)
+- Desired dates and times
+- Departure and arrival airports
+- Dietary preferences
+- Special needs (pets, medical equipment)
+
+### Required Documents
+
+**For domestic flights:**
+- Valid national ID card
+- Booking confirmation
+
+**For international flights:**
+- Valid passport (minimum 6 months)
+- Required visas depending on destination
+- Health certificates if necessary
+- Travel insurance (recommended)
+
+### What to Pack?
+
+**Cabin Baggage**
+- Unlike commercial flights, almost everything is allowed
+- Liquids without volume restrictions
+- Sharp objects generally permitted
+- Still check with your operator
+
+**Checked Baggage**
+- Limits depending on aircraft type
+- Inquire when booking
+- Possibility to transport unusual items (skis, golf clubs, bikes)
+
+## Departure Day
+
+### Airport Arrival
+
+**Perfect Timing**
+- Arrive 15-20 minutes before departure
+- No need for 2-3 hours like commercial flights
+- The crew is waiting for you
+
+**Where to Go?**
+- Private terminal (FBO - Fixed Base Operator)
+- Exact address provided with your confirmation
+- Often free and secure parking
+- Personalized welcome upon arrival
+
+### Express Check-in
+
+**Simplified Formalities**
+- No queuing
+- Quick and discreet security check
+- Document verification in minutes
+- Private lounge while waiting for boarding
+
+### VIP Lounge
+
+**Enjoy the Comfort**
+- Free drinks and snacks
+- High-speed Wi-Fi
+- Workspaces
+- Private meeting rooms
+- Sometimes spa and concierge services
+
+## Boarding
+
+### Going Aboard
+
+**Simplicity and Elegance**
+- Walk directly to the aircraft
+- No crowded buses or jetways
+- Warm welcome from the crew
+- Assistance with luggage
+
+### Discovering the Cabin
+
+**Your Private Space**
+- Configuration varies by aircraft
+- Spacious leather seats
+- Work tables
+- Private toilets
+- Sometimes bedrooms and showers (large aircraft)
+
+### Meeting the Crew
+
+**Your Dedicated Team**
+- Experienced pilots
+- Attentive flight attendant
+- Personalized safety briefing
+- Available for any request
+
+## During the Flight
+
+### Takeoff
+
+**Unique Sensations**
+- Smoother acceleration than commercial
+- Rapid climb
+- Less turbulence thanks to high cruising altitude
+- Stunning views from large windows
+
+### In-Flight Comfort
+
+**Relax or Work**
+- Seats recline to 180°
+- Space to move freely
+- Temperature adjustable to your preference
+- Reduced noise level
+
+### Onboard Services
+
+**Gourmet Catering**
+- Personalized menu according to your tastes
+- Fresh cuisine prepared by chefs
+- Quality wines and champagnes
+- Service on demand, no imposed schedule
+
+**Entertainment and Connectivity**
+- High-speed Wi-Fi (on most aircraft)
+- Audiovisual systems
+- Electrical and USB outlets
+- Ability to make phone calls
+
+### In-Flight Productivity
+
+**Turn Flight into Opportunity**
+- Confidential meetings
+- Professional calls without disturbance
+- Focused work
+- Or simply rest and relaxation
+
+## Landing and Arrival
+
+### Smooth Descent
+
+**Comfortable End of Flight**
+- Smooth landing
+- Often on private runways
+- Stop close to terminal
+
+### Quick Disembarkation
+
+**Maximum Efficiency**
+- Immediate exit after stop
+- Luggage retrieved in minutes
+- Expedited customs formalities
+- Transfer to your final destination
+
+### Ground Services
+
+**Premium Service Continuity**
+- Chauffeur-driven car available
+- Hotel assistance
+- Local concierge
+- Organization of your activities
+
+## Etiquette and Best Practices
+
+### Dress Code
+
+**No Strict Rules**
+- Business casual generally appropriate
+- Casual attire accepted
+- Adapt to your destination
+- Comfort above all
+
+### Onboard Behavior
+
+**Respect and Courtesy**
+- Thank the crew
+- Respect the aircraft (no shoes on seats)
+- Phone allowed but moderate volume
+- Smoker? Ask if permitted
+
+### Tipping
+
+**Appreciated Gesture but Not Mandatory**
+- 5-10% of flight cost for crew
+- Or flat amount (€100-500 depending on flight)
+- Discreetly given to captain
+- Already included in some packages
+
+## Beginner FAQs
+
+### "Can I bring my pet?"
+
+Yes! It's one of the great advantages:
+- Your pet travels with you in cabin
+- No cage necessary (depending on size)
+- Inform when booking
+
+### "What happens if I'm late?"
+
+- The plane waits for you (it's YOUR flight)
+- Total flexibility on schedule
+- Communication with crew
+
+### "Can I modify my itinerary in flight?"
+
+- Yes, within limits of possibility
+- Depending on airport availability
+- Additional costs may apply
+
+### "Is it really safe?"
+
+- Same safety standards as commercial aviation
+- Often stricter
+- Highly qualified pilots
+- Rigorous maintenance
+
+## After Your First Flight
+
+### Feedback
+
+**Your Opinion Matters**
+- Share your experience
+- Improvement suggestions
+- Compliments for the crew
+
+### Next Flights
+
+**You'll Be Hooked**
+- Hard to return to commercial aviation
+- Loyalty programs available
+- Preferential rates for regular clients
+
+## Pro Tips
+
+### Maximize Your Experience
+
+1. **Communicate your preferences** in advance
+2. **Arrive relaxed**, everything is managed for you
+3. **Enjoy the moment**, it's a unique experience
+4. **Take photos** (with permission)
+5. **Stay flexible**, that's the private advantage
+
+### Mistakes to Avoid
+
+- Don't arrive too early (15 min is enough)
+- Forgetting to communicate dietary needs
+- Neglecting travel documents
+- Stressing unnecessarily (everything is simple)
+
+## Conclusion
+
+Your first private jet flight will be a revelation. The combination of comfort, flexibility, and efficiency will transform your way of traveling. At FlyElite, we're committed to making this first experience perfect and memorable.
+
+**Ready for your first flight?** Contact us today. Our team will guide you through every step to ensure your first private jet experience is absolutely perfect.
+
+**Welcome to the world of private aviation!**
+      `
+    }
   }
 ]

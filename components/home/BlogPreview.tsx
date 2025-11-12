@@ -5,8 +5,10 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import BlogCard from '@/components/blog/BlogCard'
 import { blogPosts } from '@/data/blog-posts'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function BlogPreview() {
+  const { t } = useLanguage()
   const latestPosts = blogPosts.slice(0, 2)
 
   return (
@@ -19,10 +21,10 @@ export default function BlogPreview() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Derniers Articles
+            {t('home.blog.title')}
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Découvrez nos conseils et guides pour profiter au mieux de votre expérience en aviation privée
+            {t('home.blog.subtitle')}
           </p>
         </motion.div>
 
@@ -42,7 +44,7 @@ export default function BlogPreview() {
             href="/blog"
             className="inline-flex items-center gap-2 bg-primary hover:bg-accent text-white px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg"
           >
-            <span>Voir tous les articles</span>
+            <span>{t('home.blog.viewAll')}</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.div>

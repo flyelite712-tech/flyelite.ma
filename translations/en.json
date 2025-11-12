@@ -1,0 +1,342 @@
+{
+  "nav": {
+    "home": "Home",
+    "offers": "Offers",
+    "concept": "Our Concept",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Book your",
+    "titleHighlight": "private jet",
+    "titleEnd": "in just 5 minutes!",
+    "subtitle": "Enjoy the best price and",
+    "subtitleHighlight": "exceptional service.",
+    "location": "Business Aviation Morocco",
+    "tagline": "The sky at your fingertips"
+  },
+  "search": {
+    "roundTrip": "ROUND TRIP",
+    "oneWay": "ONE WAY",
+    "from": "WHERE ARE YOU DEPARTING FROM?",
+    "to": "WHERE ARE YOU GOING?",
+    "passengers": "PASSENGER",
+    "departure": "DEPARTURE",
+    "return": "RETURN",
+    "search": "Search",
+    "quoteTitle": "Quote Request",
+    "quoteDescription": "A representative will contact you as soon as possible to assist you",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Additional information...",
+    "consent": "I accept the terms and conditions",
+    "back": "Back",
+    "send": "Send",
+    "sending": "Sending...",
+    "successTitle": "Request sent!",
+    "successMessage": "We have received your request. A representative will contact you very soon."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Our team is available 24/7",
+    "infoTitle": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "formTitle": "Send us a message",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "✓ Message sent successfully!",
+    "successMessage": "We will respond to you as soon as possible.",
+    "required": "*"
+  },
+  "offers": {
+    "title": "Current Offers",
+    "subtitle": "Take advantage of our empty leg flights at exceptional prices",
+    "maxPassengers": "For {count} passengers max",
+    "details": "Flight Details",
+    "departureDate": "Departure Date",
+    "schedule": "Schedule",
+    "aircraft": "Aircraft",
+    "capacity": "Capacity",
+    "flightDuration": "Flight Duration",
+    "totalPrice": "Total Price",
+    "bookNow": "Book this flight",
+    "bookingForm": "Booking Form",
+    "passengers": "Number of passengers",
+    "cancel": "Cancel",
+    "confirm": "Confirm Booking",
+    "confirming": "Sending...",
+    "bookingConfirmed": "Booking confirmed!",
+    "confirmationMessage": "We have received your booking. A confirmation email has been sent to you.",
+    "redirecting": "Redirecting to offers..."
+  },
+  "footer": {
+    "description": "Rent your private jet. In 5 minutes, at the best price!",
+    "menu": "MENU",
+    "legal": "LEGAL",
+    "legalNotice": "Legal notice",
+    "termsOfSale": "Terms of Sale",
+    "termsOfUse": "Terms of Use",
+    "resources": "RESOURCES",
+    "resourcesLink": "Resources",
+    "pressRelease": "Press release",
+    "rights": "All rights reserved.",
+    "developedBy": "Developed with excellence and passion by"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "required": "*",
+    "close": "Close",
+    "readMore": "Read more",
+    "backToHome": "Back to home"
+  },
+  "topBar": {
+    "text": "Currency: MAD — Any questions? Feel free to contact us at +212 689 33 02 02 - +33 744 96 62 68 - +1 514 210 9209 or contact@flyelite.ma"
+  },
+  "home": {
+    "offersCarousel": {
+      "title": "Current Offers",
+      "subtitle": "Take advantage of our empty leg flights at reduced prices",
+      "viewAll": "View all flights",
+      "previous": "Previous offer",
+      "next": "Next offer",
+      "forMaxPassengers": "For {count} passengers max"
+    },
+    "features": {
+      "feature1Title": "Book Instantly",
+      "feature1Description": "It's noon, and you decide to travel for personal, family, or business reasons. Imagine taking off in 5 hours to your desired destination by booking a private jet in less than 5 minutes.",
+      "feature2Title": "Partner with the Best Airlines",
+      "feature2Description": "Saving time is the main goal of booking a private jet. That's why Fly Elite collaborates with the best airlines. Our algorithms optimize your flight by combining maximum data.",
+      "feature3Title": "A Jet at Business Class Price",
+      "feature3Description": "Fly Elite makes private jet travel accessible. Board in minutes, without wasting time, at business class prices - that's our commitment."
+    },
+    "benefits": {
+      "title": "Why choose",
+      "titleHighlight": "Fly Elite",
+      "benefit1Title": "Safety Standards",
+      "benefit1Description": "Compliance with the highest aviation safety standards",
+      "benefit2Title": "Book in less than 5 minutes",
+      "benefit2Description": "Simple and fast booking process",
+      "benefit3Title": "Luxury Travel Inspiration",
+      "benefit3Description": "Travel in comfort and elegance",
+      "benefit4Title": "Helicopter Transfers Available",
+      "benefit4Description": "Premium transfer service in Europe",
+      "benefit5Title": "Exclusive Events in Europe",
+      "benefit5Description": "Access to VIP events"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Tell us your requirements and one of our experts will send you a quote",
+      "question1": "Can I leave at the last minute?",
+      "answer1": "Yes, you can leave at the last minute. The Fly Elite team certifies that your plane will take off 72 hours after your request (after approval from all relevant authorities).",
+      "question2": "Can I book my flight by phone?",
+      "answer2": "No, it is not possible to book your flight by phone. All bookings are made online via our secure platform.",
+      "question3": "What are the advantages of a private jet?",
+      "answer3": "A private jet offers you flexibility, time savings, optimal comfort and confidentiality. You avoid queues and travel according to your own schedule.",
+      "question4": "How many passengers can travel?",
+      "answer4": "Capacity varies depending on the type of aircraft. Our jets can accommodate from 4 to 14 passengers depending on the model chosen.",
+      "question5": "Can I modify my booking?",
+      "answer5": "Yes, you can modify your booking under certain conditions. Contact our team to learn about modification procedures."
+    },
+    "concept": {
+      "title": "Book Instantly",
+      "description": "It's noon, you decide to travel for personal, family, or business reasons. Imagine taking off in a few hours to your desired destination by booking a private jet in less than 5 minutes.",
+      "stat1": "Over 23,000",
+      "stat1Description": "Coverage of",
+      "stat1Highlight": "165 countries",
+      "stat2": "Booking in",
+      "stat2Highlight": "less than 5 minutes",
+      "stat3": "Available",
+      "stat3Highlight": "24/7",
+      "learnMore": "Learn more"
+    },
+    "blog": {
+      "title": "Latest Articles",
+      "subtitle": "Discover our tips and guides to make the most of your private aviation experience",
+      "viewAll": "View all articles"
+    },
+    "reviews": {
+      "title": "What our clients say",
+      "subtitle": "Discover testimonials from our satisfied customers",
+      "rating": "out of 500+ reviews",
+      "ctaTitle": "Join our satisfied customers",
+      "ctaSubtitle": "Book your flight in less than 5 minutes",
+      "ctaButton": "View Our Offers",
+      "available247": "Available 24/7",
+      "responseTime": "Response in less than 2h",
+      "securePayment": "Secure payment",
+      "noHiddenFees": "No hidden fees"
+    }
+  },
+  "concept": {
+    "title": "Our Concept",
+    "subtitle": "Excellence at the service of your journey",
+    "intro": {
+      "title": "Book your private jet instantly",
+      "paragraph1": "It's noon, you decide to travel for personal, family, or business reasons. Imagine taking off in a few hours to your desired destination by booking a private jet in less than 5 minutes.",
+      "paragraph2": "At Fly Elite, we make business aviation accessible, simple and transparent. Our platform allows you to compare, book and fly with complete peace of mind."
+    },
+    "features": {
+      "feature1Title": "Worldwide Coverage",
+      "feature1Description": "Over 23,000 airports in 165 countries. Wherever you go, we'll take you there.",
+      "feature2Title": "Complete Fleet",
+      "feature2Description": "From light jets to long-haul aircraft, we have the perfect plane for every mission.",
+      "feature3Title": "Fast Booking",
+      "feature3Description": "Book in less than 5 minutes. Takeoff possible a few hours after your request.",
+      "feature4Title": "Maximum Safety",
+      "feature4Description": "All our operators are certified and comply with the strictest safety standards.",
+      "feature5Title": "Personalized Service",
+      "feature5Description": "A dedicated team available 24/7 to meet all your needs and requirements.",
+      "feature6Title": "Excellence & Comfort",
+      "feature6Description": "Travel in luxury and comfort with our high-end aircraft and premium services."
+    },
+    "howItWorks": {
+      "title": "How does it work?",
+      "step1Title": "Search",
+      "step1Description": "Use our form to indicate your itinerary, dates and number of passengers.",
+      "step2Title": "Receive your quote",
+      "step2Description": "Our team contacts you quickly with a personalized and transparent quote.",
+      "step3Title": "Take off",
+      "step3Description": "Confirm your booking and get ready to experience an exceptional flight experience."
+    },
+    "cta": {
+      "title": "Ready to take off?",
+      "description": "Request your personalized quote now and discover the excellence of private jet travel.",
+      "button": "Request a quote"
+    }
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to your questions about our private jet services",
+    "categories": {
+      "booking": "Booking",
+      "pricing": "Pricing and Payment",
+      "aircraft": "Aircraft and Services",
+      "safety": "Safety and Regulations",
+      "destinations": "Destinations and Routes"
+    },
+    "booking": {
+      "q1": "How do I book a private jet flight?",
+      "a1": "You can book via our search form on the homepage. Select your departure and arrival airports, choose your dates, then submit your request. Our team will contact you quickly with a personalized quote.",
+      "q2": "What is the minimum notice required to book a flight?",
+      "a2": "We can arrange flights with just a few hours' notice. However, to ensure availability and benefit from the best rates, we recommend booking at least 24 to 48 hours in advance.",
+      "q3": "Can I modify or cancel my booking?",
+      "a3": "Yes, modifications and cancellations are possible according to your contract terms. Cancellation fees vary depending on the notice given. Contact our team for more details about your specific booking."
+    },
+    "pricing": {
+      "q1": "How are prices calculated?",
+      "a1": "Prices depend on several factors: flight distance, aircraft type, availability, airport taxes and additional services. Our 'Current Offers' display fixed prices for empty leg flights at reduced rates.",
+      "q2": "What payment methods do you accept?",
+      "a2": "We accept bank transfers, credit cards (Visa, Mastercard, American Express) and check payments for regular clients. A deposit is usually required when booking.",
+      "q3": "Are there any hidden fees?",
+      "a3": "No, all our quotes are transparent and include all mandatory fees. The only possible additional costs concern optional services you choose (premium catering, ground transfers, etc.)."
+    },
+    "aircraft": {
+      "q1": "What types of aircraft do you offer?",
+      "a1": "Our fleet includes a wide range of aircraft, from light jets (4-6 passengers) to long-haul jets (12-16 passengers). Each aircraft meets the strictest safety standards and offers optimal comfort.",
+      "q2": "Can I choose my aircraft?",
+      "a2": "Yes, you can express your preferences when making your request. We will offer you available aircraft matching your needs in terms of capacity, range and budget.",
+      "q3": "What services are included on board?",
+      "a3": "All our flights include basic service: leather seats, Wi-Fi, refreshments and snacks. Premium services (gourmet meals, champagne, special equipment) can be added on request."
+    },
+    "safety": {
+      "q1": "Are your flights safe?",
+      "a1": "Absolutely. All our operators are certified and comply with the strictest aviation safety standards. Aircraft undergo regular maintenance and crews are highly qualified.",
+      "q2": "What documents are required to travel?",
+      "a2": "For domestic flights, a valid ID is sufficient. For international flights, a valid passport is required. Depending on the destination, a visa may be necessary. We will inform you of specific requirements.",
+      "q3": "What happens in case of unfavorable weather conditions?",
+      "a3": "Safety is our absolute priority. In case of dangerous weather conditions, the flight may be delayed or postponed. We will keep you informed in real time and offer alternatives."
+    },
+    "destinations": {
+      "q1": "Where can I fly?",
+      "a1": "We cover over 23,000 airports in 165 countries. Whether for a domestic flight in Morocco or an intercontinental journey, we can arrange your flight to almost any destination.",
+      "q2": "Do you offer multi-destination flights?",
+      "a2": "Yes, we can arrange complex itineraries with multiple stops. This is ideal for business tours or multi-destination tourist trips.",
+      "q3": "Can I land at small airports?",
+      "a3": "Yes, one of the advantages of private jets is access to thousands of regional and private airports inaccessible to commercial flights, bringing you closer to your final destination."
+    },
+    "cta": {
+      "title": "Can't find the answer to your question?",
+      "description": "Our team is available 24/7 to answer all your questions",
+      "button": "Contact us"
+    }
+  },
+  "blogPage": {
+    "title": "FlyElite Blog",
+    "subtitle": "Discover our tips, guides and news about private aviation",
+    "filters": {
+      "all": "All",
+      "guide": "Guide",
+      "tutorial": "Tutorial",
+      "faq": "FAQ"
+    },
+    "noArticles": "No articles available at the moment.",
+    "readMore": "Read more",
+    "readTime": "read"
+  },
+  "blogPost": {
+    "backToBlog": "Back to blog",
+    "publishedOn": "Published on",
+    "readTime": "read",
+    "shareArticle": "Share this article:",
+    "share": "Share",
+    "relatedPosts": "Related articles",
+    "cta": {
+      "title": "Ready to Book Your Private Flight?",
+      "description": "Discover our exclusive offers and book in less than 5 minutes",
+      "button": "View offers"
+    }
+  },
+  "offersPage": {
+    "title": "Current Offers",
+    "subtitle": "Take advantage of our empty leg flights at exceptional prices",
+    "medicalBadge": "MEDICAL FLIGHT",
+    "from": "From anywhere",
+    "to": "To anywhere",
+    "forMaxPassengers": "For {count} passengers max",
+    "onRequest": "On request",
+    "customQuote": "Custom quote",
+    "anytime": "Anytime"
+  },
+  "offerDetail": {
+    "notFound": "Offer not found",
+    "backToOffers": "Back to offers",
+    "departureFrom": "Departure from anywhere",
+    "arrivalTo": "To anywhere",
+    "departureDate": "Departure date",
+    "schedule": "Schedule",
+    "aircraft": "Aircraft",
+    "capacity": "Capacity",
+    "passengersMax": "{count} passengers max",
+    "flightDuration": "Flight duration",
+    "medicalEquipment": "Medical Equipment On Board",
+    "includedServices": "Included Services",
+    "totalPrice": "Total price",
+    "contactForQuote": "Contact us for a personalized quote",
+    "forMaxPassengers": "For {count} passengers maximum",
+    "bookThisFlight": "Book this flight",
+    "bookingForm": "Booking form",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "passengers": "Number of passengers",
+    "notes": "Notes (optional)",
+    "consent": "I accept the terms and conditions and confirm my booking",
+    "cancel": "Cancel",
+    "confirmBooking": "Confirm booking",
+    "sending": "Sending...",
+    "bookingConfirmed": "Booking confirmed!",
+    "confirmationSent": "We have received your booking. A confirmation email has been sent to you.",
+    "redirecting": "Redirecting to offers...",
+    "required": "*"
+  }
+}

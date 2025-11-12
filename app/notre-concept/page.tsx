@@ -1,13 +1,12 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Plane, Shield, Clock, Users, Globe, Star } from 'lucide-react'
-
-export const metadata = {
-  title: 'Notre Concept - Fly Elite',
-  description: 'Découvrez notre vision de l\'aviation d\'affaires',
-}
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function NotreConceptPage() {
+  const { t } = useLanguage()
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -15,7 +14,7 @@ export default function NotreConceptPage() {
         <div className="absolute inset-0">
           <Image
             src="/assets/images/concept-hero.jpg"
-            alt="Notre Concept"
+            alt={t('concept.title')}
             fill
             className="object-cover opacity-30"
           />
@@ -23,10 +22,10 @@ export default function NotreConceptPage() {
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center text-center">
           <div>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-              Notre Concept
+              {t('concept.title')}
             </h1>
             <p className="text-xl text-white/90">
-              L'excellence au service de votre voyage
+              {t('concept.subtitle')}
             </p>
           </div>
         </div>
@@ -38,17 +37,13 @@ export default function NotreConceptPage() {
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
             <h2 className="text-3xl font-bold text-primary mb-6">
-              Réservez instantanément votre jet privé
+              {t('concept.intro.title')}
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Il est 12 heures, vous décidez de partir en voyage, pour des raisons personnelles,
-              familiales, professionnelles. Imaginez décoller dans quelques heures, vers la
-              destination souhaitée, en réservant un jet privé en moins de 5 minutes.
+              {t('concept.intro.paragraph1')}
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Chez <strong className="text-accent">Fly Elite</strong>, nous rendons l'aviation d'affaires
-              accessible, simple et transparente. Notre plateforme vous permet de comparer, réserver
-              et voler en toute sérénité.
+              {t('concept.intro.paragraph2')}
             </p>
           </div>
         </div>
@@ -60,11 +55,10 @@ export default function NotreConceptPage() {
               <Globe className="text-accent" size={32} />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">
-              Couverture Mondiale
+              {t('concept.features.feature1Title')}
             </h3>
             <p className="text-gray-600">
-              Plus de <strong>23 000 aéroports</strong> dans <strong>165 pays</strong>.
-              Où que vous alliez, nous vous y emmenons.
+              {t('concept.features.feature1Description')}
             </p>
           </div>
 
@@ -73,11 +67,10 @@ export default function NotreConceptPage() {
               <Plane className="text-accent" size={32} />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">
-              Flotte Complète
+              {t('concept.features.feature2Title')}
             </h3>
             <p className="text-gray-600">
-              Du jet léger au long-courrier, nous avons l'appareil parfait
-              pour chaque mission.
+              {t('concept.features.feature2Description')}
             </p>
           </div>
 
@@ -86,11 +79,10 @@ export default function NotreConceptPage() {
               <Clock className="text-accent" size={32} />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">
-              Réservation Rapide
+              {t('concept.features.feature3Title')}
             </h3>
             <p className="text-gray-600">
-              Réservez en moins de 5 minutes. Décollage possible quelques heures
-              après votre demande.
+              {t('concept.features.feature3Description')}
             </p>
           </div>
 
@@ -99,11 +91,10 @@ export default function NotreConceptPage() {
               <Shield className="text-accent" size={32} />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">
-              Sécurité Maximale
+              {t('concept.features.feature4Title')}
             </h3>
             <p className="text-gray-600">
-              Tous nos opérateurs sont certifiés et respectent les normes
-              de sécurité les plus strictes.
+              {t('concept.features.feature4Description')}
             </p>
           </div>
 
@@ -112,11 +103,10 @@ export default function NotreConceptPage() {
               <Users className="text-accent" size={32} />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">
-              Service Personnalisé
+              {t('concept.features.feature5Title')}
             </h3>
             <p className="text-gray-600">
-              Une équipe dédiée disponible 24/7 pour répondre à tous vos besoins
-              et exigences.
+              {t('concept.features.feature5Description')}
             </p>
           </div>
 
@@ -125,11 +115,10 @@ export default function NotreConceptPage() {
               <Star className="text-accent" size={32} />
             </div>
             <h3 className="text-xl font-bold text-primary mb-4">
-              Excellence & Confort
+              {t('concept.features.feature6Title')}
             </h3>
             <p className="text-gray-600">
-              Voyagez dans le luxe et le confort avec nos appareils haut de gamme
-              et services premium.
+              {t('concept.features.feature6Description')}
             </p>
           </div>
         </div>
@@ -137,7 +126,7 @@ export default function NotreConceptPage() {
         {/* How It Works */}
         <div className="max-w-5xl mx-auto mb-16">
           <h2 className="text-4xl font-bold text-primary text-center mb-12">
-            Comment ça marche ?
+            {t('concept.howItWorks.title')}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -146,11 +135,10 @@ export default function NotreConceptPage() {
                 1
               </div>
               <h3 className="text-xl font-bold text-primary mb-4">
-                Recherchez
+                {t('concept.howItWorks.step1Title')}
               </h3>
               <p className="text-gray-600">
-                Utilisez notre formulaire pour indiquer votre itinéraire,
-                vos dates et le nombre de passagers.
+                {t('concept.howItWorks.step1Description')}
               </p>
             </div>
 
@@ -159,11 +147,10 @@ export default function NotreConceptPage() {
                 2
               </div>
               <h3 className="text-xl font-bold text-primary mb-4">
-                Recevez votre devis
+                {t('concept.howItWorks.step2Title')}
               </h3>
               <p className="text-gray-600">
-                Notre équipe vous contacte rapidement avec un devis personnalisé
-                et transparent.
+                {t('concept.howItWorks.step2Description')}
               </p>
             </div>
 
@@ -172,11 +159,10 @@ export default function NotreConceptPage() {
                 3
               </div>
               <h3 className="text-xl font-bold text-primary mb-4">
-                Envolez-vous
+                {t('concept.howItWorks.step3Title')}
               </h3>
               <p className="text-gray-600">
-                Confirmez votre réservation et préparez-vous à vivre une
-                expérience de vol exceptionnelle.
+                {t('concept.howItWorks.step3Description')}
               </p>
             </div>
           </div>
@@ -186,23 +172,23 @@ export default function NotreConceptPage() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-primary to-accent rounded-xl p-12 text-center text-white">
             <h2 className="text-4xl font-bold mb-6">
-              Prêt à décoller ?
+              {t('concept.cta.title')}
             </h2>
             <p className="text-xl mb-8">
-              Découvrez nos offres du moment ou demandez un devis personnalisé
+              {t('concept.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/offres"
                 className="inline-block bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
               >
-                Voir les offres
+                {t('offers.title')}
               </Link>
               <Link
                 href="/"
                 className="inline-block bg-accent/20 border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all transform hover:scale-105"
               >
-                Demander un devis
+                {t('concept.cta.button')}
               </Link>
             </div>
           </div>

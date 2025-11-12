@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react'
 import settings from '@/data/settings.json'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function TopBar() {
+  const { t } = useLanguage()
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
 
@@ -35,7 +37,7 @@ export default function TopBar() {
       style={{ backgroundColor: settings.topBar.bg }}
     >
       <p className="container mx-auto leading-tight">
-        {settings.topBar.text}
+        {t('topBar.text')}
       </p>
     </div>
   )

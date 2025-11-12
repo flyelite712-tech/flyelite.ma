@@ -3,8 +3,11 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import SearchTabs from '../search/SearchTabs'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Hero() {
+  const { t } = useLanguage()
+  
   return (
     <section className="relative min-h-[50vh] md:min-h-[70vh] lg:min-h-[90vh] flex items-center bg-gradient-to-br from-primary via-primary to-[#1a5a8a]">
       {/* Background Image with Overlay */}
@@ -31,16 +34,16 @@ export default function Hero() {
               className="text-white"
             >
               <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-2 md:mb-4 leading-tight">
-                Réservez votre  <span className="text-accent">jet privé</span> en seulement 5 min !
+                {t('hero.title')} <span className="text-accent">{t('hero.titleHighlight')}</span> {t('hero.titleEnd')}
               </h1>
               <p className="text-lg md:text-2xl lg:text-3xl mb-3 md:mb-6 font-semibold">
-               Profitez du meilleur prix et<span className="text-accent"> d’un service d’exception.</span>
+                {t('hero.subtitle')}<span className="text-accent"> {t('hero.subtitleHighlight')}</span>
               </p>
               <p className="text-sm md:text-lg lg:text-xl mb-2 md:mb-4 font-medium">
-                Aviation d'Affaires Maroc
+                {t('hero.location')}
               </p>
               <p className="text-xs md:text-base lg:text-lg italic text-gray-200">
-                " Le ciel à portée de vos doigts "
+                " {t('hero.tagline')} "
               </p>
             </motion.div>
 

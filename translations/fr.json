@@ -1,0 +1,342 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "offers": "Offres",
+    "concept": "Notre Concept",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Réservez votre",
+    "titleHighlight": "jet privé",
+    "titleEnd": "en seulement 5 min !",
+    "subtitle": "Profitez du meilleur prix et",
+    "subtitleHighlight": "d'un service d'exception.",
+    "location": "Aviation d'Affaires Maroc",
+    "tagline": "Le ciel à portée de vos doigts"
+  },
+  "search": {
+    "roundTrip": "ALLER - RETOUR",
+    "oneWay": "ALLER SIMPLE",
+    "from": "D'OÙ PARTEZ-VOUS ?",
+    "to": "OÙ ALLEZ-VOUS ?",
+    "passengers": "PASSAGER",
+    "departure": "ALLER",
+    "return": "RETOUR",
+    "search": "Rechercher",
+    "quoteTitle": "Demande de Devis",
+    "quoteDescription": "Un responsable vous contactera dans les plus brefs délais pour vous assister",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "notes": "Notes (optionnel)",
+    "notesPlaceholder": "Informations supplémentaires...",
+    "consent": "J'accepte les termes et conditions",
+    "back": "Retour",
+    "send": "Envoyer",
+    "sending": "Envoi...",
+    "successTitle": "Demande envoyée !",
+    "successMessage": "Nous avons bien reçu votre demande. Un responsable vous contactera très bientôt."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Notre équipe est à votre disposition 24/7",
+    "infoTitle": "Informations de contact",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "formTitle": "Envoyez-nous un message",
+    "subject": "Sujet",
+    "message": "Message",
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "successTitle": "✓ Message envoyé avec succès !",
+    "successMessage": "Nous vous répondrons dans les plus brefs délais.",
+    "required": "*"
+  },
+  "offers": {
+    "title": "Offres du moment",
+    "subtitle": "Profitez de nos vols à vide à prix exceptionnels",
+    "maxPassengers": "Pour {count} passagers max",
+    "details": "Détails du vol",
+    "departureDate": "Date de départ",
+    "schedule": "Horaires",
+    "aircraft": "Appareil",
+    "capacity": "Capacité",
+    "flightDuration": "Durée du vol",
+    "totalPrice": "Prix total",
+    "bookNow": "Réserver ce vol",
+    "bookingForm": "Formulaire de réservation",
+    "passengers": "Nombre de passagers",
+    "cancel": "Annuler",
+    "confirm": "Confirmer la réservation",
+    "confirming": "Envoi...",
+    "bookingConfirmed": "Réservation confirmée !",
+    "confirmationMessage": "Nous avons bien reçu votre réservation. Un email de confirmation vous a été envoyé.",
+    "redirecting": "Redirection vers les offres..."
+  },
+  "footer": {
+    "description": "Louez votre jet privé. En 5 minutes, au meilleur prix !",
+    "menu": "MENU",
+    "legal": "LÉGALES",
+    "legalNotice": "Mentions légales",
+    "termsOfSale": "CGV",
+    "termsOfUse": "CGU",
+    "resources": "RESSOURCES",
+    "resourcesLink": "Ressources",
+    "pressRelease": "Communiqué de presse",
+    "rights": "Tous droits réservés.",
+    "developedBy": "Développé avec excellence et passion par"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "required": "Champ obligatoire",
+    "close": "Fermer",
+    "readMore": "Lire la suite",
+    "backToHome": "Retour à l'accueil"
+  },
+  "topBar": {
+    "text": "Devise : MAD — Une question ? N'hésitez pas à nous contacter au +212 689 33 02 02 - +33 744 96 62 68 - +1 514 210 9209 ou contact@flyelite.ma"
+  },
+  "home": {
+    "offersCarousel": {
+      "title": "Offres du moment",
+      "subtitle": "Profitez de nos vols à vide à prix réduits",
+      "viewAll": "Voir les autres vols",
+      "previous": "Offre précédente",
+      "next": "Offre suivante",
+      "forMaxPassengers": "Pour {count} passagers max"
+    },
+    "features": {
+      "feature1Title": "Réservez instantanément",
+      "feature1Description": "Il est 12 heures, et vous décidez de partir en voyage pour des raisons personnelles, familiales ou professionnelles. Imaginez décoller dans 5 heures vers votre destination souhaitée, en réservant un jet privé en moins de 5 minutes.",
+      "feature2Title": "Partenaire des meilleures compagnies",
+      "feature2Description": "Gagner du temps est l'objectif principal de la réservation d'un jet privé. C'est pourquoi Fly Elite collabore avec les meilleures compagnies aériennes. Nos algorithmes optimisent votre vol en cumulant un maximum de données.",
+      "feature3Title": "Un jet au prix de la classe business",
+      "feature3Description": "Fly Elite rend le voyage en jet privé accessible. Embarquez en quelques minutes, sans perdre de temps, au prix d'une classe business, tel est notre engagement."
+    },
+    "benefits": {
+      "title": "Pourquoi choisir",
+      "titleHighlight": "Fly Elite",
+      "benefit1Title": "Normes de sécurité",
+      "benefit1Description": "Respect des plus hauts standards de sécurité aérienne",
+      "benefit2Title": "Réservez en moins de 5 minutes",
+      "benefit2Description": "Processus de réservation simple et rapide",
+      "benefit3Title": "Inspiration de voyage de luxe",
+      "benefit3Description": "Voyagez dans le confort et l'élégance",
+      "benefit4Title": "Transferts en hélicoptère disponibles",
+      "benefit4Description": "Service de transfert premium en Europe",
+      "benefit5Title": "Événements exclusifs en Europe",
+      "benefit5Description": "Accès à des événements VIP"
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "subtitle": "Dites-nous vos exigences et un de nos experts vous enverra un devis",
+      "question1": "Puis-je partir à la dernière minute ?",
+      "answer1": "Oui, vous pouvez partir à la dernière minute. L'équipe de Fly Elite vous certifie que votre avion décollera après 72 H de votre demande (après l'approbation de toutes les autorités compétentes).",
+      "question2": "Puis-je réserver mon vol par téléphone ?",
+      "answer2": "Non, il est impossible de réserver son vol par téléphone. Toutes les réservations se font en ligne via notre plateforme sécurisée.",
+      "question3": "Quels sont les avantages d'un jet privé ?",
+      "answer3": "Le jet privé vous offre flexibilité, gain de temps, confort optimal et confidentialité. Vous évitez les files d'attente et voyagez selon votre propre emploi du temps.",
+      "question4": "Combien de passagers peuvent voyager ?",
+      "answer4": "La capacité varie selon le type d'avion. Nos jets peuvent accueillir de 4 à 14 passagers selon le modèle choisi.",
+      "question5": "Puis-je modifier ma réservation ?",
+      "answer5": "Oui, vous pouvez modifier votre réservation sous certaines conditions. Contactez notre équipe pour connaître les modalités de modification."
+    },
+    "concept": {
+      "title": "Réservez instantanément",
+      "description": "Il est 12 heures, vous décidez de partir en voyage, pour des raisons personnelles, familiales, professionnelles, imaginez décoller dans quelques heures, dans la destination souhaitée, en réservant un jet privé en moins de 5 minutes.",
+      "stat1": "+ de 23 000",
+      "stat1Description": "Couverture de",
+      "stat1Highlight": "165 pays",
+      "stat2": "Réservation en",
+      "stat2Highlight": "moins de 5 minutes",
+      "stat3": "Disponible",
+      "stat3Highlight": "24h/24, 7j/7",
+      "learnMore": "En savoir plus"
+    },
+    "blog": {
+      "title": "Derniers Articles",
+      "subtitle": "Découvrez nos conseils et guides pour profiter au mieux de votre expérience en aviation privée",
+      "viewAll": "Voir tous les articles"
+    },
+    "reviews": {
+      "title": "Ce que disent nos clients",
+      "subtitle": "Découvrez les témoignages de nos clients satisfaits",
+      "rating": "sur 500+ avis",
+      "ctaTitle": "Rejoignez nos clients satisfaits",
+      "ctaSubtitle": "Réservez votre vol en moins de 5 minutes",
+      "ctaButton": "Voir Nos Offres",
+      "available247": "Disponible 24/7",
+      "responseTime": "Réponse en moins de 2h",
+      "securePayment": "Paiement sécurisé",
+      "noHiddenFees": "Sans frais cachés"
+    }
+  },
+  "concept": {
+    "title": "Notre Concept",
+    "subtitle": "L'excellence au service de votre voyage",
+    "intro": {
+      "title": "Réservez instantanément votre jet privé",
+      "paragraph1": "Il est 12 heures, vous décidez de partir en voyage, pour des raisons personnelles, familiales, professionnelles. Imaginez décoller dans quelques heures, vers la destination souhaitée, en réservant un jet privé en moins de 5 minutes.",
+      "paragraph2": "Chez Fly Elite, nous rendons l'aviation d'affaires accessible, simple et transparente. Notre plateforme vous permet de comparer, réserver et voler en toute sérénité."
+    },
+    "features": {
+      "feature1Title": "Couverture Mondiale",
+      "feature1Description": "Plus de 23 000 aéroports dans 165 pays. Où que vous alliez, nous vous y emmenons.",
+      "feature2Title": "Flotte Complète",
+      "feature2Description": "Du jet léger au long-courrier, nous avons l'appareil parfait pour chaque mission.",
+      "feature3Title": "Réservation Rapide",
+      "feature3Description": "Réservez en moins de 5 minutes. Décollage possible quelques heures après votre demande.",
+      "feature4Title": "Sécurité Maximale",
+      "feature4Description": "Tous nos opérateurs sont certifiés et respectent les normes de sécurité les plus strictes.",
+      "feature5Title": "Service Personnalisé",
+      "feature5Description": "Une équipe dédiée disponible 24/7 pour répondre à tous vos besoins et exigences.",
+      "feature6Title": "Excellence & Confort",
+      "feature6Description": "Voyagez dans le luxe et le confort avec nos appareils haut de gamme et services premium."
+    },
+    "howItWorks": {
+      "title": "Comment ça marche ?",
+      "step1Title": "Recherchez",
+      "step1Description": "Utilisez notre formulaire pour indiquer votre itinéraire, vos dates et le nombre de passagers.",
+      "step2Title": "Recevez votre devis",
+      "step2Description": "Notre équipe vous contacte rapidement avec un devis personnalisé et transparent.",
+      "step3Title": "Envolez-vous",
+      "step3Description": "Confirmez votre réservation et préparez-vous à vivre une expérience de vol exceptionnelle."
+    },
+    "cta": {
+      "title": "Prêt à décoller ?",
+      "description": "Demandez votre devis personnalisé dès maintenant et découvrez l'excellence du voyage en jet privé.",
+      "button": "Demander un devis"
+    }
+  },
+  "faqPage": {
+    "title": "Questions Fréquentes",
+    "subtitle": "Trouvez les réponses à vos questions sur nos services de jets privés",
+    "categories": {
+      "booking": "Réservation",
+      "pricing": "Tarifs et Paiement",
+      "aircraft": "Appareils et Services",
+      "safety": "Sécurité et Réglementation",
+      "destinations": "Destinations et Itinéraires"
+    },
+    "booking": {
+      "q1": "Comment réserver un vol en jet privé ?",
+      "a1": "Vous pouvez réserver via notre formulaire de recherche sur la page d'accueil. Sélectionnez vos aéroports de départ et d'arrivée, choisissez vos dates, puis soumettez votre demande. Notre équipe vous contactera rapidement avec un devis personnalisé.",
+      "q2": "Quel est le délai minimum pour réserver un vol ?",
+      "a2": "Nous pouvons organiser des vols avec seulement quelques heures de préavis. Cependant, pour garantir la disponibilité et bénéficier des meilleurs tarifs, nous recommandons de réserver au moins 24 à 48 heures à l'avance.",
+      "q3": "Puis-je modifier ou annuler ma réservation ?",
+      "a3": "Oui, les modifications et annulations sont possibles selon les conditions de votre contrat. Les frais d'annulation varient en fonction du préavis donné. Contactez notre équipe pour plus de détails concernant votre réservation spécifique."
+    },
+    "pricing": {
+      "q1": "Comment sont calculés les prix ?",
+      "a1": "Les prix dépendent de plusieurs facteurs : distance du vol, type d'appareil, disponibilité, taxes aéroportuaires et services additionnels. Nos 'Offres du Moment' affichent des prix fixes pour des vols à vide à tarifs réduits.",
+      "q2": "Quels modes de paiement acceptez-vous ?",
+      "a2": "Nous acceptons les virements bancaires, cartes de crédit (Visa, Mastercard, American Express) et paiements par chèque pour les clients réguliers. Un acompte est généralement requis lors de la réservation.",
+      "q3": "Y a-t-il des frais cachés ?",
+      "a3": "Non, tous nos devis sont transparents et incluent tous les frais obligatoires. Les seuls coûts supplémentaires possibles concernent les services optionnels que vous choisissez (restauration premium, transferts terrestres, etc.)."
+    },
+    "aircraft": {
+      "q1": "Quels types d'appareils proposez-vous ?",
+      "a1": "Notre flotte comprend une large gamme d'appareils, des jets légers (4-6 passagers) aux jets long-courriers (12-16 passagers). Chaque appareil respecte les normes de sécurité les plus strictes et offre un confort optimal.",
+      "q2": "Puis-je choisir mon appareil ?",
+      "a2": "Oui, vous pouvez exprimer vos préférences lors de votre demande. Nous vous proposerons les appareils disponibles correspondant à vos besoins en termes de capacité, autonomie et budget.",
+      "q3": "Quels services sont inclus à bord ?",
+      "a3": "Tous nos vols incluent un service de base : sièges en cuir, Wi-Fi, rafraîchissements et collations. Des services premium (repas gastronomiques, champagne, équipements spéciaux) peuvent être ajoutés sur demande."
+    },
+    "safety": {
+      "q1": "Vos vols sont-ils sûrs ?",
+      "a1": "Absolument. Tous nos opérateurs sont certifiés et respectent les normes de sécurité aérienne les plus strictes. Les appareils subissent des maintenances régulières et les équipages sont hautement qualifiés.",
+      "q2": "Quels documents sont nécessaires pour voyager ?",
+      "a2": "Pour les vols domestiques, une pièce d'identité valide suffit. Pour les vols internationaux, un passeport en cours de validité est requis. Selon la destination, un visa peut être nécessaire. Nous vous informerons des exigences spécifiques.",
+      "q3": "Que se passe-t-il en cas de conditions météorologiques défavorables ?",
+      "a3": "La sécurité est notre priorité absolue. En cas de conditions météo dangereuses, le vol peut être retardé ou reporté. Nous vous tiendrons informé en temps réel et proposerons des alternatives."
+    },
+    "destinations": {
+      "q1": "Où puis-je voler ?",
+      "a1": "Nous couvrons plus de 23 000 aéroports dans 165 pays. Que ce soit pour un vol domestique au Maroc ou un voyage intercontinental, nous pouvons organiser votre vol vers presque toutes les destinations.",
+      "q2": "Proposez-vous des vols multi-destinations ?",
+      "a2": "Oui, nous pouvons organiser des itinéraires complexes avec plusieurs escales. C'est idéal pour les tournées d'affaires ou les voyages touristiques multi-destinations.",
+      "q3": "Puis-je atterrir dans des petits aéroports ?",
+      "a3": "Oui, l'un des avantages du jet privé est l'accès à des milliers d'aéroports régionaux et privés inaccessibles aux vols commerciaux, vous rapprochant ainsi de votre destination finale."
+    },
+    "cta": {
+      "title": "Vous ne trouvez pas la réponse à votre question ?",
+      "description": "Notre équipe est disponible 24/7 pour répondre à toutes vos questions",
+      "button": "Contactez-nous"
+    }
+  },
+  "blogPage": {
+    "title": "Blog FlyElite",
+    "subtitle": "Découvrez nos conseils, guides et actualités sur l'aviation privée",
+    "filters": {
+      "all": "Tous",
+      "guide": "Guide",
+      "tutorial": "Tutoriel",
+      "faq": "FAQ"
+    },
+    "noArticles": "Aucun article disponible pour le moment.",
+    "readMore": "Lire plus",
+    "readTime": "de lecture"
+  },
+  "blogPost": {
+    "backToBlog": "Retour au blog",
+    "publishedOn": "Publié le",
+    "readTime": "de lecture",
+    "shareArticle": "Partager cet article :",
+    "share": "Partager",
+    "relatedPosts": "Articles similaires",
+    "cta": {
+      "title": "Prêt à Réserver Votre Vol Privé ?",
+      "description": "Découvrez nos offres exclusives et réservez en moins de 5 minutes",
+      "button": "Voir les offres"
+    }
+  },
+  "offersPage": {
+    "title": "Offres du moment",
+    "subtitle": "Profitez de nos vols à vide à prix exceptionnels",
+    "medicalBadge": "VOL SANITAIRE",
+    "from": "De partout",
+    "to": "Vers partout",
+    "forMaxPassengers": "Pour {count} passagers max",
+    "onRequest": "Sur demande",
+    "customQuote": "Devis personnalisé",
+    "anytime": "N'importe quand"
+  },
+  "offerDetail": {
+    "notFound": "Offre non trouvée",
+    "backToOffers": "Retour aux offres",
+    "departureFrom": "Départ de n'importe où",
+    "arrivalTo": "Vers n'importe où",
+    "departureDate": "Date de départ",
+    "schedule": "Horaires",
+    "aircraft": "Appareil",
+    "capacity": "Capacité",
+    "passengersMax": "{count} passagers max",
+    "flightDuration": "Durée du vol",
+    "medicalEquipment": "Équipements Médicaux à Bord",
+    "includedServices": "Services Inclus",
+    "totalPrice": "Prix total",
+    "contactForQuote": "Contactez-nous pour un devis personnalisé",
+    "forMaxPassengers": "Pour {count} passagers maximum",
+    "bookThisFlight": "Réserver ce vol",
+    "bookingForm": "Formulaire de réservation",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "passengers": "Nombre de passagers",
+    "notes": "Notes (optionnel)",
+    "consent": "J'accepte les termes et conditions et confirme ma réservation",
+    "cancel": "Annuler",
+    "confirmBooking": "Confirmer la réservation",
+    "sending": "Envoi...",
+    "bookingConfirmed": "Réservation confirmée !",
+    "confirmationSent": "Nous avons bien reçu votre réservation. Un email de confirmation vous a été envoyé.",
+    "redirecting": "Redirection vers les offres...",
+    "required": "*"
+  }
+}

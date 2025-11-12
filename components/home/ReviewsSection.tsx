@@ -3,8 +3,11 @@
 import { motion } from 'framer-motion'
 import { Star, Quote } from 'lucide-react'
 import { reviews } from '@/data/reviews'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function ReviewsSection() {
+  const { t } = useLanguage()
+  
   return (
     <section className="relative py-20 overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-accent">
       {/* Animated Background Pattern */}
@@ -59,10 +62,10 @@ export default function ReviewsSection() {
           </motion.div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Ce Que Disent Nos Clients
+            {t('home.reviews.title')}
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Plus de 500 clients satisfaits nous font confiance pour leurs voyages d'affaires et de loisirs
+            {t('home.reviews.subtitle')}
           </p>
           
           {/* Rating Summary */}
@@ -79,7 +82,7 @@ export default function ReviewsSection() {
               ))}
             </div>
             <span className="text-white font-bold text-xl ml-2">5.0</span>
-            <span className="text-white/80">sur 500+ avis</span>
+            <span className="text-white/80">{t('home.reviews.rating')}</span>
           </motion.div>
         </motion.div>
 
@@ -137,14 +140,14 @@ export default function ReviewsSection() {
         >
           <div className="inline-flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
             <div className="text-white">
-              <p className="text-2xl font-bold mb-1">Rejoignez nos clients satisfaits</p>
-              <p className="text-white/80">Réservez votre vol en moins de 5 minutes</p>
+              <p className="text-2xl font-bold mb-1">{t('home.reviews.ctaTitle')}</p>
+              <p className="text-white/80">{t('home.reviews.ctaSubtitle')}</p>
             </div>
             <a
               href="/offres"
               className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg whitespace-nowrap"
             >
-              Voir Nos Offres
+              {t('home.reviews.ctaButton')}
             </a>
           </div>
         </motion.div>
@@ -159,19 +162,19 @@ export default function ReviewsSection() {
         >
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span>Disponible 24/7</span>
+            <span>{t('home.reviews.available247')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span>Réponse en moins de 2h</span>
+            <span>{t('home.reviews.responseTime')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span>Paiement sécurisé</span>
+            <span>{t('home.reviews.securePayment')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            <span>Sans frais cachés</span>
+            <span>{t('home.reviews.noHiddenFees')}</span>
           </div>
         </motion.div>
       </div>

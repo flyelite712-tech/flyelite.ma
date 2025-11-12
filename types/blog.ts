@@ -1,12 +1,30 @@
 export interface BlogPost {
   id: string
   slug: string
-  title: string
-  excerpt: string
-  content: string
+  title: {
+    fr: string
+    en: string
+  }
+  excerpt: {
+    fr: string
+    en: string
+  }
+  content: {
+    fr: string
+    en: string
+  }
   publishedAt: string
-  readTime: string
-  category: string
+  readTime: {
+    fr: string
+    en: string
+  }
+  category: {
+    fr: string
+    en: string
+  }
   image: string
-  tags: string[]
+  tags: {
+    fr: string[]
+    en: string[]
+  }
 }

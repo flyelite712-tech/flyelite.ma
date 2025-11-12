@@ -6,6 +6,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppButton from '@/components/common/WhatsAppButton'
 import ScrollToTop from '@/components/common/ScrollToTop'
+import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -23,16 +24,18 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.variable}>
-        <TopBar />
-        <Header />
-        <main className="min-h-screen pt-[4.5rem] md:pt-28 lg:pt-24">
-          {children}
-        </main>
-        <Footer />
-        
-        {/* Floating Action Buttons */}
-        <WhatsAppButton />
-        <ScrollToTop />
+        <LanguageProvider>
+          <TopBar />
+          <Header />
+          <main className="min-h-screen pt-[4.5rem] md:pt-28 lg:pt-24">
+            {children}
+          </main>
+          <Footer />
+          
+          {/* Floating Action Buttons */}
+          <WhatsAppButton />
+          <ScrollToTop />
+        </LanguageProvider>
       </body>
     </html>
   )

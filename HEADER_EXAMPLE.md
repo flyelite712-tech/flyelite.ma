@@ -1,3 +1,46 @@
+# How to Add Language Switcher to Header
+
+## Option 1: Add Next to CTA Button (Recommended)
+
+Replace lines 74-82 in `components/layout/Header.tsx`:
+
+```tsx
+{/* CTA Button & Language Switcher Desktop */}
+<div className="hidden lg:flex items-center space-x-4">
+  <LanguageSwitcher />
+  <Link
+    href="/"
+    className="bg-accent hover:bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all transform hover:scale-105 shadow-md"
+  >
+    {t('nav.quote')}  {/* or keep "Demander un devis" */}
+  </Link>
+</div>
+```
+
+## Option 2: Add to Mobile Menu
+
+Add after line 107 in the mobile menu section:
+
+```tsx
+{navigation.map((item) => (
+  // ... existing code
+))}
+
+{/* Add Language Switcher in Mobile Menu */}
+<div className="px-4 py-3">
+  <LanguageSwitcher />
+</div>
+
+<Link href="/" ...>
+  Demander un devis
+</Link>
+```
+
+## Complete Example with Translations
+
+Here's the full updated Header with language support:
+
+```tsx
 'use client'
 
 import Link from 'next/link'
@@ -7,7 +50,6 @@ import { Menu, X } from 'lucide-react'
 import settings from '@/data/settings.json'
 import LanguageSwitcher from '@/components/common/LanguageSwitcher'
 import { useLanguage } from '@/contexts/LanguageContext'
-
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -19,7 +61,6 @@ export default function Header() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
       
-      // Sync with TopBar visibility
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
         setIsTopBarVisible(false)
       } else {
@@ -129,3 +170,41 @@ export default function Header() {
     </header>
   )
 }
+```
+
+## What Changed?
+
+1. **Import statements added**:
+   - `LanguageSwitcher` component
+   - `useLanguage` hook
+
+2. **Navigation uses translations**:
+   - `t('nav.offers')` instead of hardcoded "Offres Du Moment"
+   - `t('nav.concept')` instead of "Notre Concept"
+   - etc.
+
+3. **Language switcher added**:
+   - Desktop: Next to CTA button
+   - Mobile: In the mobile menu
+
+## Quick Integration (Minimal Changes)
+
+If you want to keep hardcoded text for now, just add the switcher:
+
+```tsx
+// Add import at top
+import LanguageSwitcher from '@/components/common/LanguageSwitcher'
+
+// Replace line 75-82 with:
+<div className="hidden lg:flex items-center space-x-4">
+  <LanguageSwitcher />
+  <Link
+    href="/"
+    className="bg-accent hover:bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all transform hover:scale-105 shadow-md"
+  >
+    Demander un devis
+  </Link>
+</div>
+```
+
+That's it! The language switcher will appear and work immediately. 🎉

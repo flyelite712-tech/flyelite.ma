@@ -26,6 +26,15 @@ export interface Offer {
   }
   gallery: string[]
   featured: boolean
+  isMedical?: boolean
+  medicalDetails?: {
+    type: string
+    description: string
+    equipment: string[]
+    crew: string[]
+    services: string[]
+    suitableFor: string[]
+  }
 }
 
 export interface QuoteRequest {

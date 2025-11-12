@@ -3,30 +3,32 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function FAQPreview() {
+  const { t } = useLanguage()
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const faqs = [
     {
-      question: 'Puis-je partir à la dernière minute ?',
-      answer: 'Oui, vous pouvez partir à la dernière minute. L\'équipe de Fly Elite vous certifie que votre avion décollera après 72 H de votre demande (après l\'approbation de toutes les autorités compétentes).'
+      questionKey: 'home.faq.question1',
+      answerKey: 'home.faq.answer1'
     },
     {
-      question: 'Puis-je réserver mon vol par téléphone ?',
-      answer: 'Non, il est impossible de réserver son vol par téléphone. Toutes les réservations se font en ligne via notre plateforme sécurisée.'
+      questionKey: 'home.faq.question2',
+      answerKey: 'home.faq.answer2'
     },
     {
-      question: 'Quels sont les avantages d\'un jet privé ?',
-      answer: 'Le jet privé vous offre flexibilité, gain de temps, confort optimal et confidentialité. Vous évitez les files d\'attente et voyagez selon votre propre emploi du temps.'
+      questionKey: 'home.faq.question3',
+      answerKey: 'home.faq.answer3'
     },
     {
-      question: 'Combien de passagers peuvent voyager ?',
-      answer: 'La capacité varie selon le type d\'avion. Nos jets peuvent accueillir de 4 à 14 passagers selon le modèle choisi.'
+      questionKey: 'home.faq.question4',
+      answerKey: 'home.faq.answer4'
     },
     {
-      question: 'Puis-je modifier ma réservation ?',
-      answer: 'Oui, vous pouvez modifier votre réservation sous certaines conditions. Contactez notre équipe pour connaître les modalités de modification.'
+      questionKey: 'home.faq.question5',
+      answerKey: 'home.faq.answer5'
     }
   ]
 
@@ -41,10 +43,10 @@ export default function FAQPreview() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Questions Fréquentes
+            {t('home.faq.title')}
           </h2>
           <p className="text-gray-600 text-lg">
-            Dites-nous vos exigences et un de nos experts vous enverra un devis
+            {t('home.faq.subtitle')}
           </p>
         </motion.div>
 
@@ -65,7 +67,7 @@ export default function FAQPreview() {
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
                     className="w-full bg-primary text-white px-6 py-4 rounded-lg flex items-center justify-between hover:bg-primary/90 transition-colors text-left group"
                   >
-                    <span className="font-medium">{faq.question}</span>
+                    <span className="font-medium">{t(faq.questionKey)}</span>
                     <ChevronDown
                       size={20}
                       className={`transform transition-transform flex-shrink-0 ml-4 ${
@@ -87,7 +89,7 @@ export default function FAQPreview() {
                         <div className="mt-3 ml-8">
                           <div className="bg-[#C9A961] text-white px-6 py-4 rounded-lg relative">
                             <div className="absolute -left-2 top-4 w-0 h-0 border-t-8 border-t-transparent border-r-8 border-r-[#C9A961] border-b-8 border-b-transparent"></div>
-                            <p className="text-sm leading-relaxed">{faq.answer}</p>
+                            <p className="text-sm leading-relaxed">{t(faq.answerKey)}</p>
                           </div>
                         </div>
                       </motion.div>

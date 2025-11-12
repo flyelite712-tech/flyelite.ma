@@ -1,16 +1,15 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar, Plane } from 'lucide-react'
 import offers from '@/data/offers.json'
 import airports from '@/data/airports.json'
 import { formatPrice } from '@/lib/utils'
-
-export const metadata = {
-  title: 'Offres du Moment - Fly Elite',
-  description: 'Découvrez nos offres de vols en jet privé à prix réduits',
-}
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function OffresPage() {
+  const { t, language } = useLanguage()
   const getAirportCity = (code: string) => {
     const airport = airports.find(a => a.code === code)
     return airport?.city || code
@@ -22,10 +21,10 @@ export default function OffresPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-primary mb-4">
-            Offres du moment
+            {t('offersPage.title')}
           </h1>
           <p className="text-xl text-gray-600">
-            Profitez de nos vols à vide à prix exceptionnels
+            {t('offersPage.subtitle')}
           </p>
         </div>
 
@@ -41,8 +40,18 @@ export default function OffresPage() {
                 {/* Date Badge */}
                 <div className="relative">
                   <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-lg font-bold text-sm z-10">
-                    {new Date(offer.date).toLocaleDateString('fr-FR', { day: '2-digit', month: 'short' })}
+                    {offer.date === "N'importe quand" ? t('offersPage.anytime') : new Date(offer.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', { day: '2-digit', month: 'short' })}
                   </div>
+                  
+                  {/* Medical Badge */}
+                  {offer.isMedical && (
+                    <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-lg font-bold text-xs z-10 flex items-center">
+                      <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                      </svg>
+                      {t('offersPage.medicalBadge')}
+                    </div>
+                  )}
                   
                   {/* Image */}
                   <div className="relative h-56 bg-gray-200">
@@ -61,7 +70,9 @@ export default function OffresPage() {
                   <div className="flex items-center justify-between mb-4">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-primary">{offer.from}</div>
-                      <div className="text-sm text-gray-500">{getAirportCity(offer.from)}</div>
+                      <div className="text-sm text-gray-500">
+                        {offer.from === 'Worldwide' ? t('offersPage.from') : getAirportCity(offer.from)}
+                      </div>
                     </div>
                     <div className="flex-1 flex items-center justify-center">
                       <div className="border-t-2 border-dashed border-gray-300 flex-1 mx-2"></div>
@@ -70,7 +81,9 @@ export default function OffresPage() {
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-primary">{offer.to}</div>
-                      <div className="text-sm text-gray-500">{getAirportCity(offer.to)}</div>
+                      <div className="text-sm text-gray-500">
+                        {offer.to === 'Worldwide' ? t('offersPage.to') : getAirportCity(offer.to)}
+                      </div>
                     </div>
                   </div>
 
@@ -89,10 +102,10 @@ export default function OffresPage() {
                   {/* Price */}
                   <div className="border-t pt-4">
                     <div className="text-3xl font-bold text-accent">
-                      {formatPrice(offer.price.amount, offer.price.currency)}
+                      {offer.price.amount === 0 ? t('offersPage.onRequest') : formatPrice(offer.price.amount, offer.price.currency)}
                     </div>
                     <div className="text-sm text-gray-500 mt-1">
-                      Pour {offer.seats} passagers max
+                      {offer.price.amount === 0 ? t('offersPage.customQuote') : t('offersPage.forMaxPassengers').replace('{count}', offer.seats.toString())}
                     </div>
                   </div>
                 </div>

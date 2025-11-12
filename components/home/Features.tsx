@@ -2,28 +2,31 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Features() {
- const features = [
-  {
-    title: 'Réservez instantanément',
-    description: "Il est 12 heures, et vous décidez de partir en voyage pour des raisons personnelles, familiales ou professionnelles. Imaginez décoller dans 5 heures vers votre destination souhaitée, en réservant un jet privé en moins de 5 minutes.",
-    image: '/assets/images/offers/Embraer Phenom 300/1.png',
-    imagePosition: 'right' as const
-  },
-  {
-    title: 'Partenaire des meilleures compagnies',
-    description: "Gagner du temps est l'objectif principal de la réservation d'un jet privé. C'est pourquoi Fly Elite collabore avec les meilleures compagnies aériennes. Nos algorithmes optimisent votre vol en cumulant un maximum de données.",
-    image: '/assets/images/offers/Embraer Phenom 300/2.png',
-    imagePosition: 'left' as const
-  },
-  {
-    title: 'Un jet au prix de la classe business',
-    description: "Fly Elite rend le voyage en jet privé accessible. Embarquez en quelques minutes, sans perdre de temps, au prix d'une classe business, tel est notre engagement.",
-    image: '/assets/images/offers/Hawker 900XP/1.png',
-    imagePosition: 'right' as const
-  }
-]
+  const { t } = useLanguage()
+  
+  const features = [
+    {
+      titleKey: 'home.features.feature1Title',
+      descriptionKey: 'home.features.feature1Description',
+      image: '/assets/images/offers/Embraer Phenom 300/1.png',
+      imagePosition: 'right' as const
+    },
+    {
+      titleKey: 'home.features.feature2Title',
+      descriptionKey: 'home.features.feature2Description',
+      image: '/assets/images/offers/Embraer Phenom 300/2.png',
+      imagePosition: 'left' as const
+    },
+    {
+      titleKey: 'home.features.feature3Title',
+      descriptionKey: 'home.features.feature3Description',
+      image: '/assets/images/offers/Hawker 900XP/1.png',
+      imagePosition: 'right' as const
+    }
+  ]
 
 
   return (
@@ -48,7 +51,7 @@ export default function Features() {
                 <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl">
                   <Image
                     src={feature.image}
-                    alt={feature.title}
+                    alt={t(feature.titleKey)}
                     fill
                     className="object-cover"
                   />
@@ -65,11 +68,11 @@ export default function Features() {
               >
                 <div className="bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100">
                   <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-                    {feature.title}
+                    {t(feature.titleKey)}
                   </h3>
                   <div className="w-16 h-1 bg-accent mb-6"></div>
                   <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-                    {feature.description}
+                    {t(feature.descriptionKey)}
                   </p>
                 </div>
               </motion.div>

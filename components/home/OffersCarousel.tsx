@@ -8,8 +8,10 @@ import { motion } from 'framer-motion'
 import offers from '@/data/offers.json'
 import airports from '@/data/airports.json'
 import { formatPrice, formatDate } from '@/lib/utils'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function OffersCarousel() {
+  const { t, language } = useLanguage()
   const containerRef = useRef<HTMLDivElement>(null)
   const allOffers = offers // Show ALL offers, not just featured
 
@@ -43,10 +45,10 @@ export default function OffersCarousel() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Offres du moment
+            {t('home.offersCarousel.title')}
           </h2>
           <p className="text-lg text-gray-600">
-            Profitez de nos vols à vide à prix réduits
+            {t('home.offersCarousel.subtitle')}
           </p>
         </motion.div>
 
@@ -56,7 +58,7 @@ export default function OffersCarousel() {
           <button
             onClick={() => scroll('left')}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 z-10 bg-white hover:bg-accent text-primary hover:text-white p-3 md:p-4 rounded-full shadow-xl transition-all transform hover:scale-110"
-            aria-label="Offre précédente"
+            aria-label={t('home.offersCarousel.previous')}
           >
             <ChevronLeft size={24} />
           </button>
@@ -64,7 +66,7 @@ export default function OffersCarousel() {
           <button
             onClick={() => scroll('right')}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 z-10 bg-white hover:bg-accent text-primary hover:text-white p-3 md:p-4 rounded-full shadow-xl transition-all transform hover:scale-110"
-            aria-label="Offre suivante"
+            aria-label={t('home.offersCarousel.next')}
           >
             <ChevronRight size={24} />
           </button>
@@ -99,7 +101,7 @@ export default function OffersCarousel() {
                       {/* Date Badge */}
                       <div className="relative">
                         <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-lg font-bold text-sm z-10">
-                          {new Date(offer.date).toLocaleDateString('fr-FR', { day: '2-digit', month: 'short' })}
+                          {offer.date === "N'importe quand" ? t('offersPage.anytime') : new Date(offer.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', { day: '2-digit', month: 'short' })}
                         </div>
                         
                         {/* Image */}
@@ -147,10 +149,10 @@ export default function OffersCarousel() {
                         {/* Price */}
                         <div className="border-t pt-4">
                           <div className="text-3xl font-bold text-accent">
-                            {formatPrice(offer.price.amount, offer.price.currency)}
+                            {offer.price.amount === 0 ? t('offersPage.onRequest') : formatPrice(offer.price.amount, offer.price.currency)}
                           </div>
                           <div className="text-xs text-gray-500 mt-1">
-                            Pour {offer.seats} passagers max
+                            {offer.price.amount === 0 ? t('offersPage.customQuote') : t('home.offersCarousel.forMaxPassengers').replace('{count}', offer.seats.toString())}
                           </div>
                         </div>
                       </div>
@@ -167,7 +169,7 @@ export default function OffersCarousel() {
             href="/offres"
             className="inline-block bg-accent hover:bg-primary text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
           >
-            Voir les autres vols
+            {t('home.offersCarousel.viewAll')}
           </Link>
         </div>
       </div>

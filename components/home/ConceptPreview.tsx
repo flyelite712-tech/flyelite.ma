@@ -3,8 +3,11 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function ConceptPreview() {
+  const { t } = useLanguage()
+  
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
@@ -18,7 +21,7 @@ export default function ConceptPreview() {
           >
             <Image
               src="/assets/images/offers/Embraer Phenom 300/3.png"
-              alt="Réservez instantanément"
+              alt={t('home.concept.title')}
               fill
               className="object-cover"
             />
@@ -31,12 +34,10 @@ export default function ConceptPreview() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Réservez instantanément
+              {t('home.concept.title')}
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Il est 12 heures, vous décidez de partir en voyage, pour des raisons personnelles,
-              familiales, professionnelles, imaginez décoller dans quelques heures, dans la
-              destination souhaitée, en réservant un jet privé en moins de 5 minutes.
+              {t('home.concept.description')}
             </p>
             <div className="space-y-4 mb-8">
               <div className="flex items-start">
@@ -44,7 +45,7 @@ export default function ConceptPreview() {
                   <span className="text-white text-sm">✓</span>
                 </div>
                 <p className="text-gray-700">
-                  <strong>+ de 23 000</strong> Couverture de <strong>165 pays</strong>
+                  <strong>{t('home.concept.stat1')}</strong> {t('home.concept.stat1Description')} <strong>{t('home.concept.stat1Highlight')}</strong>
                 </p>
               </div>
               <div className="flex items-start">
@@ -52,7 +53,7 @@ export default function ConceptPreview() {
                   <span className="text-white text-sm">✓</span>
                 </div>
                 <p className="text-gray-700">
-                  <strong>Compris d'avions</strong> Gamme complète d'avions
+                  <strong>{t('home.concept.stat2')}</strong> <strong>{t('home.concept.stat2Highlight')}</strong>
                 </p>
               </div>
               <div className="flex items-start">
@@ -60,7 +61,7 @@ export default function ConceptPreview() {
                   <span className="text-white text-sm">✓</span>
                 </div>
                 <p className="text-gray-700">
-                  <strong>Service personnalisé</strong> Assistance 24/7
+                  <strong>{t('home.concept.stat3')}</strong> <strong>{t('home.concept.stat3Highlight')}</strong>
                 </p>
               </div>
             </div>
@@ -68,7 +69,7 @@ export default function ConceptPreview() {
               href="/notre-concept"
               className="inline-block bg-primary hover:bg-accent text-white px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg"
             >
-              Configurer votre vols
+              {t('home.concept.learnMore')}
             </Link>
           </motion.div>
         </div>

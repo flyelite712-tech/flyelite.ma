@@ -9,8 +9,10 @@ import { motion } from 'framer-motion'
 import offers from '@/data/offers.json'
 import airports from '@/data/airports.json'
 import { formatPrice, formatDate } from '@/lib/utils'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function OfferDetailPage() {
+  const { t, language } = useLanguage()
   const params = useParams()
   const router = useRouter()
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -34,9 +36,9 @@ export default function OfferDetailPage() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-primary mb-4">Offre non trouvée</h1>
+          <h1 className="text-4xl font-bold text-primary mb-4">{t('offerDetail.notFound')}</h1>
           <Link href="/offres" className="text-accent hover:underline">
-            Retour aux offres
+            {t('offerDetail.backToOffers')}
           </Link>
         </div>
       </div>
@@ -100,7 +102,7 @@ export default function OfferDetailPage() {
       }
     } catch (error) {
       console.error('Error:', error)
-      alert('Une erreur est survenue. Veuillez réessayer.')
+      alert(t('common.error'))
     } finally {
       setLoading(false)
     }
@@ -115,7 +117,7 @@ export default function OfferDetailPage() {
           className="inline-flex items-center text-primary hover:text-accent transition-colors mb-8"
         >
           <ArrowLeft size={20} className="mr-2" />
-          Retour aux offres
+          {t('offerDetail.backToOffers')}
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -150,7 +152,7 @@ export default function OfferDetailPage() {
 
                 {/* Date Badge */}
                 <div className="absolute top-4 left-4 bg-accent text-white px-4 py-2 rounded-lg font-bold">
-                  {formatDate(offer.date)}
+                  {offer.date === "N'importe quand" ? t('offersPage.anytime') : formatDate(offer.date)}
                 </div>
               </div>
             </div>
@@ -185,8 +187,15 @@ export default function OfferDetailPage() {
               <div className="flex items-center justify-between mb-8">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-primary mb-2">{offer.from}</div>
-                  <div className="text-sm text-gray-600">{fromAirport?.city}</div>
-                  <div className="text-xs text-gray-500">{fromAirport?.name}</div>
+                  {fromAirport && (
+                    <>
+                      <div className="text-sm text-gray-600">{fromAirport.city}</div>
+                      <div className="text-xs text-gray-500">{fromAirport.name}</div>
+                    </>
+                  )}
+                  {!fromAirport && offer.from === 'Worldwide' && (
+                    <div className="text-sm text-gray-600">{t('offerDetail.departureFrom')}</div>
+                  )}
                 </div>
                 <div className="flex-1 flex items-center justify-center px-4">
                   <div className="border-t-2 border-dashed border-gray-300 flex-1"></div>
@@ -195,8 +204,15 @@ export default function OfferDetailPage() {
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-primary mb-2">{offer.to}</div>
-                  <div className="text-sm text-gray-600">{toAirport?.city}</div>
-                  <div className="text-xs text-gray-500">{toAirport?.name}</div>
+                  {toAirport && (
+                    <>
+                      <div className="text-sm text-gray-600">{toAirport.city}</div>
+                      <div className="text-xs text-gray-500">{toAirport.name}</div>
+                    </>
+                  )}
+                  {!toAirport && offer.to === 'Worldwide' && (
+                    <div className="text-sm text-gray-600">{t('offerDetail.arrivalTo')}</div>
+                  )}
                 </div>
               </div>
 
@@ -205,15 +221,17 @@ export default function OfferDetailPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-gray-700">
                     <Calendar size={20} className="mr-3 text-accent" />
-                    <span className="font-semibold">Date de départ</span>
+                    <span className="font-semibold">{t('offerDetail.departureDate')}</span>
                   </div>
-                  <span className="text-gray-900 font-bold">{formatDate(offer.date)}</span>
+                  <span className="text-gray-900 font-bold">
+                    {offer.date === "N'importe quand" ? t('offersPage.anytime') : formatDate(offer.date)}
+                  </span>
                 </div>
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-gray-700">
                     <Clock size={20} className="mr-3 text-accent" />
-                    <span className="font-semibold">Horaires</span>
+                    <span className="font-semibold">{t('offerDetail.schedule')}</span>
                   </div>
                   <span className="text-gray-900 font-bold">
                     {offer.schedule.depart} - {offer.schedule.arrive}
@@ -223,7 +241,7 @@ export default function OfferDetailPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-gray-700">
                     <Plane size={20} className="mr-3 text-accent" />
-                    <span className="font-semibold">Appareil</span>
+                    <span className="font-semibold">{t('offerDetail.aircraft')}</span>
                   </div>
                   <span className="text-gray-900 font-bold">{offer.aircraft}</span>
                 </div>
@@ -231,31 +249,73 @@ export default function OfferDetailPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-gray-700">
                     <Users size={20} className="mr-3 text-accent" />
-                    <span className="font-semibold">Capacité</span>
+                    <span className="font-semibold">{t('offerDetail.capacity')}</span>
                   </div>
-                  <span className="text-gray-900 font-bold">{offer.seats} passagers max</span>
+                  <span className="text-gray-900 font-bold">{t('offerDetail.passengersMax').replace('{count}', offer.seats.toString())}</span>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-gray-700">
-                    <Clock size={20} className="mr-3 text-accent" />
-                    <span className="font-semibold">Durée du vol</span>
+                {offer.flightTimeMin > 0 && (
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center text-gray-700">
+                      <Clock size={20} className="mr-3 text-accent" />
+                      <span className="font-semibold">{t('offerDetail.flightDuration')}</span>
+                    </div>
+                    <span className="text-gray-900 font-bold">
+                      {Math.floor(offer.flightTimeMin / 60)}h {offer.flightTimeMin % 60}min
+                    </span>
                   </div>
-                  <span className="text-gray-900 font-bold">
-                    {Math.floor(offer.flightTimeMin / 60)}h {offer.flightTimeMin % 60}min
-                  </span>
-                </div>
+                )}
               </div>
+
+              {/* Medical Flight Details */}
+              {offer.isMedical && offer.medicalDetails && (
+                <div className="mb-8 pb-8 border-b">
+                  <h3 className="text-xl font-bold text-primary mb-4 flex items-center">
+                    <svg className="w-6 h-6 mr-2 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    {offer.medicalDetails.type}
+                  </h3>
+                  <p className="text-gray-700 mb-4">{offer.medicalDetails.description}</p>
+                  
+                  <div className="bg-blue-50 rounded-lg p-4 mb-4">
+                    <h4 className="font-bold text-primary mb-2">{t('offerDetail.medicalEquipment')}</h4>
+                    <ul className="space-y-1">
+                      {offer.medicalDetails.equipment.slice(0, 4).map((item, index) => (
+                        <li key={index} className="text-sm text-gray-700 flex items-start">
+                          <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-4">
+                    <h4 className="font-bold text-primary mb-2">{t('offerDetail.includedServices')}</h4>
+                    <ul className="space-y-1">
+                      {offer.medicalDetails.services.slice(0, 4).map((item, index) => (
+                        <li key={index} className="text-sm text-gray-700 flex items-start">
+                          <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
 
               {/* Price */}
               <div className="mb-8">
                 <div className="text-center">
-                  <div className="text-sm text-gray-600 mb-2">Prix total</div>
+                  <div className="text-sm text-gray-600 mb-2">{t('offerDetail.totalPrice')}</div>
                   <div className="text-5xl font-bold text-accent mb-2">
-                    {formatPrice(offer.price.amount, offer.price.currency)}
+                    {offer.price.amount === 0 ? t('offersPage.onRequest') : formatPrice(offer.price.amount, offer.price.currency)}
                   </div>
                   <div className="text-sm text-gray-500">
-                    Pour {offer.seats} passagers maximum
+                    {offer.price.amount === 0 
+                      ? t('offerDetail.contactForQuote') 
+                      : t('offerDetail.forMaxPassengers').replace('{count}', offer.seats.toString())
+                    }
                   </div>
                 </div>
               </div>
@@ -266,7 +326,7 @@ export default function OfferDetailPage() {
                   onClick={() => setShowBookingForm(true)}
                   className="w-full bg-accent hover:bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
                 >
-                  Réserver ce vol
+                  {t('offerDetail.bookThisFlight')}
                 </button>
               )}
 
@@ -278,14 +338,14 @@ export default function OfferDetailPage() {
                   className="border-t pt-8 mt-8"
                 >
                   <h3 className="text-2xl font-bold text-primary mb-6">
-                    Formulaire de réservation
+                    {t('offerDetail.bookingForm')}
                   </h3>
 
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Prénom *
+                          {t('offerDetail.firstName')} {t('offerDetail.required')}
                         </label>
                         <input
                           type="text"
@@ -298,7 +358,7 @@ export default function OfferDetailPage() {
 
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Nom *
+                          {t('offerDetail.lastName')} {t('offerDetail.required')}
                         </label>
                         <input
                           type="text"
@@ -313,7 +373,7 @@ export default function OfferDetailPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Email *
+                          {t('offerDetail.email')} {t('offerDetail.required')}
                         </label>
                         <input
                           type="email"
@@ -326,7 +386,7 @@ export default function OfferDetailPage() {
 
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Téléphone *
+                          {t('offerDetail.phone')} {t('offerDetail.required')}
                         </label>
                         <input
                           type="tel"
@@ -340,7 +400,7 @@ export default function OfferDetailPage() {
 
                     <div>
                       <label className="block text-sm font-semibold text-gray-700 mb-2">
-                        Nombre de passagers *
+                        {t('offerDetail.passengers')} {t('offerDetail.required')}
                       </label>
                       <input
                         type="number"
@@ -355,7 +415,7 @@ export default function OfferDetailPage() {
 
                     <div>
                       <label className="block text-sm font-semibold text-gray-700 mb-2">
-                        Notes (optionnel)
+                        {t('offerDetail.notes')}
                       </label>
                       <textarea
                         value={formData.notes}
@@ -375,7 +435,7 @@ export default function OfferDetailPage() {
                         required
                       />
                       <label htmlFor="consent" className="text-sm text-gray-700">
-                        J'accepte les termes et conditions et confirme ma réservation
+                        {t('offerDetail.consent')}
                       </label>
                     </div>
 
@@ -385,14 +445,14 @@ export default function OfferDetailPage() {
                         onClick={() => setShowBookingForm(false)}
                         className="flex-1 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
                       >
-                        Annuler
+                        {t('offerDetail.cancel')}
                       </button>
                       <button
                         type="submit"
                         disabled={loading}
                         className="flex-1 px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                       >
-                        {loading ? 'Envoi...' : 'Confirmer la réservation'}
+                        {loading ? t('offerDetail.sending') : t('offerDetail.confirmBooking')}
                       </button>
                     </div>
                   </form>
@@ -410,13 +470,13 @@ export default function OfferDetailPage() {
                     <Check size={40} className="text-green-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-green-600 mb-2">
-                    Réservation confirmée !
+                    {t('offerDetail.bookingConfirmed')}
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Nous avons bien reçu votre réservation. Un email de confirmation vous a été envoyé.
+                    {t('offerDetail.confirmationSent')}
                   </p>
                   <p className="text-sm text-gray-500">
-                    Redirection vers les offres...
+                    {t('offerDetail.redirecting')}
                   </p>
                 </motion.div>
               )}

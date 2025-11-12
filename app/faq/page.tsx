@@ -3,94 +3,51 @@
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function FAQPage() {
+  const { t } = useLanguage()
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const faqData = [
   {
-    category: "Réservation",
+    categoryKey: 'faqPage.categories.booking',
     questions: [
-      {
-        q: "Comment réserver un vol en jet privé ?",
-        a: "Vous pouvez réserver via notre formulaire de recherche sur la page d'accueil. Sélectionnez vos aéroports de départ et d'arrivée, choisissez vos dates, puis soumettez votre demande. Notre équipe vous contactera rapidement avec un devis personnalisé."
-      },
-      {
-        q: "Quel est le délai minimum pour réserver un vol ?",
-        a: "Nous pouvons organiser des vols avec seulement quelques heures de préavis. Cependant, pour garantir la disponibilité et bénéficier des meilleurs tarifs, nous recommandons de réserver au moins 24 à 48 heures à l'avance."
-      },
-      {
-        q: "Puis-je modifier ou annuler ma réservation ?",
-        a: "Oui, les modifications et annulations sont possibles selon les conditions de votre contrat. Les frais d'annulation varient en fonction du préavis donné. Contactez notre équipe pour plus de détails concernant votre réservation spécifique."
-      }
+      { qKey: 'faqPage.booking.q1', aKey: 'faqPage.booking.a1' },
+      { qKey: 'faqPage.booking.q2', aKey: 'faqPage.booking.a2' },
+      { qKey: 'faqPage.booking.q3', aKey: 'faqPage.booking.a3' }
     ]
   },
   {
-    category: "Tarifs et Paiement",
+    categoryKey: 'faqPage.categories.pricing',
     questions: [
-      {
-        q: "Comment sont calculés les prix ?",
-        a: "Les prix dépendent de plusieurs facteurs : distance du vol, type d'appareil, disponibilité, taxes aéroportuaires et services additionnels. Nos 'Offres du Moment' affichent des prix fixes pour des vols à vide à tarifs réduits."
-      },
-      {
-        q: "Quels modes de paiement acceptez-vous ?",
-        a: "Nous acceptons les virements bancaires, cartes de crédit (Visa, Mastercard, American Express) et paiements par chèque pour les clients réguliers. Un acompte est généralement requis lors de la réservation."
-      },
-      {
-        q: "Y a-t-il des frais cachés ?",
-        a: "Non, tous nos devis sont transparents et incluent tous les frais obligatoires. Les seuls coûts supplémentaires possibles concernent les services optionnels que vous choisissez (restauration premium, transferts terrestres, etc.)."
-      }
+      { qKey: 'faqPage.pricing.q1', aKey: 'faqPage.pricing.a1' },
+      { qKey: 'faqPage.pricing.q2', aKey: 'faqPage.pricing.a2' },
+      { qKey: 'faqPage.pricing.q3', aKey: 'faqPage.pricing.a3' }
     ]
   },
   {
-    category: "Appareils et Services",
+    categoryKey: 'faqPage.categories.aircraft',
     questions: [
-      {
-        q: "Quels types d'appareils proposez-vous ?",
-        a: "Notre flotte comprend une large gamme d'appareils, des jets légers (4-6 passagers) aux jets long-courriers (12-16 passagers). Chaque appareil respecte les normes de sécurité les plus strictes et offre un confort optimal."
-      },
-      {
-        q: "Puis-je choisir mon appareil ?",
-        a: "Oui, vous pouvez exprimer vos préférences lors de votre demande. Nous vous proposerons les appareils disponibles correspondant à vos besoins en termes de capacité, autonomie et budget."
-      },
-      {
-        q: "Quels services sont inclus à bord ?",
-        a: "Tous nos vols incluent un service de base : sièges en cuir, Wi-Fi, rafraîchissements et collations. Des services premium (repas gastronomiques, champagne, équipements spéciaux) peuvent être ajoutés sur demande."
-      }
+      { qKey: 'faqPage.aircraft.q1', aKey: 'faqPage.aircraft.a1' },
+      { qKey: 'faqPage.aircraft.q2', aKey: 'faqPage.aircraft.a2' },
+      { qKey: 'faqPage.aircraft.q3', aKey: 'faqPage.aircraft.a3' }
     ]
   },
   {
-    category: "Sécurité et Réglementation",
+    categoryKey: 'faqPage.categories.safety',
     questions: [
-      {
-        q: "Vos vols sont-ils sûrs ?",
-        a: "Absolument. Tous nos opérateurs sont certifiés et respectent les normes de sécurité aérienne les plus strictes. Les appareils subissent des maintenances régulières et les équipages sont hautement qualifiés."
-      },
-      {
-        q: "Quels documents sont nécessaires pour voyager ?",
-        a: "Pour les vols domestiques, une pièce d'identité valide suffit. Pour les vols internationaux, un passeport en cours de validité est requis. Selon la destination, un visa peut être nécessaire. Nous vous informerons des exigences spécifiques."
-      },
-      {
-        q: "Que se passe-t-il en cas de conditions météorologiques défavorables ?",
-        a: "La sécurité est notre priorité absolue. En cas de conditions météo dangereuses, le vol peut être retardé ou reporté. Nous vous tiendrons informé en temps réel et proposerons des alternatives."
-      }
+      { qKey: 'faqPage.safety.q1', aKey: 'faqPage.safety.a1' },
+      { qKey: 'faqPage.safety.q2', aKey: 'faqPage.safety.a2' },
+      { qKey: 'faqPage.safety.q3', aKey: 'faqPage.safety.a3' }
     ]
   },
   {
-    category: "Destinations et Itinéraires",
+    categoryKey: 'faqPage.categories.destinations',
     questions: [
-      {
-        q: "Où puis-je voler ?",
-        a: "Nous couvrons plus de 23 000 aéroports dans 165 pays. Que ce soit pour un vol domestique au Maroc ou un voyage intercontinental, nous pouvons organiser votre vol vers presque toutes les destinations."
-      },
-      {
-        q: "Proposez-vous des vols multi-destinations ?",
-        a: "Oui, nous pouvons organiser des itinéraires complexes avec plusieurs escales. C'est idéal pour les tournées d'affaires ou les voyages touristiques multi-destinations."
-      },
-      {
-        q: "Puis-je atterrir dans des petits aéroports ?",
-        a: "Oui, l'un des avantages du jet privé est l'accès à des milliers d'aéroports régionaux et privés inaccessibles aux vols commerciaux, vous rapprochant ainsi de votre destination finale."
-      }
+      { qKey: 'faqPage.destinations.q1', aKey: 'faqPage.destinations.a1' },
+      { qKey: 'faqPage.destinations.q2', aKey: 'faqPage.destinations.a2' },
+      { qKey: 'faqPage.destinations.q3', aKey: 'faqPage.destinations.a3' }
     ]
   }
 ]
@@ -107,10 +64,10 @@ export default function FAQPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-primary mb-4">
-            Questions Fréquentes
+            {t('faqPage.title')}
           </h1>
           <p className="text-xl text-gray-600">
-            Trouvez les réponses à vos questions sur nos services de jets privés
+            {t('faqPage.subtitle')}
           </p>
         </div>
 
@@ -119,7 +76,7 @@ export default function FAQPage() {
           {faqData.map((category, catIndex) => (
             <div key={catIndex} className="bg-white rounded-xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-primary mb-6">
-                {category.category}
+                {t(category.categoryKey)}
               </h2>
 
               <div className="space-y-4">
@@ -133,7 +90,7 @@ export default function FAQPage() {
                         onClick={() => toggleQuestion(catIndex, qIndex)}
                         className="w-full flex items-center justify-between text-left py-4 hover:text-accent transition-colors"
                       >
-                        <span className="font-semibold text-lg pr-4">{item.q}</span>
+                        <span className="font-semibold text-lg pr-4">{t(item.qKey)}</span>
                         <ChevronDown
                           className={`flex-shrink-0 text-accent transition-transform ${
                             isOpen ? 'transform rotate-180' : ''
@@ -152,7 +109,7 @@ export default function FAQPage() {
                             className="overflow-hidden"
                           >
                             <p className="text-gray-600 pb-4 leading-relaxed">
-                              {item.a}
+                              {t(item.aKey)}
                             </p>
                           </motion.div>
                         )}
@@ -168,16 +125,16 @@ export default function FAQPage() {
         {/* Contact CTA */}
         <div className="max-w-4xl mx-auto mt-12 bg-gradient-to-r from-primary to-accent rounded-xl p-8 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">
-            Vous ne trouvez pas la réponse à votre question ?
+            {t('faqPage.cta.title')}
           </h2>
           <p className="text-lg mb-6">
-            Notre équipe est disponible 24/7 pour répondre à toutes vos questions
+            {t('faqPage.cta.description')}
           </p>
           <a
             href="/contact"
             className="inline-block bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
           >
-            Contactez-nous
+            {t('faqPage.cta.button')}
           </a>
         </div>
       </div>

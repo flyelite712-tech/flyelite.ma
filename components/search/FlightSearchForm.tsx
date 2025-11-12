@@ -3,12 +3,14 @@
 import { useState } from 'react'
 import { Search, ArrowLeft } from 'lucide-react'
 import AirportSelect from './AirportSelect'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 interface FlightSearchFormProps {
   tripType: 'round_trip' | 'one_way'
 }
 
 export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
+  const { t } = useLanguage()
   const [showQuoteForm, setShowQuoteForm] = useState(false)
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
@@ -87,7 +89,7 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
       }
     } catch (error) {
       console.error('Error:', error)
-      alert('Une erreur est survenue. Veuillez réessayer.')
+      alert(t('common.error'))
     } finally {
       setLoading(false)
     }
@@ -100,7 +102,7 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
           {/* Départ */}
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-2">
-              D'OÙ PARTEZ-VOUS ? *
+              {t('search.from')} *
             </label>
             <AirportSelect
               value={searchData.from}
@@ -112,7 +114,7 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
           {/* Destination */}
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-2">
-              OÙ ALLEZ-VOUS ? *
+              {t('search.to')} *
             </label>
             <AirportSelect
               value={searchData.to}
@@ -124,7 +126,7 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
           {/* Passagers */}
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-2">
-              PASSAGER *
+              {t('search.passengers')} *
             </label>
             <input
               type="number"
@@ -140,7 +142,7 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
           {/* Date/Heure Aller */}
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-2">
-              ALLER *
+              {t('search.departure')} *
             </label>
             <div className="grid grid-cols-2 gap-2">
               <input
@@ -164,7 +166,7 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
           {tripType === 'round_trip' && (
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                RETOUR *
+                {t('search.return')} *
               </label>
               <div className="grid grid-cols-2 gap-2">
                 <input
@@ -194,7 +196,7 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
               className="bg-accent hover:bg-primary text-white px-12 py-4 rounded-full font-bold text-lg flex items-center space-x-3 transition-all transform hover:scale-105 shadow-lg"
             >
               <Search size={24} />
-              <span>Rechercher</span>
+              <span>{t('search.search')}</span>
             </button>
           </div>
         )}
@@ -206,10 +208,10 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
           {/* Header */}
           <div className="mb-6">
             <h3 className="text-xl font-bold text-gray-900 mb-2">
-              Demande de Devis
+              {t('search.quoteTitle')}
             </h3>
             <p className="text-sm text-gray-600">
-              Un responsable vous contactera dans les plus brefs délais pour vous assister
+              {t('search.quoteDescription')}
             </p>
           </div>
 
@@ -217,10 +219,10 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
             <div className="py-12 text-center">
               <div className="text-6xl mb-4">✅</div>
               <h3 className="text-2xl font-bold text-green-600 mb-2">
-                Demande envoyée !
+                {t('search.successTitle')}
               </h3>
               <p className="text-gray-600">
-                Nous avons bien reçu votre demande. Un responsable vous contactera très bientôt.
+                {t('search.successMessage')}
               </p>
             </div>
           ) : (
@@ -229,13 +231,13 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
                 {/* Prénom */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Prénom *
+                    {t('search.firstName')} *
                   </label>
                   <input
                     type="text"
                     value={quoteData.firstName}
                     onChange={(e) => setQuoteData({ ...quoteData, firstName: e.target.value })}
-                    placeholder="Prénom"
+                    placeholder={t('search.firstName')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     required
                   />
@@ -244,13 +246,13 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
                 {/* Nom */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Nom *
+                    {t('search.lastName')} *
                   </label>
                   <input
                     type="text"
                     value={quoteData.lastName}
                     onChange={(e) => setQuoteData({ ...quoteData, lastName: e.target.value })}
-                    placeholder="Nom"
+                    placeholder={t('search.lastName')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     required
                   />
@@ -259,13 +261,13 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
                 {/* Email */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    E-mail *
+                    {t('search.email')} *
                   </label>
                   <input
                     type="email"
                     value={quoteData.email}
                     onChange={(e) => setQuoteData({ ...quoteData, email: e.target.value })}
-                    placeholder="E-mail"
+                    placeholder={t('search.email')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     required
                   />
@@ -274,13 +276,13 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
                 {/* Téléphone */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Téléphone *
+                    {t('search.phone')} *
                   </label>
                   <input
                     type="tel"
                     value={quoteData.phone}
                     onChange={(e) => setQuoteData({ ...quoteData, phone: e.target.value })}
-                    placeholder="Téléphone"
+                    placeholder={t('search.phone')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                     required
                   />
@@ -290,12 +292,12 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
               {/* Notes */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Notes (optionnel)
+                  {t('search.notes')}
                 </label>
                 <textarea
                   value={quoteData.notes}
                   onChange={(e) => setQuoteData({ ...quoteData, notes: e.target.value })}
-                  placeholder="Informations supplémentaires..."
+                  placeholder={t('search.notesPlaceholder')}
                   rows={3}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
                 />
@@ -312,7 +314,7 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
                   required
                 />
                 <label htmlFor="consent" className="text-sm text-gray-700">
-                  J'accepte les termes et conditions
+                  {t('search.consent')}
                 </label>
               </div>
 
@@ -324,14 +326,14 @@ export default function FlightSearchForm({ tripType }: FlightSearchFormProps) {
                   className="flex-1 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center space-x-2"
                 >
                   <ArrowLeft size={20} />
-                  <span>Retour</span>
+                  <span>{t('search.back')}</span>
                 </button>
                 <button
                   type="submit"
                   disabled={loading}
                   className="flex-1 px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {loading ? 'Envoi...' : 'Envoyer'}
+                  {loading ? t('search.sending') : t('search.send')}
                 </button>
               </div>
             </form>
