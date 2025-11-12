@@ -1,7 +1,10 @@
 import { NextResponse } from 'next/server'
+import { blogPosts } from '@/data/blog-posts'
+import offers from '@/data/offers.json'
 
 export async function GET() {
-  const baseUrl = 'https://flyelite.ma'
+  try {
+    const baseUrl = process.env.NODE_ENV === 'production' ? 'https://flyelite.ma' : 'http://localhost:3000'
     
     // Static pages
     const staticPages = [
