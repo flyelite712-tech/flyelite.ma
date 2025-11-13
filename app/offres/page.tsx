@@ -7,12 +7,20 @@ import offers from '@/data/offers.json'
 import airports from '@/data/airports.json'
 import { formatPrice } from '@/lib/utils'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { formatAircraftName } from '@/lib/aircraft-formatter'
 
 export default function OffresPage() {
   const { t, language } = useLanguage()
   const getAirportCity = (code: string) => {
     const airport = airports.find(a => a.code === code)
     return airport?.city || code
+  }
+
+  const getRouteDisplay = (code: string, isFrom: boolean = true) => {
+    if (code === 'Worldwide' || code === 'WW' || code === 'from any where' || code === 'to any where') {
+      return isFrom ? t('offersPage.from') : t('offersPage.to')
+    }
+    return code
   }
 
   return (
@@ -68,21 +76,21 @@ export default function OffresPage() {
                 <div className="p-6">
                   {/* Route */}
                   <div className="flex items-center justify-between mb-4">
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-primary">{offer.from}</div>
-                      <div className="text-sm text-gray-500">
-                        {offer.from === 'Worldwide' ? t('offersPage.from') : getAirportCity(offer.from)}
+                    <div className="text-center flex-1 min-w-0">
+                      <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">{getRouteDisplay(offer.from, true)}</div>
+                      <div className="text-xs sm:text-sm text-gray-500">
+                        {offer.from === 'Worldwide' || offer.from === 'WW' || offer.from === 'from any where' ? t('offersPage.from') : getAirportCity(offer.from)}
                       </div>
                     </div>
-                    <div className="flex-1 flex items-center justify-center">
-                      <div className="border-t-2 border-dashed border-gray-300 flex-1 mx-2"></div>
-                      <Plane className="text-accent" size={24} />
-                      <div className="border-t-2 border-dashed border-gray-300 flex-1 mx-2"></div>
+                    <div className="flex items-center justify-center px-2 sm:px-4">
+                      <div className="border-t-2 border-dashed border-gray-300 w-4 sm:w-8"></div>
+                      <Plane className="text-accent mx-1 sm:mx-2" size={20} />
+                      <div className="border-t-2 border-dashed border-gray-300 w-4 sm:w-8"></div>
                     </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-primary">{offer.to}</div>
-                      <div className="text-sm text-gray-500">
-                        {offer.to === 'Worldwide' ? t('offersPage.to') : getAirportCity(offer.to)}
+                    <div className="text-center flex-1 min-w-0">
+                      <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">{getRouteDisplay(offer.to, false)}</div>
+                      <div className="text-xs sm:text-sm text-gray-500">
+                        {offer.to === 'Worldwide' || offer.to === 'WW' || offer.to === 'to any where' ? t('offersPage.to') : getAirportCity(offer.to)}
                       </div>
                     </div>
                   </div>
@@ -95,7 +103,7 @@ export default function OffresPage() {
                     </div>
                     <div className="flex items-center">
                       <Plane size={18} className="mr-2 text-accent" />
-                      <span>{offer.aircraft}</span>
+                      <span>{formatAircraftName(offer.aircraft)}</span>
                     </div>
                   </div>
 

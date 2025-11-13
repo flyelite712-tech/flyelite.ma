@@ -10,6 +10,7 @@ import offers from '@/data/offers.json'
 import airports from '@/data/airports.json'
 import { formatPrice, formatDate } from '@/lib/utils'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { formatAircraftName } from '@/lib/aircraft-formatter'
 
 export default function OfferDetailPage() {
   const { t, language } = useLanguage()
@@ -243,7 +244,7 @@ export default function OfferDetailPage() {
                     <Plane size={20} className="mr-3 text-accent" />
                     <span className="font-semibold">{t('offerDetail.aircraft')}</span>
                   </div>
-                  <span className="text-gray-900 font-bold">{offer.aircraft}</span>
+                  <span className="text-gray-900 font-bold">{formatAircraftName(offer.aircraft)}</span>
                 </div>
 
                 <div className="flex items-center justify-between">
@@ -268,37 +269,57 @@ export default function OfferDetailPage() {
               </div>
 
               {/* Medical Flight Details */}
-              {offer.isMedical && offer.medicalDetails && (
+              {offer.isMedical && (
                 <div className="mb-8 pb-8 border-b">
                   <h3 className="text-xl font-bold text-primary mb-4 flex items-center">
                     <svg className="w-6 h-6 mr-2 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
-                    {offer.medicalDetails.type}
+                    {t('offerDetail.medicalType')}
                   </h3>
-                  <p className="text-gray-700 mb-4">{offer.medicalDetails.description}</p>
+                  <p className="text-gray-700 mb-4">{t('offerDetail.medicalDescription')}</p>
                   
                   <div className="bg-blue-50 rounded-lg p-4 mb-4">
                     <h4 className="font-bold text-primary mb-2">{t('offerDetail.medicalEquipment')}</h4>
                     <ul className="space-y-1">
-                      {offer.medicalDetails.equipment.slice(0, 4).map((item, index) => (
-                        <li key={index} className="text-sm text-gray-700 flex items-start">
-                          <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
+                      <li className="text-sm text-gray-700 flex items-start">
+                        <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{t('offerDetail.medicalEquipmentList.lifeport')}</span>
+                      </li>
+                      <li className="text-sm text-gray-700 flex items-start">
+                        <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{t('offerDetail.medicalEquipmentList.oxygen')}</span>
+                      </li>
+                      <li className="text-sm text-gray-700 flex items-start">
+                        <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{t('offerDetail.medicalEquipmentList.monitor')}</span>
+                      </li>
+                      <li className="text-sm text-gray-700 flex items-start">
+                        <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{t('offerDetail.medicalEquipmentList.ventilator')}</span>
+                      </li>
                     </ul>
                   </div>
 
                   <div className="bg-green-50 rounded-lg p-4">
                     <h4 className="font-bold text-primary mb-2">{t('offerDetail.includedServices')}</h4>
                     <ul className="space-y-1">
-                      {offer.medicalDetails.services.slice(0, 4).map((item, index) => (
-                        <li key={index} className="text-sm text-gray-700 flex items-start">
-                          <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
+                      <li className="text-sm text-gray-700 flex items-start">
+                        <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{t('offerDetail.medicalServices.availability')}</span>
+                      </li>
+                      <li className="text-sm text-gray-700 flex items-start">
+                        <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{t('offerDetail.medicalServices.departure')}</span>
+                      </li>
+                      <li className="text-sm text-gray-700 flex items-start">
+                        <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{t('offerDetail.medicalServices.transfer')}</span>
+                      </li>
+                      <li className="text-sm text-gray-700 flex items-start">
+                        <Check size={16} className="text-accent mr-2 mt-0.5 flex-shrink-0" />
+                        <span>{t('offerDetail.medicalServices.monitoring')}</span>
+                      </li>
                     </ul>
                   </div>
                 </div>

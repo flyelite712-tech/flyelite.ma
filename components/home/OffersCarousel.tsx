@@ -9,6 +9,7 @@ import offers from '@/data/offers.json'
 import airports from '@/data/airports.json'
 import { formatPrice, formatDate } from '@/lib/utils'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { formatAircraftName } from '@/lib/aircraft-formatter'
 
 export default function OffersCarousel() {
   const { t, language } = useLanguage()
@@ -32,6 +33,13 @@ export default function OffersCarousel() {
   const getAirportCity = (code: string) => {
     const airport = airports.find(a => a.code === code)
     return airport?.city || code
+  }
+
+  const getRouteDisplay = (code: string, isFrom: boolean = true) => {
+    if (code === 'Worldwide' || code === 'WW' || code === 'from any where' || code === 'to any where') {
+      return isFrom ? t('offersPage.from') : t('offersPage.to')
+    }
+    return code
   }
 
   return (
@@ -119,17 +127,17 @@ export default function OffersCarousel() {
                       <div className="p-6">
                         {/* Route */}
                         <div className="flex items-center justify-between mb-4">
-                          <div className="text-center">
-                            <div className="text-2xl font-bold text-primary">{offer.from}</div>
+                          <div className="text-center flex-1 min-w-0">
+                            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-primary">{getRouteDisplay(offer.from, true)}</div>
                             <div className="text-xs text-gray-500">{getAirportCity(offer.from)}</div>
                           </div>
-                          <div className="flex-1 flex items-center justify-center">
-                            <div className="border-t-2 border-dashed border-gray-300 flex-1 mx-2"></div>
-                            <Plane className="text-accent" size={20} />
-                            <div className="border-t-2 border-dashed border-gray-300 flex-1 mx-2"></div>
+                          <div className="flex items-center justify-center px-2">
+                            <div className="border-t-2 border-dashed border-gray-300 w-4"></div>
+                            <Plane className="text-accent mx-1" size={16} />
+                            <div className="border-t-2 border-dashed border-gray-300 w-4"></div>
                           </div>
-                          <div className="text-center">
-                            <div className="text-2xl font-bold text-primary">{offer.to}</div>
+                          <div className="text-center flex-1 min-w-0">
+                            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-primary">{getRouteDisplay(offer.to, false)}</div>
                             <div className="text-xs text-gray-500">{getAirportCity(offer.to)}</div>
                           </div>
                         </div>
@@ -142,7 +150,7 @@ export default function OffersCarousel() {
                           </div>
                           <div className="flex items-center">
                             <Plane size={16} className="mr-2 text-accent" />
-                            <span>{offer.aircraft}</span>
+                            <span>{formatAircraftName(offer.aircraft)}</span>
                           </div>
                         </div>
 

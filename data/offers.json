@@ -27,14 +27,14 @@
     "id": "medical-flight-worldwide",
     "slug": "vol-sanitaire-mondial",
     "date": "N'importe quand",
-    "from": "Worldwide",
-    "to": "Worldwide",
+    "from": "from any where",
+    "to": "to any where",
     "aircraft": "Citation CJ3 Médicalisé",
     "seats": 2,
     "flightTimeMin": 0,
     "schedule": {
       "depart": "Disponible 24h/24",
-      "arrive": "Sur demande"
+      "arrive": ""
     },
     "price": {
       "currency": "EUR",

@@ -319,6 +319,40 @@
     "flightDuration": "Flight duration",
     "medicalEquipment": "Medical Equipment On Board",
     "includedServices": "Included Services",
+    "medicalType": "Medical Flight / Air Ambulance",
+    "medicalDescription": "Secure medical transport with complete medical team and intensive care equipment on board",
+    "medicalEquipmentList": {
+      "lifeport": "Lifeport intensive care unit with shell mattress",
+      "oxygen": "Centralized oxygen tank (6000+ liters)",
+      "monitor": "Multi-parameter medical transport monitor",
+      "ventilator": "Artificial respirator for complex breathing modes",
+      "ecg": "12-channel multifunction electrocardiograph",
+      "defibrillator": "Compact defibrillator/monitoring system",
+      "satellite": "Satellite phone for global communications"
+    },
+    "medicalCrew": {
+      "doctor": "Doctor specialized in emergency and intensive care",
+      "paramedic": "Qualified paramedical assistant",
+      "pilots": "Experienced pilots certified for medical flights"
+    },
+    "medicalServices": {
+      "availability": "24/7 availability",
+      "departure": "Departure from the airport closest to the hospital",
+      "transfer": "'Bed to bed' transfer with ground ambulance",
+      "pressure": "Cabin pressure adjustment (sea level flight if necessary)",
+      "monitoring": "Constant medical monitoring during flight",
+      "coordination": "Coordination with healthcare facilities",
+      "translation": "Translation service and medical document management"
+    },
+    "suitableFor": {
+      "repatriation": "International medical repatriation",
+      "evacuation": "Emergency medical evacuations",
+      "transfers": "Inter-hospital transfers for specialized care",
+      "intensive": "Intensive care patients",
+      "respiratory": "Patients on respiratory assistance",
+      "monitoring": "Patient transport with constant monitoring",
+      "planned": "Planned medical trips for treatment abroad"
+    },
     "totalPrice": "Total price",
     "contactForQuote": "Contact us for a personalized quote",
     "forMaxPassengers": "For {count} passengers maximum",

@@ -319,6 +319,40 @@
     "flightDuration": "Durée du vol",
     "medicalEquipment": "Équipements Médicaux à Bord",
     "includedServices": "Services Inclus",
+    "medicalType": "Vol Sanitaire / Avion Ambulance",
+    "medicalDescription": "Transport médical sécurisé avec équipe médicale complète et équipements de soins intensifs à bord",
+    "medicalEquipmentList": {
+      "lifeport": "Unité de soins intensifs Lifeport avec matelas coquille",
+      "oxygen": "Réservoir d'oxygène centralisé (6000+ litres)",
+      "monitor": "Moniteur de transport médical multiparamètres",
+      "ventilator": "Respirateur artificiel pour modes de respiration complexes",
+      "ecg": "Électrocardiographe multifonction 12 canaux",
+      "defibrillator": "Défibrillateur/système de surveillance compact",
+      "satellite": "Téléphone satellite pour communications mondiales"
+    },
+    "medicalCrew": {
+      "doctor": "Médecin spécialisé en soins d'urgence et intensifs",
+      "paramedic": "Assistant paramédical qualifié",
+      "pilots": "Pilotes expérimentés certifiés vols médicaux"
+    },
+    "medicalServices": {
+      "availability": "Disponibilité 24h/24, 7j/7",
+      "departure": "Départ de l'aéroport le plus proche de l'hôpital",
+      "transfer": "Transfert 'de lit à lit' avec ambulance terrestre",
+      "pressure": "Ajustement de la pression cabine (vol sea level si nécessaire)",
+      "monitoring": "Surveillance médicale constante durant le vol",
+      "coordination": "Coordination avec établissements de santé",
+      "translation": "Service traduction et gestion documents médicaux"
+    },
+    "suitableFor": {
+      "repatriation": "Rapatriements sanitaires internationaux",
+      "evacuation": "Évacuations médicales urgentes",
+      "transfers": "Transferts inter-hospitaliers pour soins spécialisés",
+      "intensive": "Patients en soins intensifs",
+      "respiratory": "Patients sous assistance respiratoire",
+      "monitoring": "Transport de patients avec monitoring constant",
+      "planned": "Voyages médicaux planifiés pour traitements à l'étranger"
+    },
     "totalPrice": "Prix total",
     "contactForQuote": "Contactez-nous pour un devis personnalisé",
     "forMaxPassengers": "Pour {count} passagers maximum",
